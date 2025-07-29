@@ -125,10 +125,13 @@ const MatchesCards = () => {
                             <p className='fs-12'>Panipat Panthers</p>
                         </div>
 
-                        <div className="score-section">
-                        <div className="score">
-                            <span>{match.scoreA}</span> - <span>{match.scoreB}</span>
-                        </div>
+                        <div style={{display: 'flex', alignItems: 'center', flexDirection: 'column', gap: '5px'}}>
+                            <p style={{marginTop: '10px'}}>Full Time</p>
+                            <div className="score-section">
+                            <div className="score">
+                                <span>{match.scoreA}</span> - <span>{match.scoreB}</span>
+                            </div>
+                            </div>
                         </div>
 
                         <div className="team">

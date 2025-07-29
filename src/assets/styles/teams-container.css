@@ -1,3 +1,6 @@
+.team-container{
+    margin-top: 50px;
+}
 .team-container .teams{
     display: flex;
     flex-wrap: wrap;

@@ -8,16 +8,34 @@
   padding: 15px 20px;
   gap: 2rem;
   background-color: #000;
-
+  color: #fff;
+  scale: 0.9;
+  transition: 0.2s linear all;
 }
 
 .heading{
   font-style: italic;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 .swiper-slide-next .match-card{
   background-color: #fff;
-  
+  color: #000;
+  scale: 1;
+}
+
+.button-purple{
+  width: fit-content;
+  padding: 5px 10px;
+    background-color: var(--color-accent-light);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.swiper-slide-next .match-card .button-purple{
+  background-color: var(--color-primary-dark);
+
 }
 
 .match-header{
@@ -34,13 +52,7 @@
 
 }
 
-.button-purple{
-  width: fit-content;
-  padding: 5px 10px;
-  background-color: var(--color-primary-light);
-  border-radius: 5px;
-  color: #fff;
-}
+
  p.fs-12{
   font-size: 12px;
 }
@@ -50,7 +62,6 @@
 
 .match-body{
   display: flex;
-  align-items: center;
   gap: 20px;
 }
 
@@ -61,7 +72,6 @@
   justify-content: space-between;
   text-align: center;
 
-  height: 100%;
 }
 
 .team img {

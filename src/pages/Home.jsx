@@ -22,10 +22,10 @@ function Home() {
         {/* Teams */}
         <TeamsContainer />
 
-        {/* <MatchesCards /> */}
+        <MatchesCards />
 
         {/* Ground Banner */}
-        <div className="img-container" style={{width: "100%", marginTop: '80px'}}>
+        <div className="img-container" style={{width: "100%", marginTop: '50px'}}>
           <img src={GroundImage} alt="GroundImage" style={{width: '100%'}} />
         </div>
 
