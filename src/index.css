@@ -1,0 +1,71 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+}
+
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+:root {
+  --color-primary-dark: #1A2362;
+  --color-primary-light: #1029A6;
+  /* --color-body-light: #efefef3b; */
+  --color-body-light: #fff;
+  --color-accent-dark: #A8002C;
+  --color-accent-light: #E8002F;
+  --color-highlight-dark: #EBC449;
+  --color-highlight-light: #FFF07C;
+  --color-success-btn: #28a745;
+  --color-success-btn-hover: #218838;
+}
+
+
+.container{
+  width: 85vw;
+  margin: 0 auto;
+}
+
+
+@font-face {
+  font-family: 'Exo 2';
+  src: url('./assets/fonts/Exo/Exo2-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  src: url('./assets/fonts/Exo/Exo2-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  src: url('./assets/fonts/Exo/Exo2-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  src: url('./assets/fonts/Exo/Exo2-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  src: url('./assets/fonts/Exo/Exo2-Black.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: 700;
+}

@@ -1,0 +1,95 @@
+.leaderboard-container {
+  width: 100%;
+  overflow-x: auto;
+
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.leaderboard-container h2{
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+thead{
+    background: linear-gradient(28deg, #330d69 0%, #c20b0b 100%);
+}
+
+
+
+.leaderboard-table th{
+  border-bottom: 1px solid #ddd;
+    padding: 14px 22px;
+
+}
+
+.leaderboard-table td {
+  border-bottom: 1px solid #ddd;
+    padding: 9px 22px;
+
+}
+
+.leaderboard-table th {
+  color: #fff;
+  font-size: 16px;
+}
+
+.leaderboard-table tbody tr:nth-child(even){
+  background-color: #ddd;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.trhighlight {
+  font-weight: bold;
+}
+
+.form-icons {
+  display: flex;
+}
+
+td.team-name{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+td.team-name img{
+    width: 70px;
+}
+
+.form-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-icon.W {
+  background-color: #009c25;
+}
+
+.form-icon.L {
+  background-color:#ff0000;
+}
+
+.form-icon.D {
+  background-color: black;
+}

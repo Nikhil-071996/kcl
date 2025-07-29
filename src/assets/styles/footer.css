@@ -1,0 +1,74 @@
+footer{
+    background-image: linear-gradient(28deg, #330d69 0%, #c20b0b 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 54px 0 20px;
+    color: #fff;
+}
+
+.teams .image-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 26px;
+}
+
+.teams .image-container img{
+    width: 11%;
+    aspect-ratio: 1;
+
+    border-radius: 100%;
+}
+
+footer .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer .menu a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 180px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    margin-top: 55px;
+
+}
+
+.privacy-content-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.privacy-content-container .links{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.privacy-content-container a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}

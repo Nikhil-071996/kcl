@@ -1,0 +1,42 @@
+.enquries-container{
+    background: linear-gradient(28deg, #330d69 0%, #c20b0b 100%);
+    padding: 58px 0;
+    margin-bottom: 50px;
+}
+
+.enquries-container .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enquries-container .container .section-1, .enquries-container .container .section-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
+
+    width: 50%;
+}
+
+.enquries-container .container .section-1 img{
+    width: 70px;
+}
+
+.enquries-container .container .section-2 button{
+    all: unset;
+    width: fit-content;
+    padding: 22px 44px;
+    border: 1px solid var(--color-highlight-dark);
+}
+
+.enquries-container .container .section-2 a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+
