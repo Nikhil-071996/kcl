@@ -91,65 +91,65 @@ function TeamsContainer() {
             <SplideSlide 
               
             >
-                <div className="team-card">
+                <Link to={'/team-page'} className="team-card">
                     <img src={Team1} alt="Team1" />
-                </div>
+                </Link>
             </SplideSlide>
 
             <SplideSlide 
               
             >
-                <div className="team-card">
+                <Link to={'/team-page'} className="team-card">
                     <img src={Team2} alt="Team1" />
-                </div>
+                </Link>
             </SplideSlide>
 
             <SplideSlide 
               
             >
-                <div className="team-card">
+                <Link to={'/team-page'} className="team-card">
                     <img src={Team1} alt="Team1" />
-                </div>
+                </Link>
             </SplideSlide>
 
             <SplideSlide 
               
             >
-                <div className="team-card">
+                <Link to={'/team-page'} className="team-card">
                     <img src={Team2} alt="Team1" />
-                </div>
+                </Link>
             </SplideSlide>
 
             <SplideSlide 
               
             >
-                <div className="team-card">
+                <Link to={'/team-page'} className="team-card">
                     <img src={Team1} alt="Team1" />
-                </div>
+                </Link>
             </SplideSlide>
 
             <SplideSlide 
               
             >
-                <div className="team-card">
+                <Link to={'/team-page'} className="team-card">
                     <img src={Team2} alt="Team1" />
-                </div>
+                </Link>
             </SplideSlide>
 
             <SplideSlide 
               
             >
-                <div className="team-card">
+                <Link to={'/team-page'} className="team-card">
                     <img src={Team1} alt="Team1" />
-                </div>
+                </Link>
             </SplideSlide>
 
             <SplideSlide 
               
             >
-                <div className="team-card">
+                <Link to={'/team-page'} className="team-card">
                     <img src={Team2} alt="Team1" />
-                </div>
+                </Link>
             </SplideSlide>
 
           </Splide>
