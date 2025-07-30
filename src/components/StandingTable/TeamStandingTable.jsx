@@ -2,6 +2,8 @@ import React from 'react';
 import './TeamStandingTable.css';
 import image1 from '../../assets/images/Home/Table_logo_1.png'
 import image2 from '../../assets/images/Home/Table_logo_2.png'
+import arrow from '../../assets/images/Home/Arrow.svg'
+import { Link } from 'react-router-dom'
 
 const teams = [
   {
@@ -43,7 +45,15 @@ const TeamStandingTable = () => {
   return (
     <div className="leaderboard-container">
         <div className="container">
-            <h2>POINTS TABLE</h2>
+
+            <div className="heading-container">
+                  <h2>POINTS TABLE</h2>
+                  <Link href="">
+                      <span>View More</span>
+                      <img src={arrow} alt="Arrow" />
+                  </Link>
+              </div>
+
             <table className="leaderboard-table table-striped">
                 <thead>
                 <tr>

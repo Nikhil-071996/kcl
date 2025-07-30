@@ -13,7 +13,7 @@ body{
 :root {
   --color-primary-dark: #1A2362;
   --color-primary-light: #1029A6;
-  /* --color-body-light: #efefef3b; */
+  --color-body-gray: #E8E8E8;
   --color-body-light: #fff;
   --color-accent-dark: #A8002C;
   --color-accent-light: #E8002F;

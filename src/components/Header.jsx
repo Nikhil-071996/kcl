@@ -58,15 +58,15 @@ function Header() {
 
         <div className="container">
 
-          <div className="logo">
+          <Link to={'/'} className="logo">
             <div className="logo-clip-path">
               <img src={logo} alt="KCL" />
             </div>
-          </div>
+          </Link>
           <nav>
               <Link to={'/'}>Home</Link>
               <Link>Teams</Link>
-              <Link>Matches</Link>
+              <Link to={'/fixtures'}>Matches</Link>
               <Link>Standing</Link>
               <Link>About Us</Link>
               <Link  to={'/contact-us'}>Contact Us</Link>

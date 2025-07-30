@@ -1,0 +1,155 @@
+.fixtures-page{
+    margin-top: 93px;
+    background-color: var(--color-accent-dark);
+    padding-bottom: 69px;
+}
+
+.fixtures-buttons-container{
+    padding-top: 87px;
+    padding-bottom: 62px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixtures-buttons-container button{
+    all: unset;
+    width: fit-content;
+    padding: 15px 69px;
+    background-color: #fff;
+    color: var(--color-accent-dark);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.fixtures-buttons-container button.active{
+    background-color: var(--color-highlight-dark);
+}
+
+.fixtures-buttons-container button:nth-child(2){
+    border: 1px solid var(--color-accent-dark);
+}
+
+.fixtures-buttons-container button:nth-child(1){
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.fixtures-buttons-container button:nth-child(3){
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+
+
+/* Match Fixtures Cards */
+
+
+.fs-27{
+    font-size: 27px;
+}
+
+.fs-13{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.fs-18{
+    font-size: 18px;
+}
+
+p.teams-name{
+    font-weight: 500;
+}
+
+.margin-para{
+    margin-top: 28px;
+}
+
+.date{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+
+.fixture-card-section{
+    background-color: #fff;
+    padding: 37px 0;
+}
+
+.fixtures-cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.fixtures-section{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.fixture-card{
+    display: flex;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.fixture-card .section-1{
+ background-color: var(--color-primary-light);
+ width: 27%;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+
+ padding: 47px 40px;
+ color: #fff;
+}
+
+.fixture-card .section-2{
+ background-color: var(--color-body-gray);   
+ width: 73%;
+ padding: 47px 40px;
+
+
+}
+
+.fixture-card .section-2 .fitures-match-body{
+ display: flex;
+    justify-content: space-between;
+}
+
+.fitures-score{
+    width: fit-content;
+
+    background-color: var(--color-highlight-dark);
+    text-align: center;
+    padding: 12px 55px;
+    border-radius: 100px;
+}
+
+.full-time{
+    background-color: var(--color-success-btn);
+    border-radius: 5px;
+    padding: 8px 28px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.fitures-team{
+    display: flex;
+    align-items: center;
+
+    gap: 23px;
+}
+
+.fitures-score{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.fixture-card img.arrow-icon{
+    width: 25px;
+}

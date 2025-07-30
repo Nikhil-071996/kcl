@@ -10,37 +10,44 @@ import GroundImage from '../assets/images/Home/Stadium.jpg'
 import Enquiries from '../components/Enquiries/Enquiries'
 import MatchesCards from '../components/matches/MatchesCards'
 import SocialMediaPosts from '../components/socialMediaPosts/SocialMediaPosts'
+import Videos from '../components/videos/Videos'
 
 function Home() {
   return (
     <div>
         <Slider />
 
-        {/* Blogs */}
+        <MatchesCards />
+
+        <TeamsContainer />
+
+        <TeamStandingTable />
 
         <Blogs />
 
-        {/* Teams */}
-        <TeamsContainer />
-
-        <MatchesCards />
+        <Videos />
 
         <SocialMediaPosts />
+
+
 
         {/* Ground Banner */}
         <div className="img-container" style={{width: "100%", marginTop: '50px'}}>
           <img src={GroundImage} alt="GroundImage" style={{width: '100%'}} />
         </div>
 
-        {/* Teams */}
-        <TeamStandingTable />
 
-
-        {/* Enquiries */}
         <Enquiries />
 
 
-        {/* Sponsers Logos */}
+
+
+        
+
+
+
+
+
         {/* <Sponsers /> */}
 
     </div>

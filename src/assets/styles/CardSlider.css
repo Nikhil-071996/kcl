@@ -38,6 +38,14 @@
 
 }
 
+a.link-white span{
+  color: #fff;
+}
+
+a.link-white img{
+  filter: invert();
+}
+
 .match-header{
   width: 100%;
 }

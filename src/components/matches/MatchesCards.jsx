@@ -13,6 +13,9 @@ import '../../assets/styles/CardSlider.css'
 import logo1 from '../../assets/images/register/register-image.png'
 import logo2 from '../../assets/images/register/logo-1.png'
 import logo3 from '../../assets/images/register/logo-2.png'
+import arrow from '../../assets/images/Home/Arrow.svg'
+import { Link } from 'react-router-dom';
+
 
 
 const matchData = [
@@ -75,7 +78,13 @@ const MatchesCards = () => {
     <div className="slide-container">
         <div className="container">
 
-            <h2 className='heading'>FIXTURES</h2>
+            <div className="heading-container ">
+                <h2 className='heading'>FIXTURES</h2>
+                <Link className='link-white' href="">
+                    <span>View More</span>
+                    <img src={arrow} alt="Arrow" />
+                </Link>
+            </div>
 
             <Swiper
                 modules={[Navigation, Pagination]}

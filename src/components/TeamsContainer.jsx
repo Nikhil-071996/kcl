@@ -3,12 +3,21 @@ import Team1 from '../assets/images/Home/team_1.jpg'
 import Team2 from '../assets/images/Home/team_2.jpg'
 
 import "../assets/styles/teams-container.css"
+import arrow from '../assets/images/Home/Arrow.svg'
+import { Link } from 'react-router-dom'
 
 function TeamsContainer() {
   return (
     <div className='team-container'>
         <div className="container">
-            <h2>TEAMS</h2>
+
+            <div className="heading-container">
+                <h2>TEAMS</h2>
+                <Link href="">
+                    <span>View More</span>
+                    <img src={arrow} alt="Arrow" />
+                </Link>
+            </div>
 
             <div className="teams">
 

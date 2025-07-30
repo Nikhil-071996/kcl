@@ -1,0 +1,116 @@
+.video-container{
+    margin-top: 50px;
+
+}
+
+.video-container h2{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.video-content-container{
+    /* background-color: #000; */
+
+    height: 320px;
+    width: 100%;
+
+    background-color: black;
+    padding: 38px 41px;
+
+    display: flex;
+    gap: 30px;
+
+    position: relative;
+
+}
+
+.video-content-container .video-cards{
+    width: 250px;
+    color: #fff;
+
+    border-radius: 5px;
+    overflow: hidden;
+
+    position: absolute;
+}
+
+.video-cards .banner{
+    border-radius: 5px;
+    
+}
+
+
+.video-cards p{
+    font-size: 16px;
+}
+.video-cards .fs-12{
+    font-size: 12px;
+}
+
+.video-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.play-btn{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.play-btn img{
+    width: 25px;
+}
+
+.share-icon{
+    width: 25px;
+}
+
+
+.video-content-container .video-cards.active{
+    width: 100%;
+    height: 320px;
+    color: #fff;
+
+    border-radius: 5px;
+    overflow: hidden;
+
+    top: 0;
+    left: 0;
+
+    
+
+    position: absolute;
+}
+
+.video-cards.second-card{
+    transform: translateX(105%);
+}
+
+.video-content-container .video-cards.active img.banner{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+
+.video-content-container .video-cards.active .video-title{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 18px;
+}
+
+.video-content-container .video-cards.active .video-footer{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+
+    flex-direction: column;
+}
+
+.video-content-container .video-cards.active .play-btn p{
+    font-size: 18px;
+}

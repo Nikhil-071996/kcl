@@ -3,6 +3,7 @@ import '../../assets/styles/blogs.css'
 import blogImage from '../../assets/images/Home/blog-image.jpg'
 import arrow from '../../assets/images/Home/Arrow.svg'
 import shareIcon from '../../assets/images/Home/Share_icon.svg'
+import { Link } from 'react-router-dom'
 
 function Blogs() {
   return (
@@ -10,10 +11,10 @@ function Blogs() {
         <div className="container">
             <div className="heading-container">
                 <h2>Latest Updates</h2>
-                <a href="">
+                <Link href="">
                     <span>View More</span>
                     <img src={arrow} alt="Arrow" />
-                </a>
+                </Link>
             </div>
 
             <div className="blogs-content-container">
