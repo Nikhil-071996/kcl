@@ -7,7 +7,7 @@ import '../assets/styles/fixtures.css'
 
 function Fixtures() {
 
-    const [activeTab, setActiveTab] = useState('live');
+    const [activeTab, setActiveTab] = useState('upcoming');
 
   return (
     <div className='fixtures-page'>

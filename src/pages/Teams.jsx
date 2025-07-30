@@ -2,6 +2,7 @@ import React from 'react'
 import Team1 from '../assets/images/Home/team_1.jpg'
 import Team2 from '../assets/images/Home/team_2.jpg'
 import arrow from '../assets/images/Home/Arrow.svg'
+import { Link } from 'react-router-dom'
 
 function Teams() {
 
@@ -21,37 +22,37 @@ function Teams() {
         <div className="container">
             <div className="teams" style={{marginBottom: '50px'}}>
 
-                    <div className="team-card">
+                    <Link to={'/team-page'} className="team-card width-20">
                         <img src={Team1} alt="Team1" />
-                    </div>
+                    </Link>
 
-                    <div className="team-card">
+                    <Link to={'/team-page'} className="team-card width-20">
                         <img src={Team2} alt="Team1" />
-                    </div>
+                    </Link>
                     
-                    <div className="team-card">
+                    <Link to={'/team-page'} className="team-card width-20">
                         <img src={Team1} alt="Team1" />
-                    </div>
+                    </Link>
 
-                    <div className="team-card">
+                    <Link to={'/team-page'} className="team-card width-20">
                         <img src={Team2} alt="Team1" />
-                    </div>
+                    </Link>
 
-                    <div className="team-card">
+                    <Link to={'/team-page'} className="team-card width-20">
                         <img src={Team1} alt="Team1" />
-                    </div>
+                    </Link>
 
-                    <div className="team-card">
+                    <Link to={'/team-page'} className="team-card width-20">
                         <img src={Team2} alt="Team1" />
-                    </div>
+                    </Link>
 
-                    <div className="team-card">
+                    <Link to={'/team-page'} className="team-card width-20">
                         <img src={Team1} alt="Team1" />
-                    </div>
+                    </Link>
 
-                    <div className="team-card">
+                    <Link to={'/team-page'} className="team-card width-20">
                         <img src={Team2} alt="Team1" />
-                    </div>
+                    </Link>
 
                 </div>
         </div>

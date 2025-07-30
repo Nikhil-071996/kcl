@@ -18,13 +18,14 @@
     width: fit-content;
     padding: 15px 69px;
     background-color: #fff;
-    color: var(--color-accent-dark);
     font-weight: 700;
     cursor: pointer;
 }
 
 .fixtures-buttons-container button.active{
     background-color: var(--color-highlight-dark);
+    color: var(--color-accent-dark);
+
 }
 
 .fixtures-buttons-container button:nth-child(2){

@@ -53,7 +53,7 @@ function Standings() {
 
     <div className="container">
 
-        <table className="leaderboard-table table-striped">
+        <table className="leaderboard-table table-striped" style={{margin: "50px 0"}}>
                     <thead>
                     <tr>
                         <th>POS</th>
