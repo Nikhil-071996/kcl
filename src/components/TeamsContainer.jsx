@@ -70,12 +70,12 @@ function TeamsContainer() {
                 pagination: false, 
                 drag: "free", 
                 arrows: false, 
-                perPage: 4, 
+                perPage: 5, 
                 perMove: 1, 
                 autoplay : true,
-                interval: 3000,
+                interval: 1000,
                 snap   :  true ,
-                gap: windowWidth ? "20px" : "10px" , 
+                gap: '50px', 
                 breakpoints: {
                   320: { perPage: 1 ,focus  : 'center',trimSpace: false,},
                   460: { perPage: 1,  focus  : 'center',trimSpace: false,},
@@ -89,9 +89,7 @@ function TeamsContainer() {
               
           >
             <SplideSlide 
-              style={{
-                        padding: '50px 10px',
-                      }}
+              
             >
                 <div className="team-card">
                     <img src={Team1} alt="Team1" />
@@ -99,9 +97,7 @@ function TeamsContainer() {
             </SplideSlide>
 
             <SplideSlide 
-              style={{
-                        padding: '50px 10px',
-                      }}
+              
             >
                 <div className="team-card">
                     <img src={Team2} alt="Team1" />
@@ -109,9 +105,7 @@ function TeamsContainer() {
             </SplideSlide>
 
             <SplideSlide 
-              style={{
-                        padding: '50px 10px',
-                      }}
+              
             >
                 <div className="team-card">
                     <img src={Team1} alt="Team1" />
@@ -119,9 +113,7 @@ function TeamsContainer() {
             </SplideSlide>
 
             <SplideSlide 
-              style={{
-                        padding: '50px 10px',
-                      }}
+              
             >
                 <div className="team-card">
                     <img src={Team2} alt="Team1" />
@@ -129,9 +121,7 @@ function TeamsContainer() {
             </SplideSlide>
 
             <SplideSlide 
-              style={{
-                        padding: '50px 10px',
-                      }}
+              
             >
                 <div className="team-card">
                     <img src={Team1} alt="Team1" />
@@ -139,9 +129,7 @@ function TeamsContainer() {
             </SplideSlide>
 
             <SplideSlide 
-              style={{
-                        padding: '50px 10px',
-                      }}
+              
             >
                 <div className="team-card">
                     <img src={Team2} alt="Team1" />
@@ -149,9 +137,7 @@ function TeamsContainer() {
             </SplideSlide>
 
             <SplideSlide 
-              style={{
-                        padding: '50px 10px',
-                      }}
+              
             >
                 <div className="team-card">
                     <img src={Team1} alt="Team1" />
@@ -159,9 +145,7 @@ function TeamsContainer() {
             </SplideSlide>
 
             <SplideSlide 
-              style={{
-                        padding: '50px 10px',
-                      }}
+              
             >
                 <div className="team-card">
                     <img src={Team2} alt="Team1" />

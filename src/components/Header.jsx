@@ -53,7 +53,10 @@ function Header() {
   return (
     <header >
         <section className="marquee-wrapper">
-              <marquee>Kabaddi ke itihaas me sabse badi – Champions ki takkar! REVEALING SOON   | Fir arhe hai champions,  AB PURE DESH ME GUNJEGI - KABADDI KABADDI KABADDI | Champions Ki Takkar... Officially Begins! PRE-LAUNCH ON 6TH AUG 2025</marquee>
+              <marquee>🏆 Kabaddi Champions League Haryana – Pre-Launch Event on 6th August 2025
+ 📰 Press Conference at Ramada, Sonipat ( 6th August 2025) 
+📢 Registration for KCL Haryana Trials is Now Open!
+</marquee>
         </section>
 
         <div className="container">
@@ -69,6 +72,14 @@ function Header() {
               <Link to={'/fixtures'} >Matches</Link>
               <Link to={'/standings'}>Standing</Link>
               <Link>About Us</Link>
+              <div className="dropdown">
+                <Link to="#">Media</Link>
+                <div className="dropdown-content">
+                  <Link to="/media/photos">Photos</Link>
+                  <Link to="/media/videos">Videos</Link>
+                </div>
+              </div>
+
               <Link  to={'/contact-us'}>Contact Us</Link>
               <Link className='contact-us' to={'/register'}>Register</Link>
           </nav>

@@ -4,6 +4,13 @@
     
 }
 
+.sponsers-container h2{
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
 .sponsers-container .container{
     display: flex;
     justify-content: center;

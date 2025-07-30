@@ -11,10 +11,15 @@ import logo from '../assets/images/footer/main_logo.png'
 
 import '../assets/styles/footer.css'
 import { Link } from 'react-router-dom'
+import Sponsers from './sponsers/Sponsers'
 
 function Footer() {
   return (
+    <>
+        <Sponsers />
     <footer>
+
+
 
         <div className="container">
 
@@ -35,12 +40,15 @@ function Footer() {
                 </div>
             </div>
 
-            {/* <div className="menu">
-                <Link>Home</Link>
-                <Link>About us</Link>
-                <Link>Contact Us</Link>
-                <Link>Registration</Link>
-            </div> */}
+            <div className="menu">
+                <Link to={'/'}>Home</Link>
+                <Link to={'/team'}>Teams</Link>
+                <Link to={'/fixtures'} >Matches</Link>
+                <Link to={'/standings'}>Standing</Link>
+                <Link>About Us</Link>
+                <Link  to={'/contact-us'}>Contact Us</Link>
+                <Link className='contact-us' to={'/register'}>Register</Link>
+            </div>
             
             <div className="social-media">
                 <Link>
@@ -70,6 +78,8 @@ function Footer() {
         </div>
 
     </footer>
+    
+    </>
   )
 }
 

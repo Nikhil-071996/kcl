@@ -14,6 +14,7 @@ import logo1 from '../../assets/images/register/register-image.png'
 import logo2 from '../../assets/images/register/logo-1.png'
 import logo3 from '../../assets/images/register/logo-2.png'
 import arrow from '../../assets/images/Home/Arrow.svg'
+import arrow2 from '../../assets/images/Home/Icon_Arrow.svg'
 import { Link } from 'react-router-dom';
 
 
@@ -168,11 +169,9 @@ const MatchesCards = () => {
               options={{
                 type: "slider",
                 pagination: false,
-                start: matchData.length - 1,
                 arrows: false,
                 perPage: 3,
                 perMove: 1,
-                focus: 'center',
                 snap: true,
                 breakpoints: {
                 320: { perPage: 1, trimSpace: false },
@@ -227,17 +226,18 @@ const MatchesCards = () => {
                 </SplideSlide>
 
             ))}
+            <SplideSlide></SplideSlide>
           </Splide>
           <div className='arrow-container arrow-container-right'  onClick={() => {
                 matchCardRef.current.go("+1");
             }} >
-            <img src={arrow} />
+            <img src={arrow2} />
             </div>
 
             <div className='arrow-container arrow-container-left' onClick={() => {
                     matchCardRef.current.go("-1");
                 }} >
-                <img src={arrow}  />
+                <img src={arrow2}  />
             </div>
         </div>
     </div>

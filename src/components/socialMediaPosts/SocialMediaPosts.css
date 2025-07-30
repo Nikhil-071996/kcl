@@ -21,8 +21,15 @@
 
 .social-head{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.social-icons-social-media {
+    position: absolute;
+    right: 0;
 }
 
 .social-icons-social-media img{

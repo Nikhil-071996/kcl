@@ -1,6 +1,6 @@
 .enquries-container{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .enquries-container .container{
@@ -26,13 +26,13 @@
 .enquries-container .container .section-2 button{
     all: unset;
     width: fit-content;
-    padding: 22px 44px;
+    padding: 12px 24px;
     border: 1px solid var(--color-highlight-dark);
 }
 
 .enquries-container .container .section-2 a{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 24px;
     color: #000;
     font-weight: 500;
 }

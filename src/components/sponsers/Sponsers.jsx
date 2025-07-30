@@ -9,6 +9,7 @@ function Sponsers() {
   return (
 
     <div className="sponsers-container">
+        <h2>OUR PARTNERS</h2>
         <div className='container'>
             <img src={sponser1} alt="sponser1" />
             <img src={sponser2} alt="sponser1" />

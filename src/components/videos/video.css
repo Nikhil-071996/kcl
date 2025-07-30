@@ -25,7 +25,7 @@
 }
 
 .video-content-container .video-cards{
-    width: 250px;
+    width: 22%;
     color: #fff;
 
     border-radius: 5px;
@@ -36,7 +36,7 @@
 
 .video-cards .banner{
     border-radius: 5px;
-    
+    width: 100%;
 }
 
 
@@ -50,7 +50,7 @@
 .video-footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .play-btn{
@@ -70,7 +70,7 @@
 
 .video-content-container .video-cards.active{
     width: 100%;
-    height: 320px;
+    height: 322px;
     color: #fff;
 
     border-radius: 5px;

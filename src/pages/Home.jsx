@@ -32,14 +32,13 @@ function Home() {
 
 
         {/* Ground Banner */}
-        <div className="img-container" style={{width: "100%", marginTop: '50px'}}>
+        <div className="img-container" style={{width: "100%"}}>
           <img src={GroundImage} alt="GroundImage" style={{width: '100%'}} />
         </div>
 
 
         <Enquiries />
 
-        <Sponsers />
 
     </div>
   )

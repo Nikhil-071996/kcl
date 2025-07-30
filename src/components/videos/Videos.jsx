@@ -22,6 +22,53 @@ function Videos() {
               </div>
 
 
+            {/* <div className="video-content-container">
+
+                <div className="video-cards active">
+                    <img src={banner2} alt="banner" className='banner' />
+                    <p className='video-title'> New Panthers eye third PKL title under new head coach</p>
+                    <div className="video-footer">
+                        <div className="play-btn">
+                            <img src={playIcon} alt="playIcon" />
+                            <p className='fs-12'>1:50 min</p>
+                        </div>
+
+                        <img src={shareIcon} alt="shareIcon" className='share-icon' />
+
+                    </div>
+                </div>
+
+                <div className="video-cards second-card">
+                    <img src={banner1} alt="banner" className='banner' />
+                    <p className='video-title'>New Panthers eye third PKL title under new head coach</p>
+                    <div className="video-footer">
+                        <div className="play-btn">
+                            <img src={playIcon} alt="playIcon" />
+                            <p className='fs-12'>1:50 min</p>
+                        </div>
+
+                        <img src={shareIcon} alt="shareIcon" className='share-icon' />
+
+                    </div>
+                </div>
+
+                <div className="video-cards">
+                    <img src={banner1} alt="banner" className='banner' />
+                    <p className='video-title'>New Panthers eye third PKL title under new head coach</p>
+                    <div className="video-footer">
+                        <div className="play-btn">
+                            <img src={playIcon} alt="playIcon" />
+                            <p className='fs-12'>1:50 min</p>
+                        </div>
+
+                        <img src={shareIcon} alt="shareIcon" className='share-icon' />
+
+                    </div>
+                </div>
+
+            </div> */}
+
+
             <div className="video-content-container">
 
                 <div className="video-cards active">
@@ -67,8 +114,6 @@ function Videos() {
                 </div>
 
             </div>
-
-
             
         </div>
     </div>

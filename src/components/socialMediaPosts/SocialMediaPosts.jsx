@@ -81,8 +81,7 @@ function SocialMediaPosts() {
           >
             <SplideSlide 
               style={{
-                        padding: '50px 10px',
-                        marginLeft: (windowWidth > 990) ? '2.5%' : '0', 
+                        paddingBottom: '50px',
                       }}
             >
               <div className="blog">
@@ -96,8 +95,7 @@ function SocialMediaPosts() {
             </SplideSlide>
             <SplideSlide 
               style={{
-                        padding: '50px 10px',
-                        marginLeft: (windowWidth > 990) ? '2.5%' : '0', 
+                        paddingBottom: '50px',
                       }}
             >
               <div className="blog">
@@ -111,8 +109,7 @@ function SocialMediaPosts() {
             </SplideSlide>
             <SplideSlide 
               style={{
-                        padding: '50px 10px',
-                        marginLeft: (windowWidth > 990) ? '2.5%' : '0', 
+                        paddingBottom: '50px',
                       }}
             >
               <div className="blog">
@@ -126,8 +123,7 @@ function SocialMediaPosts() {
             </SplideSlide>
             <SplideSlide 
               style={{
-                        padding: '50px 10px',
-                        marginLeft: (windowWidth > 990) ? '2.5%' : '0', 
+                        paddingBottom: '50px',
                       }}
             >
               <div className="blog">
@@ -141,8 +137,7 @@ function SocialMediaPosts() {
             </SplideSlide>
             <SplideSlide 
               style={{
-                        padding: '50px 10px',
-                        marginLeft: (windowWidth > 990) ? '2.5%' : '0', 
+                        paddingBottom: '50px',
                       }}
             >
               <div className="blog">

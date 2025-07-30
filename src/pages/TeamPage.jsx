@@ -1,7 +1,7 @@
 import React from 'react'
 import logoTeam from '../assets/images/fixtures/logo_1.png'
-import owner from '../assets/images/team-page/owner.webp'
-import player from '../assets/images/team-page/player.webp'
+import owner from '../assets/images/team-page/owner.png'
+import player from '../assets/images/team-page/player.png'
 import '../assets/styles/team-page.css'
 
 function TeamPage() {
@@ -52,7 +52,7 @@ From desi akhadas to national grounds, Sonipat ke players have always ruled the 
                         </div>
 
                         <div className="img-container">
-                            <img src={owner} alt="owner" />
+                            <img src={player} alt="player" />
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@ From desi akhadas to national grounds, Sonipat ke players have always ruled the 
                         </div>
 
                         <div className="img-container">
-                            <img src={owner} alt="owner" />
+                            <img src={player} alt="player" />
                         </div>
                     </div>
 
@@ -76,7 +76,7 @@ From desi akhadas to national grounds, Sonipat ke players have always ruled the 
                         </div>
 
                         <div className="img-container">
-                            <img src={owner} alt="owner" />
+                            <img src={player} alt="player" />
                         </div>
                     </div>
 
@@ -88,7 +88,7 @@ From desi akhadas to national grounds, Sonipat ke players have always ruled the 
                         </div>
 
                         <div className="img-container">
-                            <img src={owner} alt="owner" />
+                            <img src={player} alt="player" />
                         </div>
                     </div>
 
@@ -100,7 +100,7 @@ From desi akhadas to national grounds, Sonipat ke players have always ruled the 
                         </div>
 
                         <div className="img-container">
-                            <img src={owner} alt="owner" />
+                            <img src={player} alt="player" />
                         </div>
                     </div>
 
@@ -112,7 +112,7 @@ From desi akhadas to national grounds, Sonipat ke players have always ruled the 
                         </div>
 
                         <div className="img-container">
-                            <img src={owner} alt="owner" />
+                            <img src={player} alt="player" />
                         </div>
                     </div>
 
@@ -124,7 +124,7 @@ From desi akhadas to national grounds, Sonipat ke players have always ruled the 
                         </div>
 
                         <div className="img-container">
-                            <img src={owner} alt="owner" />
+                            <img src={player} alt="player" />
                         </div>
                     </div>
 
@@ -136,7 +136,7 @@ From desi akhadas to national grounds, Sonipat ke players have always ruled the 
                         </div>
 
                         <div className="img-container">
-                            <img src={owner} alt="owner" />
+                            <img src={player} alt="player" />
                         </div>
                     </div>
 
@@ -148,7 +148,7 @@ From desi akhadas to national grounds, Sonipat ke players have always ruled the 
                         </div>
 
                         <div className="img-container">
-                            <img src={owner} alt="owner" />
+                            <img src={player} alt="player" />
                         </div>
                     </div>
 
@@ -160,7 +160,7 @@ From desi akhadas to national grounds, Sonipat ke players have always ruled the 
                         </div>
 
                         <div className="img-container">
-                            <img src={owner} alt="owner" />
+                            <img src={player} alt="player" />
                         </div>
                     </div>
 
@@ -172,7 +172,7 @@ From desi akhadas to national grounds, Sonipat ke players have always ruled the 
                         </div>
 
                         <div className="img-container">
-                            <img src={owner} alt="owner" />
+                            <img src={player} alt="player" />
                         </div>
                     </div>
 

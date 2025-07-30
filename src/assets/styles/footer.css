@@ -1,5 +1,5 @@
 footer{
-    background-image: linear-gradient(28deg, #330d69 0%, #c20b0b 100%);
+    background: var(--color-primary-dark);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -26,7 +26,7 @@ footer .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    margin-top: 50px;
 }
 
 footer .menu a{
