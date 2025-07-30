@@ -9,6 +9,7 @@ import TeamStandingTable from '../components/StandingTable/TeamStandingTable'
 import GroundImage from '../assets/images/Home/Stadium.jpg'
 import Enquiries from '../components/Enquiries/Enquiries'
 import MatchesCards from '../components/matches/MatchesCards'
+import SocialMediaPosts from '../components/socialMediaPosts/SocialMediaPosts'
 
 function Home() {
   return (
@@ -23,6 +24,8 @@ function Home() {
         <TeamsContainer />
 
         <MatchesCards />
+
+        <SocialMediaPosts />
 
         {/* Ground Banner */}
         <div className="img-container" style={{width: "100%", marginTop: '50px'}}>

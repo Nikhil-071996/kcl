@@ -52,7 +52,7 @@ function Header() {
 
   return (
     <header >
-        <section class="marquee-wrapper">
+        <section className="marquee-wrapper">
               <marquee>Kabaddi ke itihaas me sabse badi – Champions ki takkar! REVEALING SOON   | Fir arhe hai champions,  AB PURE DESH ME GUNJEGI - KABADDI KABADDI KABADDI | Champions Ki Takkar... Officially Begins! PRE-LAUNCH ON 6TH AUG 2025</marquee>
         </section>
 
