@@ -7,6 +7,9 @@ import Home from './pages/Home'
 import ContactPage from './pages/Contact/ContactPage'
 import Footer from './components/Footer'
 import Fixtures from './pages/Fixtures'
+import Standings from './pages/Standings'
+import TeamPage from './pages/TeamPage'
+import Teams from './pages/Teams'
 
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
           <Route path='/register' element={<RegistrationForm />} />
           <Route path='/contact-us' element={<ContactPage />} />
           <Route path='/fixtures' element={<Fixtures />} />
+          <Route path='/standings' element={<Standings />} />
+          <Route path='/team-page' element={<TeamPage />} />
+          <Route path='/team' element={<Teams />} />
         </Routes>
         <Footer />
 

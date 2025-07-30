@@ -1,8 +1,8 @@
 // CardSlider.jsx
-import React from 'react';
+import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -59,13 +59,13 @@ const matchData = [
       Time: "8:00 PM"
     },
     {
-      matchNo: "Match 3",
+      matchNo: "Match 100",
       teamA: 'Noida Warriors',
       logoA: logo1,
-      scoreA: 0,
+      scoreA: 33,
       teamB: 'Lucknow Lions',
       logoB: logo2,
-      scoreB: 1,
+      scoreB: 33,
       status: 'FINAL',
       venue: "Kalinga Stadium",
       date: "24 July 2025",
@@ -74,6 +74,10 @@ const matchData = [
   ];
 
 const MatchesCards = () => {
+
+    const matchCardRef = useRef();
+    const windowWidth = window.innerWidth;
+
   return (
     <div className="slide-container">
         <div className="container">
@@ -86,7 +90,7 @@ const MatchesCards = () => {
                 </Link>
             </div>
 
-            <Swiper
+            {/* <Swiper
                 modules={[Navigation, Pagination]}
                 slidesPerView={3}
                 spaceBetween={25}
@@ -157,7 +161,84 @@ const MatchesCards = () => {
                 <div className="swiper-button-next swiper-navBtn" />
                 <div className="swiper-button-prev swiper-navBtn" />
                 <div className="swiper-pagination" />
-            </Swiper>
+            </Swiper> */}
+
+            <Splide
+              ref={matchCardRef}
+              options={{
+                type: "slider",
+                pagination: false,
+                start: matchData.length - 1,
+                arrows: false,
+                perPage: 3,
+                perMove: 1,
+                focus: 'center',
+                snap: true,
+                breakpoints: {
+                320: { perPage: 1, trimSpace: false },
+                460: { perPage: 1, trimSpace: false },
+                560: { perPage: 1, trimSpace: false },
+                1024: { perPage: 3, },
+                1300: { perPage: 3, },
+                },
+            }}
+            >
+            {matchData.map((match, index) => (
+                <SplideSlide 
+                
+                >
+                    <div className="match-card">
+                        <div className="match-header">
+                            <div className="match_no">
+                                <div>
+                                    <p className='fs-14 kbp'>Kabaddi Champion League, Haryana</p>
+                                    <p className='fs-12'>{match.date} | {match.Time}</p>
+                                </div>
+                                <div className='button-purple'>
+                                    <p className='fs-12'>Day 18, {match.matchNo}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="match-body">
+                            <div className="team">
+                                <img src={match.logoA} alt={match.teamA} />
+                                <p className='fs-12'>Panipat Panthers</p>
+                            </div>
+
+                            <div style={{display: 'flex', alignItems: 'center', flexDirection: 'column', gap: '5px'}}>
+                                <p style={{marginTop: '10px'}} className='fs-9'>Full Time</p>
+                                <div className="score-section">
+                                <div className="score">
+                                    <span>{match.scoreA}</span> - <span>{match.scoreB}</span>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div className="team">
+                                <img src={match.logoB} alt={match.teamB} />
+                                <p className='fs-12'>Panipat Panthers</p>
+                            </div>
+                        </div>
+
+                        
+                        </div>
+                    
+                </SplideSlide>
+
+            ))}
+          </Splide>
+          <div className='arrow-container arrow-container-right'  onClick={() => {
+                matchCardRef.current.go("+1");
+            }} >
+            <img src={arrow} />
+            </div>
+
+            <div className='arrow-container arrow-container-left' onClick={() => {
+                    matchCardRef.current.go("-1");
+                }} >
+                <img src={arrow}  />
+            </div>
         </div>
     </div>
   );

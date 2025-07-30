@@ -5,6 +5,7 @@
   margin: 0 auto;
 
   background-color: var(--color-primary-light);
+  position: relative;
 }
 
 .card {

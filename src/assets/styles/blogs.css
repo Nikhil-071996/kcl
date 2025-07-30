@@ -21,7 +21,14 @@
 
 .heading-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.heading-container h2{
+    margin-bottom: 0px !important;
 }
 
 .heading-container a{
@@ -33,6 +40,9 @@
     font-size: 13px;
     text-decoration: none;
     gap: 5px;
+
+    position: absolute;
+    right: 0;
 }
 
 .heading-container a img{

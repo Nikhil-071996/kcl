@@ -48,7 +48,7 @@ const TeamStandingTable = () => {
 
             <div className="heading-container">
                   <h2>POINTS TABLE</h2>
-                  <Link href="">
+                  <Link to={'/standings'}>
                       <span>View More</span>
                       <img src={arrow} alt="Arrow" />
                   </Link>

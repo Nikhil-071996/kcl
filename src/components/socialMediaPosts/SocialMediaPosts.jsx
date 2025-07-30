@@ -57,12 +57,13 @@ function SocialMediaPosts() {
                 arrows: false, 
                 perPage: 4, 
                 perMove: 1, 
-                autoScroll: {
-                  speed: 1.2,
-                  pauseOnHover: true,
-                  pauseOnFocus: false,
-                  rewind: false,
-                },
+                autoplay : true,
+                // autoScroll: {
+                //   speed: 1.2,
+                //   pauseOnHover: true,
+                //   pauseOnFocus: false,
+                //   rewind: false,
+                // },
                 // snap   : (windowWidth < 990) ? true : false,
                 gap: windowWidth ? "20px" : "10px" , 
                 breakpoints: {
@@ -75,7 +76,8 @@ function SocialMediaPosts() {
                 
 
               }}
-              extensions={{ AutoScroll }}
+              // extensions={{ AutoScroll }}
+              // extensions={{ Autoplay }}
           >
             <SplideSlide 
               style={{

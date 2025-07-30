@@ -39,16 +39,7 @@ function Home() {
 
         <Enquiries />
 
-
-
-
-        
-
-
-
-
-
-        {/* <Sponsers /> */}
+        <Sponsers />
 
     </div>
   )

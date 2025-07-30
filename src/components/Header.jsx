@@ -65,9 +65,9 @@ function Header() {
           </Link>
           <nav>
               <Link to={'/'}>Home</Link>
-              <Link>Teams</Link>
-              <Link >Matches</Link>
-              <Link>Standing</Link>
+              <Link to={'/team'}>Teams</Link>
+              <Link to={'/fixtures'} >Matches</Link>
+              <Link to={'/standings'}>Standing</Link>
               <Link>About Us</Link>
               <Link  to={'/contact-us'}>Contact Us</Link>
               <Link className='contact-us' to={'/register'}>Register</Link>
