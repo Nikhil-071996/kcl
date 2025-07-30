@@ -63,7 +63,6 @@ function TeamsContainer() {
 
 
             <Splide
-              className="blogs-content-container"
               ref={teamCardsRef}
               options={{
                 type: "loop", 

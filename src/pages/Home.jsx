@@ -21,23 +21,23 @@ function Home() {
 
         <TeamsContainer />
 
-        <TeamStandingTable />
+        {/* <TeamStandingTable /> */}
+        <SocialMediaPosts />
 
         <Blogs />
 
         <Videos />
 
-        <SocialMediaPosts />
 
 
 
         {/* Ground Banner */}
-        <div className="img-container" style={{width: "100%"}}>
+        {/* <div className="img-container" style={{width: "100%"}}>
           <img src={GroundImage} alt="GroundImage" style={{width: '100%'}} />
-        </div>
+        </div> */}
 
 
-        <Enquiries />
+        {/* <Enquiries /> */}
 
 
     </div>

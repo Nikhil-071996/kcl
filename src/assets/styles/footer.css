@@ -9,14 +9,14 @@ footer{
 
 .teams .image-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
+    justify-content: center;
+    gap: 40px;
     margin-top: 26px;
 }
 
 .teams .image-container img{
-    width: 8%;
+    width: 80px;
     aspect-ratio: 1;
 
     border-radius: 100%;
@@ -42,16 +42,24 @@ footer .menu a{
     align-items: center;
 }
 
-.logo img{
-    width: 180px;
+footer .logo img{
+    width: 125px;
+}
+
+.copyright{
+    font-size: 14px;
 }
 
 .social-media{
     display: flex;
     justify-content: center;
-    gap: 36px;
+    gap: 16px;
     margin-top: 55px;
 
+}
+
+.social-media img{
+    width: 70px;
 }
 
 .privacy-content-container{

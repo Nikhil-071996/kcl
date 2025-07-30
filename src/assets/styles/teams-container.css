@@ -27,4 +27,11 @@
 .team-container .teams .team-card img{
     width: 100%;
     height: 100%;
+    border-radius: 14px;
+
+}
+
+.splide__slide img{
+    border-radius: 14px;
+
 }

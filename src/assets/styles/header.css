@@ -102,16 +102,17 @@ header .contact-us{
   width: 100%;
   overflow: hidden;
   height: 36px;
-  background-color: var(--color-accent-light);
+  background-color: var(--color-primary-light);
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 marquee{
     color: #fff;
     font-size: 15px;
+    width: 90%;
 }
 
 @media (max-width: 1280px) {
