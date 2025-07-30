@@ -1,6 +1,9 @@
 import React from 'react'
 import '../../assets/styles/blogs.css'
-import blogImage from '../../assets/images/Home/blog-image.jpg'
+import blogImage1 from '../../assets/images/News/1.png'
+import blogImage2 from '../../assets/images/News/2.png'
+import blogImage3 from '../../assets/images/News/3.png'
+import blogImage4 from '../../assets/images/News/4.png'
 import arrow from '../../assets/images/Home/Arrow.svg'
 import shareIcon from '../../assets/images/Home/Share_icon.svg'
 import { Link } from 'react-router-dom'
@@ -22,7 +25,7 @@ function Blogs() {
                 
 
                 <div className="blog">
-                    <img src={blogImage} alt="blogImage" />
+                    <img src={blogImage1} alt="blogImage" />
                     <div className="date-container">24th July</div>
                     <div className="blog-info">
                         <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -31,7 +34,7 @@ function Blogs() {
                 </div>
 
                 <div className="blog">
-                    <img src={blogImage} alt="blogImage" />
+                    <img src={blogImage2} alt="blogImage" />
                     <div className="date-container">24th July</div>
                     <div className="blog-info">
                         <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -39,7 +42,7 @@ function Blogs() {
                     </div>
                 </div>
                 <div className="blog">
-                    <img src={blogImage} alt="blogImage" />
+                    <img src={blogImage3} alt="blogImage" />
                     <div className="date-container">24th July</div>
                     <div className="blog-info">
                         <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -47,7 +50,7 @@ function Blogs() {
                     </div>
                 </div>
                 <div className="blog">
-                    <img src={blogImage} alt="blogImage" />
+                    <img src={blogImage4} alt="blogImage" />
                     <div className="date-container">24th July</div>
                     <div className="blog-info">
                         <p>Lorem ipsum dolor sit amet consectetur </p>

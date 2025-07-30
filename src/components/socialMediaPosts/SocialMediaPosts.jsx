@@ -1,6 +1,9 @@
 import React, { useRef } from 'react'
 import '@splidejs/react-splide/css';
-import blogImage from '../../assets/images/Home/blog-image.jpg'
+import blogImage1 from '../../assets/images/Social/1.png'
+import blogImage2 from '../../assets/images/Social/2.png'
+import blogImage3 from '../../assets/images/Social/3.png'
+import blogImage4 from '../../assets/images/Social/4.png'
 import arrow from '../../assets/images/Home/Arrow.svg'
 import shareIcon from '../../assets/images/Home/Share_icon.svg'
 import './SocialMediaPosts.css'
@@ -64,7 +67,7 @@ function SocialMediaPosts() {
                 //   pauseOnFocus: false,
                 //   rewind: false,
                 // },
-                // snap   : (windowWidth < 990) ? true : false,
+                snap   : true,
                 gap: windowWidth ? "20px" : "10px" , 
                 breakpoints: {
                   320: { perPage: 1 ,focus  : 'center',trimSpace: false,},
@@ -85,7 +88,7 @@ function SocialMediaPosts() {
                       }}
             >
               <div className="blog">
-                  <img src={blogImage} alt="blogImage" />
+                  <img src={blogImage1} alt="blogImage" />
                   
                   <div className="blog-info">
                       <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -99,7 +102,7 @@ function SocialMediaPosts() {
                       }}
             >
               <div className="blog">
-                  <img src={blogImage} alt="blogImage" />
+                  <img src={blogImage2} alt="blogImage" />
                   
                   <div className="blog-info">
                       <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -113,7 +116,7 @@ function SocialMediaPosts() {
                       }}
             >
               <div className="blog">
-                  <img src={blogImage} alt="blogImage" />
+                  <img src={blogImage3} alt="blogImage" />
                   
                   <div className="blog-info">
                       <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -127,7 +130,7 @@ function SocialMediaPosts() {
                       }}
             >
               <div className="blog">
-                  <img src={blogImage} alt="blogImage" />
+                  <img src={blogImage4} alt="blogImage" />
                   
                   <div className="blog-info">
                       <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -135,20 +138,7 @@ function SocialMediaPosts() {
                   </div>
               </div>
             </SplideSlide>
-            <SplideSlide 
-              style={{
-                        paddingBottom: '50px',
-                      }}
-            >
-              <div className="blog">
-                  <img src={blogImage} alt="blogImage" />
-                  
-                  <div className="blog-info">
-                      <p>Lorem ipsum dolor sit amet consectetur </p>
-                      <img src={shareIcon} alt="share" width={10} />
-                  </div>
-              </div>
-            </SplideSlide>
+            
           </Splide>
       </div>
 
