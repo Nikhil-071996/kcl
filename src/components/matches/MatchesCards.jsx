@@ -80,7 +80,7 @@ const MatchesCards = () => {
 
             <div className="heading-container ">
                 <h2 className='heading'>FIXTURES</h2>
-                <Link className='link-white' href="">
+                <Link className='link-white' to={'/fixtures'}>
                     <span>View More</span>
                     <img src={arrow} alt="Arrow" />
                 </Link>
