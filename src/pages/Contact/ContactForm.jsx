@@ -33,13 +33,12 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form">
-      <span className="circle one"></span>
-      <span className="circle two"></span>
 
       <form onSubmit={handleSubmit} autoComplete="off">
-        <h3 className="title">Contact us</h3>
 
-        <div className="input-container">
+        <div className="input-container width-50">
+          <label>Username</label>
+
           <input
             type="text"
             name="name"
@@ -49,11 +48,11 @@ const ContactForm = () => {
             onFocus={handleFocus}
             onBlur={handleBlur}
           />
-          <label>Username</label>
-          <span>Username</span>
         </div>
 
-        <div className="input-container">
+        <div className="input-container width-50">
+          <label>Email</label>
+
           <input
             type="email"
             name="email"
@@ -63,11 +62,11 @@ const ContactForm = () => {
             onFocus={handleFocus}
             onBlur={handleBlur}
           />
-          <label>Email</label>
-          <span>Email</span>
         </div>
 
-        <div className="input-container">
+        <div className="input-container width-100">
+          <label>Phone</label>
+
           <input
             type="tel"
             name="phone"
@@ -77,11 +76,11 @@ const ContactForm = () => {
             onFocus={handleFocus}
             onBlur={handleBlur}
           />
-          <label>Phone</label>
-          <span>Phone</span>
         </div>
 
-        <div className="input-container textarea">
+        <div className="input-container textarea width-100">
+          <label>Message</label>
+
           <textarea
             name="message"
             className="input"
@@ -90,11 +89,9 @@ const ContactForm = () => {
             onFocus={handleFocus}
             onBlur={handleBlur}
           ></textarea>
-          <label>Message</label>
-          <span>Message</span>
         </div>
 
-        <input type="submit" value="Send" className="btn" />
+        <input type="submit" value="Send Message" className="btn" />
       </form>
     </div>
   );
