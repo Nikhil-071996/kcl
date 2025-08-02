@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
 import { InertiaPlugin } from "gsap/InertiaPlugin";
 import banner1 from '../../assets/images/Home/banner-1.png'
-import banner2 from '../../assets/images/Home/banner-2.jpg'
+import banner2 from '../../assets/images/Home/banner-2.png'
 import "../../assets/styles/Slider.css";
 
 gsap.registerPlugin(Draggable, InertiaPlugin);
@@ -153,7 +153,7 @@ const Slider = () => {
               className="slide"
               ref={(el) => (slidesRef.current[1] = el)}
             >
-                <img src={banner1} alt="banner2" />
+                <img src={banner2} alt="banner2" />
             </div>
         </div>
       </div>

@@ -15,8 +15,6 @@ import linkedIn from '../../assets/images/footer/linked_in.svg'
 
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { Link } from 'react-router-dom';
-import { Autoplay } from 'swiper/modules';
-import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 function SocialMediaPosts() {
 
@@ -88,7 +86,9 @@ function SocialMediaPosts() {
                       }}
             >
               <div className="blog">
-                  <img src={blogImage1} alt="blogImage" />
+                    <div className="image-container">
+                      <img src={blogImage1} alt="blogImage" />
+                    </div>
                   
                   <div className="blog-info">
                       <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -102,7 +102,9 @@ function SocialMediaPosts() {
                       }}
             >
               <div className="blog">
-                  <img src={blogImage2} alt="blogImage" />
+                    <div className="image-container">
+                      <img src={blogImage2} alt="blogImage" />
+                    </div>
                   
                   <div className="blog-info">
                       <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -116,7 +118,9 @@ function SocialMediaPosts() {
                       }}
             >
               <div className="blog">
-                  <img src={blogImage3} alt="blogImage" />
+                    <div className="image-container">
+                      <img src={blogImage3} alt="blogImage" />
+                    </div>
                   
                   <div className="blog-info">
                       <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -130,7 +134,9 @@ function SocialMediaPosts() {
                       }}
             >
               <div className="blog">
-                  <img src={blogImage4} alt="blogImage" />
+                    <div className="image-container">
+                      <img src={blogImage4} alt="blogImage" />
+                    </div>
                   
                   <div className="blog-info">
                       <p>Lorem ipsum dolor sit amet consectetur </p>

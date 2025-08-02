@@ -107,7 +107,10 @@
     width: 31%;
     color: #fff;
     border-radius: 14px;
+}
 
+.players-container .player:hover{
+    background-color: var(--color-accent-dark);
 }
 
 .players-container .player .player-info{

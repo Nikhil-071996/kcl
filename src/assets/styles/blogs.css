@@ -59,10 +59,23 @@
     flex-direction: column;
     border-radius: 7px;
     overflow: hidden;
+    cursor: pointer;
 }
 
-.blogs-content-container .blog img{
+.blogs-content-container .blog .image-container{
     width: 100%;
+    overflow: hidden;
+}
+
+.blogs-content-container .blog .image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale ease 0.1s;
+}
+
+.blogs-content-container .blog:hover img{
+    scale: 1.1;
 }
 
 .blogs-content-container .blog .date-container{

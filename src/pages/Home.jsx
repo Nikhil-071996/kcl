@@ -11,11 +11,14 @@ import Enquiries from '../components/Enquiries/Enquiries'
 import MatchesCards from '../components/matches/MatchesCards'
 import SocialMediaPosts from '../components/socialMediaPosts/SocialMediaPosts'
 import Videos from '../components/videos/Videos'
+import HomeBannerSlider from '../components/HomeBannerSlider'
 
 function Home() {
   return (
     <div>
         <Slider />
+
+        {/* <HomeBannerSlider /> */}
 
         <MatchesCards />
 

@@ -25,7 +25,9 @@ function Blogs() {
                 
 
                 <div className="blog">
-                    <img src={blogImage1} alt="blogImage" />
+                    <div className="image-container">
+                        <img src={blogImage1} alt="blogImage" />
+                    </div>
                     <div className="date-container">24th July</div>
                     <div className="blog-info">
                         <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -34,7 +36,9 @@ function Blogs() {
                 </div>
 
                 <div className="blog">
-                    <img src={blogImage2} alt="blogImage" />
+                    <div className="image-container">
+                        <img src={blogImage2} alt="blogImage" />
+                    </div>
                     <div className="date-container">24th July</div>
                     <div className="blog-info">
                         <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -42,7 +46,9 @@ function Blogs() {
                     </div>
                 </div>
                 <div className="blog">
-                    <img src={blogImage3} alt="blogImage" />
+                    <div className="image-container">
+                        <img src={blogImage3} alt="blogImage" />
+                    </div>
                     <div className="date-container">24th July</div>
                     <div className="blog-info">
                         <p>Lorem ipsum dolor sit amet consectetur </p>
@@ -50,7 +56,9 @@ function Blogs() {
                     </div>
                 </div>
                 <div className="blog">
-                    <img src={blogImage4} alt="blogImage" />
+                    <div className="image-container">
+                        <img src={blogImage4} alt="blogImage" />
+                    </div>
                     <div className="date-container">24th July</div>
                     <div className="blog-info">
                         <p>Lorem ipsum dolor sit amet consectetur </p>
