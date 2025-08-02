@@ -2,6 +2,7 @@ import React from 'react'
 import Team1 from '../assets/images/Home/team_1.jpg'
 import Team2 from '../assets/images/Home/team_2.jpg'
 import arrow from '../assets/images/Home/Arrow.svg'
+import banner from '../assets/images/team-page/TeamsPage.png'
 import { Link } from 'react-router-dom'
 
 function Teams() {
@@ -10,7 +11,7 @@ function Teams() {
     
   return (
     <div className='teamPage'>
-            <div className="page-team-header">
+            <div className="page-team-header" style={{background: `url(${banner})`}}>
                 <div className="container">
                     <div className="content">
                         <h2>Teams</h2>

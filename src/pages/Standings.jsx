@@ -1,6 +1,8 @@
 import React from 'react'
 import image1 from '../assets/images/Home/Table_logo_1.png'
 import image2 from '../assets/images/Home/Table_logo_2.png'
+import banner from '../assets/images/team-page/Matches.png'
+
 import arrow from '../assets/images/Home/Arrow.svg'
 
 function Standings() {
@@ -42,7 +44,7 @@ function Standings() {
     
   return (
     <div className='teamPage'>
-            <div className="page-team-header">
+            <div className="page-team-header" style={{background: `url(${banner})`}}>
                 <div className="container">
                     <div className="content">
                         <h2>Standings</h2>

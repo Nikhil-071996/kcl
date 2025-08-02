@@ -2,12 +2,14 @@ import React from 'react'
 import logoTeam from '../assets/images/fixtures/logo_1.png'
 import owner from '../assets/images/team-page/owner.png'
 import player from '../assets/images/team-page/player.png'
+import banner from '../assets/images/team-page/Matches.png'
+
 import '../assets/styles/team-page.css'
 
 function TeamPage() {
   return (
     <div className='teamPage'>
-        <div className="page-team-header">
+        <div className="page-team-header" >
             <div className="container">
                 <div className="img-container">
                     <img src={logoTeam} alt="logoTeam" />
