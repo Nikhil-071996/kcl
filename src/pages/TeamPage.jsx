@@ -8,8 +8,8 @@ import '../assets/styles/team-page.css'
 
 function TeamPage() {
   return (
-    <div className='teamPage'>
-        <div className="page-team-header" >
+    <div className='teamPage' >
+        <div className="page-team-header" style={{backgroundImage: `url(${banner})`}} >
             <div className="container">
                 <div className="img-container">
                     <img src={logoTeam} alt="logoTeam" />

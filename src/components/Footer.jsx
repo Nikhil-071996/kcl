@@ -1,6 +1,12 @@
 import React from 'react'
-import team1 from '../assets/images/footer/team_1.jpg'
-import team2 from '../assets/images/footer/team_2.jpg'
+import team1 from '../assets/images/footer/teams/bhiwani_bulls.png'
+import team2 from '../assets/images/footer/teams/faridabad_fighters.png'
+import team3 from '../assets/images/footer/teams/gurgaon_gurus.png'
+import team4 from '../assets/images/footer/teams/hisar_heros.png'
+import team5 from '../assets/images/footer/teams/karnal_kings.png'
+import team6 from '../assets/images/footer/teams/panipat_panther.png'
+import team7 from '../assets/images/footer/teams/rohtak_royals.png'
+import team8 from '../assets/images/footer/teams/sonipat_stars.png'
 
 import instagram from '../assets/images/footer/instagram.svg'
 import facebook from '../assets/images/footer/facebook.png'
@@ -31,16 +37,16 @@ function Footer() {
                 <div className="image-container">
                     <img src={team1} alt="team-1" />
                     <img src={team2} alt="team-1" />
-                    <img src={team1} alt="team-1" />
-                    <img src={team2} alt="team-1" />
-                    <img src={team1} alt="team-1" />
-                    <img src={team2} alt="team-1" />
-                    <img src={team1} alt="team-1" />
-                    <img src={team2} alt="team-1" />
+                    <img src={team3} alt="team-1" />
+                    <img src={team4} alt="team-1" />
+                    <img src={team5} alt="team-1" />
+                    <img src={team6} alt="team-1" />
+                    <img src={team7} alt="team-1" />
+                    <img src={team8} alt="team-1" />
                 </div>
             </div>
 
-            <div className="menu">
+            {/* <div className="menu">
                 <Link to={'/'}>Home</Link>
                 <Link to={'/team'}>Teams</Link>
                 <Link to={'/fixtures'} >Matches</Link>
@@ -48,7 +54,7 @@ function Footer() {
                 <Link>About Us</Link>
                 <Link  to={'/contact-us'}>Contact Us</Link>
                 <Link className='contact-us' to={'/register'}>Register</Link>
-            </div>
+            </div> */}
             
             <div className="social-media">
                 <Link>

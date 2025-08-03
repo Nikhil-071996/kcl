@@ -10,7 +10,7 @@ body{
   overflow-x: hidden;
 }
 
-:root {
+/* :root {
   --color-primary-dark: #1A2362;
   --color-primary-light: #1029A6;
   --color-body-gray: #E8E8E8;
@@ -21,7 +21,28 @@ body{
   --color-highlight-light: #FFF07C;
   --color-success-btn: #28a745;
   --color-success-btn-hover: #218838;
+} */
+
+:root {
+  /* Blues */
+  --color-primary-dark: #002bc6;
+  --color-primary-light: #001372;
+
+  /* Yellows */
+  --color-highlight-light: #ffe45c;
+  --color-highlight-dark: #ffc200;
+
+  /* Reds */
+  --color-accent-light: #e50000;
+  --color-accent-dark: #af0000;
+
+  --color-success-btn: #28a745;
+  --color-success-btn-hover: #218838;
+
+  --color-body-gray: #E8E8E8;
+  --color-body-light: #fff;
 }
+
 
 
 .container{

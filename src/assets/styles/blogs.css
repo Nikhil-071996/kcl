@@ -99,6 +99,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    height: 84px;
 }
 
 .blogs-content-container .blog .blog-info img{

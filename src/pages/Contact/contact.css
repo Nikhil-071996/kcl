@@ -3,7 +3,6 @@
 .contact-page {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   padding: 2rem;
   background-color: #fff;
   overflow: hidden;
@@ -11,7 +10,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 70px  ;
   gap: 30px;
 }
 
@@ -221,9 +219,6 @@ textarea.input {
   margin-right: 0.7rem;
 }
 
-.social-media {
-  padding: 2rem 0 0 0;
-}
 
 
 .social-icons {

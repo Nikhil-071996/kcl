@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import arrow from '../../assets/images/Home/Arrow.svg'
 import banner1 from '../../assets/images/videos/banner_1.png'
 import banner2 from '../../assets/images/videos/banner_2.jpg'
@@ -7,8 +7,11 @@ import shareIcon from '../../assets/images/Home/Share_icon.svg'
 
 import './video.css'
 import { Link } from 'react-router-dom'
+import gsap from 'gsap'
 
 function Videos() {
+
+    
   return (
     <div className="video-container">
         <div className="container">
@@ -69,7 +72,7 @@ function Videos() {
             </div> */}
 
 
-            <div className="video-content-container">
+            <div className="video-content-container" >
 
                 <div className="video-cards active">
                     <img src={banner2} alt="banner" className='banner' />

@@ -1,6 +1,12 @@
 import React, { useRef } from 'react'
-import Team1 from '../assets/images/Home/team_1.jpg'
-import Team2 from '../assets/images/Home/team_2.jpg'
+import Team1 from '../assets/images/Home/logos/bhiwani_bulls.png'
+import Team2 from '../assets/images/Home/logos/faridabad_fighters.png'
+import Team3 from '../assets/images/Home/logos/gurgaon_gurus.png'
+import Team4 from '../assets/images/Home/logos/hisar_heros.png'
+import Team5 from '../assets/images/Home/logos/karnal_kings.png'
+import Team6 from '../assets/images/Home/logos/panipat_panther.png'
+import Team7 from '../assets/images/Home/logos/rohtak_royals.png'
+import Team8 from '../assets/images/Home/logos/sonipat_stars.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import "../assets/styles/teams-container.css"
 import arrow from '../assets/images/Home/Arrow.svg'
@@ -107,7 +113,7 @@ function TeamsContainer() {
               
             >
                 <Link to={'/team-page'} className="team-card">
-                    <img src={Team1} alt="Team1" />
+                    <img src={Team3} alt="Team1" />
                 </Link>
             </SplideSlide>
 
@@ -115,7 +121,7 @@ function TeamsContainer() {
               
             >
                 <Link to={'/team-page'} className="team-card">
-                    <img src={Team2} alt="Team1" />
+                    <img src={Team4} alt="Team1" />
                 </Link>
             </SplideSlide>
 
@@ -123,7 +129,7 @@ function TeamsContainer() {
               
             >
                 <Link to={'/team-page'} className="team-card">
-                    <img src={Team1} alt="Team1" />
+                    <img src={Team5} alt="Team1" />
                 </Link>
             </SplideSlide>
 
@@ -131,7 +137,7 @@ function TeamsContainer() {
               
             >
                 <Link to={'/team-page'} className="team-card">
-                    <img src={Team2} alt="Team1" />
+                    <img src={Team6} alt="Team1" />
                 </Link>
             </SplideSlide>
 
@@ -139,7 +145,7 @@ function TeamsContainer() {
               
             >
                 <Link to={'/team-page'} className="team-card">
-                    <img src={Team1} alt="Team1" />
+                    <img src={Team7} alt="Team1" />
                 </Link>
             </SplideSlide>
 
@@ -147,7 +153,7 @@ function TeamsContainer() {
               
             >
                 <Link to={'/team-page'} className="team-card">
-                    <img src={Team2} alt="Team1" />
+                    <img src={Team8} alt="Team1" />
                 </Link>
             </SplideSlide>
 

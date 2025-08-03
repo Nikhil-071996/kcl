@@ -11,7 +11,7 @@ function Teams() {
     
   return (
     <div className='teamPage'>
-            <div className="page-team-header" style={{background: `url(${banner})`}}>
+            <div className="page-team-header" style={{backgroundImage: `url(${banner})`}}>
                 <div className="container">
                     <div className="content">
                         <h2>Teams</h2>

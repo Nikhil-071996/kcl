@@ -12,7 +12,7 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 40px;
-    margin-top: 26px;
+    margin-top: 30px;
 }
 
 .teams .image-container img{
@@ -47,19 +47,19 @@ footer .logo img{
 }
 
 .copyright{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .social-media{
     display: flex;
     justify-content: center;
     gap: 16px;
-    margin-top: 55px;
+    margin-top: 30px;
 
 }
 
 .social-media img{
-    width: 70px;
+    width: 50px;
 }
 
 .privacy-content-container{
@@ -78,5 +78,5 @@ footer .logo img{
 .privacy-content-container a{
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
 }

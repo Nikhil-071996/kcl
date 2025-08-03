@@ -1,15 +1,23 @@
 import React from 'react'
 import ContactInfo from './ContactInfo'
 import ContactForm from './ContactForm'
+import banner from '../../assets/images/team-page/Matches.png'
+
 import "./contact.css";
 
 function ContactPage() {
   return (
+    <>
+      <div className="page-team-header" style={{backgroundImage: `url(${banner})`, marginTop: '70px'}}>
+          <div className="container">
+              <div className="content">
+                  <h2>GET IN TOUCH</h2>
+              </div>
+          </div>
+      </div>
     <div className="contact-page">
-      {/* <span className="big-circle"></span> */}
       {/* <img src="img/shape.png" className="square" alt="" /> */}
 
-      <h2 className='heading'>GET IN TOUCH</h2>
       <p className='heading-para'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit a, nihil velit eaque commodi at iure doloremque excepturi? Aspernatur voluptatum tempora illum non corporis unde quaerat magnam suscipit aperiam fuga.</p>
 
       <div className="form">
@@ -17,6 +25,7 @@ function ContactPage() {
         <ContactForm />
       </div>
     </div>
+    </>
   )
 }
 

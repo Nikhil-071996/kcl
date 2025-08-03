@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import RegisterLogo from '../assets/images/header/KCL_Logo.svg'
+import banner from '../assets/images/team-page/Matches.png'
 
 import '../assets/styles/register.css'
 import '../assets/styles/floatingForm.css'
@@ -90,11 +91,14 @@ const RegistrationForm = () => {
 
   return (
     <div className="register">
+      <div className="page-team-header" style={{backgroundImage: `url(${banner})`, marginTop: '70px'}}>
+          <div className="container">
+              <div className="content">
+                  <h2>REGISTRATION FORM</h2>
+              </div>
+          </div>
+      </div>
       <div className="container">
-        <div className="column-1 logo-content">
-          {/* <img src={RegisterLogo} alt="RegisterLogo" /> */}
-          <h1>REGISTRATION FORM</h1>
-        </div>
         <div className="column-2 form-contents">
           <div className="floating-form-container">
             <form onSubmit={handleSubmit}>

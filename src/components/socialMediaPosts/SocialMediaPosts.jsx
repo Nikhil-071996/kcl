@@ -29,7 +29,7 @@ function SocialMediaPosts() {
         <div className="social-head">
           <h2>SOCIAL MEDIA</h2>
 
-          <div className="social-icons-social-media">
+          {/* <div className="social-icons-social-media">
             <Link>
                 <img src={instagram} alt="" />
             </Link>
@@ -45,7 +45,7 @@ function SocialMediaPosts() {
             <Link>
                 <img src={linkedIn} alt="" />
             </Link>
-          </div>
+          </div> */}
         </div>
 
         <Splide

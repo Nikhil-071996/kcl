@@ -3,8 +3,13 @@
 }
 
 .page-team-header{
-    background-color: var(--color-primary-light);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 60px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 .page-team-header .container{
