@@ -1,6 +1,12 @@
 import React from 'react'
-import image1 from '../assets/images/Home/Table_logo_1.png'
-import image2 from '../assets/images/Home/Table_logo_2.png'
+import image1 from '../assets/images/Home/logos_table/sonipat_stars.png'
+import image2 from '../assets/images/Home/logos_table/rotak_royals.png'
+import image3 from '../assets/images/Home/logos_table/hisar_heros.png'
+import image4 from '../assets/images/Home/logos_table/panipat_panther.png'
+import image5 from '../assets/images/Home/logos_table/faridabad_fighters.png'
+import image6 from '../assets/images/Home/logos_table/bhiwani_bulls.png'
+import image7 from '../assets/images/Home/logos_table/karnal_kings.png'
+import image8 from '../assets/images/Home/logos_table/gurgaon_gurus.png'
 import banner from '../assets/images/team-page/Matches.png'
 
 import arrow from '../assets/images/Home/Arrow.svg'
@@ -13,32 +19,33 @@ function Standings() {
         image: image1
       },
       {
-        name: 'HISAR HEROES',
+        name: 'ROHTAK ROYALS',
         image: image2
       },
       {
-        name: 'SONIPAT STARS',
-        image: image1
-      },
-      {
         name: 'HISAR HEROES',
-        image: image2
+        image: image3
+      },
+      
+      {
+        name: 'FARIDABAD FIGHTERS',
+        image: image5
       },
       {
-        name: 'SONIPAT STARS',
-        image: image1
+        name: 'PANIPAT PANTHERS',
+        image: image4
       },
       {
-        name: 'HISAR HEROES',
-        image: image2
+        name: 'BHIWANI BULLS',
+        image: image6
       },
       {
-        name: 'SONIPAT STARS',
-        image: image1
+        name: 'KARNAL KINGS',
+        image: image7
       },
       {
-        name: 'HISAR HEROES',
-        image: image2
+        name: 'GURGAON GURU',
+        image: image8
       }
     ];
     
@@ -58,7 +65,7 @@ function Standings() {
         <table className="leaderboard-table table-striped" style={{margin: "50px 0"}}>
                     <thead>
                     <tr>
-                        <th>POS</th>
+                        <th className="text-center">POS</th>
                         <th>TEAMS</th>
                         <th>P</th>
                         <th>W</th>
@@ -77,7 +84,7 @@ function Standings() {
                             <img src={team.image} alt="" />
                             {team.name}
                         </td>
-                        <td className="trhighlight">0</td>
+                        <td>0</td>
                         <td>0</td>
                         <td>0</td>
                         <td>0</td>

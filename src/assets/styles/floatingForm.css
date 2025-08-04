@@ -1,5 +1,5 @@
 .form-contents{
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 .floating-form-container{
@@ -66,7 +66,7 @@ form .form-container  h2{
     outline: none;
     padding: 10px 13px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .input-container-floating-form input.form-control:focus{
@@ -91,7 +91,7 @@ form .form-container  h2{
     outline: none;
     padding: 10px 13px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     box-shadow: none;
 }
 
@@ -157,34 +157,35 @@ form .form-container .wid-100{
 }
 
 .form-btn-container{
-    padding: 17px 22px 17px;
+    padding: 25px 22px 25px;
     background-color: var(--color-body-light);
     border-top: 1px solid #D1D1D1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 16px;
 }
 
 .form-btn-container button{
-    all: unset;
-    width: fit-content;
-    padding: 10px 34px;
-    background-color: var(--color-success-btn);
-    font-weight: 700;
+        padding: 12px 31px;
+    background-color: #fff;
+    border: 2px solid var(--color-primary-light);
+    font-size: 0.95rem;
+    background-color: var(--color-primary-light);
     color: #fff;
-    border: 1px solid var(--color-success-btn);
-    font-size: 20px;
-    border-radius: 5px;
+    line-height: 1;
+    border-radius: 7px;
+    outline: none;
     cursor: pointer;
-
-    border-radius: 100px;
-    margin: 0 auto;
+    transition: 0.3s;
+    margin: 0;
+    width: fit-content;
 }
 
 .form-btn-container button:hover{
-    background-color: var(--color-success-btn-hover);
-    border: 1px solid var(--color-success-btn-hover);
+    background-color: transparent;
+    color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
 }
 
 .form-btn-container button[type="reset"]{

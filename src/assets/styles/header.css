@@ -88,7 +88,23 @@ header .logo img {
 }
 
 header .contact-us {
-  color: var(--color-highlight-dark);
+  color: #fff;
+  padding: 8px 25px;
+  width: fit-content;
+  background-color: #003dea;
+  border-radius: 7px;
+  border: 1px solid #003dea;
+}
+
+header .contact-us:hover {
+  background-color: transparent;
+  border: 1px solid #003dea;
+  color: var(--color-highlight-dark) !important;
+}
+
+header .contact-us.active {
+    color: #fff;
+
 }
 
 
@@ -100,6 +116,7 @@ header .contact-us {
   height: 36px;
   background-color: var(--color-primary-light);
 
+
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -109,7 +126,7 @@ marquee {
   color: #fff;
   font-size: 15px;
   font-style: italic;
-  /* width: 90%; */
+  width: 87%;
 }
 
 @media (max-width: 1280px) {

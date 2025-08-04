@@ -16,8 +16,8 @@
   text-align: left;
 }
 
-thead {
-  background: linear-gradient(28deg, #330d69 0%, #c20b0b 100%);
+thead{
+    background: linear-gradient(28deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
 }
 
 
