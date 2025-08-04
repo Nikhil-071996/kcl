@@ -18,7 +18,7 @@ function AboutUs() {
                     <div className='about-us-founder'>
                         <div className='about-us-founder-left'>
                             <h4>Rajesh Narwal</h4>
-                            <h5>All-Rounder</h5>
+                            <h5>All-Rounder </h5>
                         </div>
                         <img className='about-us-founder-image' src={founder1} alt="Rajesh Narwal and Mohit Chillar" />
                         <div className='about-us-founder-right'>
