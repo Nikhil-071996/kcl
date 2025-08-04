@@ -1,25 +1,23 @@
 import React, { useRef } from 'react'
 import '@splidejs/react-splide/css';
-import blogImage1 from '../../assets/images/Social/1.png'
-import blogImage2 from '../../assets/images/Social/2.png'
-import blogImage3 from '../../assets/images/Social/3.png'
-import blogImage4 from '../../assets/images/Social/4.png'
-import arrow from '../../assets/images/Home/Arrow.svg'
+import blogImage1 from '../../assets/images/Social/1.jpg'
+import blogImage2 from '../../assets/images/Social/2.jpg'
+import blogImage3 from '../../assets/images/Social/3.jpg'
+import blogImage4 from '../../assets/images/Social/4.jpg'
+import blogImage5 from '../../assets/images/Social/5.jpg'
+import blogImage6 from '../../assets/images/Social/6.jpg'
+import blogImage7 from '../../assets/images/Social/7.jpg'
 import shareIcon from '../../assets/images/Home/Share_icon.svg'
 import './SocialMediaPosts.css'
 
-import instagram from '../../assets/images/footer/instagram.svg'
-import facebook from '../../assets/images/footer/facebook.png'
-import youtube from '../../assets/images/footer/youtube.svg'
-import linkedIn from '../../assets/images/footer/linked_in.svg'
-
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import { Link } from 'react-router-dom';
 
 function SocialMediaPosts() {
 
   const socialMediaRef = useRef(null);
   const windowWidth = window.innerWidth;
+
+  const blogImages = [blogImage1, blogImage2, blogImage3, blogImage4, blogImage5, blogImage6, blogImage7]
 
   return (
     <div className='social-media-Posts'>
@@ -49,103 +47,57 @@ function SocialMediaPosts() {
         </div>
 
         <Splide
-              className="blogs-content-container"
-              ref={socialMediaRef}
-              options={{
-                type: "loop", 
-                pagination: false, 
-                drag: "free", 
-                arrows: false, 
-                perPage: 4, 
-                perMove: 1, 
-                autoplay : true,
-                // autoScroll: {
-                //   speed: 1.2,
-                //   pauseOnHover: true,
-                //   pauseOnFocus: false,
-                //   rewind: false,
-                // },
-                snap   : true,
-                gap: windowWidth ? "20px" : "10px" , 
-                breakpoints: {
-                  320: { perPage: 1 ,focus  : 'center',trimSpace: false,},
-                  460: { perPage: 1,  focus  : 'center',trimSpace: false,},
-                  560: { perPage: 1,  focus  : 'center',trimSpace: false,},
-                  1024: { perPage: 3 },
-                  1300: { perPage: 4 },
-                },
-                
+          className="blogs-content-container"
+          ref={socialMediaRef}
+          options={{
+            type: "loop",
+            pagination: false,
+            drag: "free",
+            arrows: false,
+            perPage: 4,
+            perMove: 1,
+            autoplay: true,
+            // autoScroll: {
+            //   speed: 1.2,
+            //   pauseOnHover: true,
+            //   pauseOnFocus: false,
+            //   rewind: false,
+            // },
+            snap: true,
+            gap: windowWidth ? "20px" : "10px",
+            breakpoints: {
+              320: { perPage: 1, focus: 'center', trimSpace: false, },
+              460: { perPage: 1, focus: 'center', trimSpace: false, },
+              560: { perPage: 1, focus: 'center', trimSpace: false, },
+              1024: { perPage: 3 },
+              1300: { perPage: 4 },
+            },
 
+
+          }}
+        // extensions={{ AutoScroll }}
+        // extensions={{ Autoplay }}
+        >
+          {blogImages.map((image, index) => (
+            <SplideSlide
+              key={index}
+              style={{
+                paddingBottom: '50px',
               }}
-              // extensions={{ AutoScroll }}
-              // extensions={{ Autoplay }}
-          >
-            <SplideSlide 
-              style={{
-                        paddingBottom: '50px',
-                      }}
             >
               <div className="blog">
-                    <div className="image-container">
-                      <img src={blogImage1} alt="blogImage" />
-                    </div>
-                  
-                  <div className="blog-info">
-                      <p>Lorem ipsum dolor sit amet consectetur </p>
-                      <img src={shareIcon} alt="share" width={10} />
-                  </div>
+                <div className="image-container">
+                  <img src={image} alt="blogImage" />
+                </div>
+
+                <div className="blog-info">
+                  <p>Lorem ipsum dolor sit amet consectetur </p>
+                  <img src={shareIcon} alt="share" width={10} />
+                </div>
               </div>
             </SplideSlide>
-            <SplideSlide 
-              style={{
-                        paddingBottom: '50px',
-                      }}
-            >
-              <div className="blog">
-                    <div className="image-container">
-                      <img src={blogImage2} alt="blogImage" />
-                    </div>
-                  
-                  <div className="blog-info">
-                      <p>Lorem ipsum dolor sit amet consectetur </p>
-                      <img src={shareIcon} alt="share" width={10} />
-                  </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide 
-              style={{
-                        paddingBottom: '50px',
-                      }}
-            >
-              <div className="blog">
-                    <div className="image-container">
-                      <img src={blogImage3} alt="blogImage" />
-                    </div>
-                  
-                  <div className="blog-info">
-                      <p>Lorem ipsum dolor sit amet consectetur </p>
-                      <img src={shareIcon} alt="share" width={10} />
-                  </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide 
-              style={{
-                        paddingBottom: '50px',
-                      }}
-            >
-              <div className="blog">
-                    <div className="image-container">
-                      <img src={blogImage4} alt="blogImage" />
-                    </div>
-                  
-                  <div className="blog-info">
-                      <p>Lorem ipsum dolor sit amet consectetur </p>
-                      <img src={shareIcon} alt="share" width={10} />
-                  </div>
-              </div>
-            </SplideSlide>
-            
-          </Splide>
+          ))}
+        </Splide>
       </div>
 
     </div>

@@ -19,19 +19,19 @@ function TeamsContainer() {
     const windowWidth = window.innerWidth;
 
 
-  return (
-    <div className='team-container'>
-        <div className="container">
+    return (
+        <div className='team-container'>
+            <div className="container">
 
-            <div className="heading-container">
-                <h2>TEAMS</h2>
-                <Link to={'/team'}>
-                    <span>View More</span>
-                    <img src={arrow} alt="Arrow" />
-                </Link>
-            </div>
+                <div className="heading-container">
+                    <h2>TEAMS</h2>
+                    <Link to={'/team'}>
+                        <span>View More</span>
+                        <img src={arrow} alt="Arrow" />
+                    </Link>
+                </div>
 
-            {/* <div className="teams">
+                {/* <div className="teams">
 
                 <div className="team-card">
                     <img src={Team1} alt="Team1" />
@@ -68,99 +68,81 @@ function TeamsContainer() {
             </div> */}
 
 
-            <Splide
-              ref={teamCardsRef}
-              options={{
-                type: "loop", 
-                pagination: false, 
-                drag: "free", 
-                arrows: false, 
-                perPage: 5, 
-                perMove: 1, 
-                autoplay : true,
-                interval: 1000,
-                snap   :  true ,
-                gap: '50px', 
-                breakpoints: {
-                  320: { perPage: 1 ,focus  : 'center',trimSpace: false,},
-                  460: { perPage: 1,  focus  : 'center',trimSpace: false,},
-                  560: { perPage: 1,  focus  : 'center',trimSpace: false,},
-                  1024: { perPage: 3 },
-                  1300: { perPage: 4 },
-                },
-                
+                <Splide
+                    ref={teamCardsRef}
+                    options={{
+                        type: "loop",
+                        pagination: false,
+                        drag: "free",
+                        arrows: false,
+                        perPage: 5,
+                        perMove: 1,
+                        autoplay: true,
+                        interval: 1000,
+                        snap: true,
+                        gap: '16px',
+                        breakpoints: {
+                            1300: { perPage: 4, },
+                            1024: { perPage: 3, },
+                            560: { perPage: 1, focus: 'center', trimSpace: false },
+                            460: { perPage: 1, focus: 'center', trimSpace: false },
+                            320: { perPage: 1, focus: 'center', trimSpace: false },
+                        },
 
-              }}
-              
-          >
-            <SplideSlide 
-              
-            >
-                <Link to={'/team-page'} className="team-card">
-                    <img src={Team1} alt="Team1" />
-                </Link>
-            </SplideSlide>
 
-            <SplideSlide 
-              
-            >
-                <Link to={'/team-page'} className="team-card">
-                    <img src={Team2} alt="Team1" />
-                </Link>
-            </SplideSlide>
+                    }}>
+                    <SplideSlide>
+                        <Link to={'/team-page'} className="team-card">
+                            <img src={Team1} alt="Team1" />
+                        </Link>
+                    </SplideSlide>
 
-            <SplideSlide 
-              
-            >
-                <Link to={'/team-page'} className="team-card">
-                    <img src={Team3} alt="Team1" />
-                </Link>
-            </SplideSlide>
+                    <SplideSlide>
+                        <Link to={'/team-page'} className="team-card">
+                            <img src={Team2} alt="Team1" />
+                        </Link>
+                    </SplideSlide>
 
-            <SplideSlide 
-              
-            >
-                <Link to={'/team-page'} className="team-card">
-                    <img src={Team4} alt="Team1" />
-                </Link>
-            </SplideSlide>
+                    <SplideSlide>
+                        <Link to={'/team-page'} className="team-card">
+                            <img src={Team3} alt="Team1" />
+                        </Link>
+                    </SplideSlide>
 
-            <SplideSlide 
-              
-            >
-                <Link to={'/team-page'} className="team-card">
-                    <img src={Team5} alt="Team1" />
-                </Link>
-            </SplideSlide>
+                    <SplideSlide>
+                        <Link to={'/team-page'} className="team-card">
+                            <img src={Team4} alt="Team1" />
+                        </Link>
+                    </SplideSlide>
 
-            <SplideSlide 
-              
-            >
-                <Link to={'/team-page'} className="team-card">
-                    <img src={Team6} alt="Team1" />
-                </Link>
-            </SplideSlide>
+                    <SplideSlide>
+                        <Link to={'/team-page'} className="team-card">
+                            <img src={Team5} alt="Team1" />
+                        </Link>
+                    </SplideSlide>
 
-            <SplideSlide 
-              
-            >
-                <Link to={'/team-page'} className="team-card">
-                    <img src={Team7} alt="Team1" />
-                </Link>
-            </SplideSlide>
+                    <SplideSlide>
+                        <Link to={'/team-page'} className="team-card">
+                            <img src={Team6} alt="Team1" />
+                        </Link>
+                    </SplideSlide>
 
-            <SplideSlide 
-              
-            >
-                <Link to={'/team-page'} className="team-card">
-                    <img src={Team8} alt="Team1" />
-                </Link>
-            </SplideSlide>
+                    <SplideSlide>
+                        <Link to={'/team-page'} className="team-card">
+                            <img src={Team7} alt="Team1" />
+                        </Link>
+                    </SplideSlide>
 
-          </Splide>
+                    <SplideSlide>
+                        <Link to={'/team-page'} className="team-card">
+                            <img src={Team8} alt="Team1" />
+                        </Link>
+                    </SplideSlide>
+
+                </Splide>
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default TeamsContainer

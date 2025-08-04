@@ -1,43 +1,59 @@
-.fixtures-page{
+.fixtures-page {
     margin-top: 93px;
     background-color: var(--color-accent-dark);
     padding-bottom: 69px;
 }
 
-.fixtures-buttons-container{
-    padding-top: 87px;
-    padding-bottom: 62px;
+/* Fixtures Header */
+.page-fixtures-header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    color: #fff;
+    text-align: center;
+}
 
+.page-fixtures-header .content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.fixtures-buttons-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 
-.fixtures-buttons-container button{
+.fixtures-buttons-container button {
     all: unset;
     width: fit-content;
     padding: 15px 69px;
     background-color: #fff;
     font-weight: 700;
     cursor: pointer;
+    color: var(--color-accent-dark);
 }
 
-.fixtures-buttons-container button.active{
+.fixtures-buttons-container button.active {
     background-color: var(--color-highlight-dark);
     color: var(--color-accent-dark);
 
 }
 
-.fixtures-buttons-container button:nth-child(2){
+.fixtures-buttons-container button:nth-child(2) {
     border: 1px solid var(--color-accent-dark);
 }
 
-.fixtures-buttons-container button:nth-child(1){
+.fixtures-buttons-container button:nth-child(1) {
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
 }
 
-.fixtures-buttons-container button:nth-child(3){
+.fixtures-buttons-container button:nth-child(3) {
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 }
@@ -47,82 +63,82 @@
 /* Match Fixtures Cards */
 
 
-.fs-27{
+.fs-27 {
     font-size: 27px;
 }
 
-.fs-13{
+.fs-13 {
     font-size: 13px;
     font-weight: 400;
 }
 
-.fs-18{
+.fs-18 {
     font-size: 18px;
 }
 
-p.teams-name{
+p.teams-name {
     font-weight: 500;
 }
 
-.margin-para{
+.margin-para {
     margin-top: 28px;
 }
 
-.date{
+.date {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 23px;
 }
 
-.fixture-card-section{
+.fixture-card-section {
     background-color: #fff;
     padding: 37px 0;
 }
 
-.fixtures-cards-container{
+.fixtures-cards-container {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
 
-.fixtures-section{
+.fixtures-section {
     display: flex;
     flex-direction: column;
     gap: 28px;
 }
 
-.fixture-card{
+.fixture-card {
     display: flex;
     border-radius: 7px;
     overflow: hidden;
 }
 
-.fixture-card .section-1{
- background-color: var(--color-primary-light);
- width: 27%;
+.fixture-card .section-1 {
+    background-color: var(--color-primary-light);
+    width: 27%;
 
- display: flex;
- flex-direction: column;
- justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
- padding: 47px 40px;
- color: #fff;
+    padding: 47px 40px;
+    color: #fff;
 }
 
-.fixture-card .section-2{
- background-color: var(--color-body-gray);   
- width: 73%;
- padding: 47px 40px;
+.fixture-card .section-2 {
+    background-color: var(--color-body-gray);
+    width: 73%;
+    padding: 47px 40px;
 
 
 }
 
-.fixture-card .section-2 .fitures-match-body{
- display: flex;
+.fixture-card .section-2 .fitures-match-body {
+    display: flex;
     justify-content: space-between;
 }
 
-.fitures-score{
+.fitures-score {
     width: fit-content;
 
     background-color: var(--color-highlight-dark);
@@ -131,7 +147,7 @@ p.teams-name{
     border-radius: 100px;
 }
 
-.full-time{
+.full-time {
     background-color: var(--color-success-btn);
     border-radius: 5px;
     padding: 8px 28px;
@@ -139,18 +155,18 @@ p.teams-name{
     font-size: 14px;
 }
 
-.fitures-team{
+.fitures-team {
     display: flex;
     align-items: center;
 
     gap: 23px;
 }
 
-.fitures-score{
+.fitures-score {
     font-size: 35px;
     font-weight: 700;
 }
 
-.fixture-card img.arrow-icon{
+.fixture-card img.arrow-icon {
     width: 25px;
 }

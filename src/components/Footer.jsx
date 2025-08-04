@@ -1,12 +1,4 @@
 import React from 'react'
-import team1 from '../assets/images/footer/teams/bhiwani_bulls.png'
-import team2 from '../assets/images/footer/teams/faridabad_fighters.png'
-import team3 from '../assets/images/footer/teams/gurgaon_gurus.png'
-import team4 from '../assets/images/footer/teams/hisar_heros.png'
-import team5 from '../assets/images/footer/teams/karnal_kings.png'
-import team6 from '../assets/images/footer/teams/panipat_panther.png'
-import team7 from '../assets/images/footer/teams/rohtak_royals.png'
-import team8 from '../assets/images/footer/teams/sonipat_stars.png'
 
 import instagram from '../assets/images/footer/instagram.svg'
 import facebook from '../assets/images/footer/facebook.png'
@@ -14,79 +6,69 @@ import youtube from '../assets/images/footer/youtube.svg'
 import linkedIn from '../assets/images/footer/linked_in.svg'
 
 import logo from '../assets/images/footer/main_logo.png'
+import footerBg from '../assets/images/footer/footer-bg.png'
 
 import '../assets/styles/footer.css'
 import { Link } from 'react-router-dom'
 import Sponsers from './sponsers/Sponsers'
 
 function Footer() {
-  return (
-    <>
-        <Sponsers />
-    <footer>
+    return (
+        <>
+            <Sponsers />
+            <footer style={{ backgroundImage: `url(${footerBg})` }}>
+                <div className="container">
+                    {/* Central Logo */}
+                    <div className="logo">
+                        <img src={logo} alt="Kabaddi Champions League Logo" />
+                    </div>
 
+                    {/* Navigation Links */}
+                    <div className="nav-links">
+                        <Link to="/blogs">BLOGS</Link>
+                        <Link to="/brand-ambassador">BRAND AMBASDER</Link>
+                        <Link to="/sponsors">OUR SPONSERS</Link>
+                        <Link to="/contact-us">CONTACT US</Link>
+                        <Link to="/media">MEDIA</Link>
+                    </div>
 
+                    {/* Footer Bottom Section */}
+                    <div className="footer-bottom">
+                        {/* Copyright */}
+                        <div className="copyright">
+                            © 2025 Kabaddi Champions League.. Developed by Creative Cosmos. All rights reserved.
+                        </div>
 
-        <div className="container">
+                        {/* Social Media and Legal Links */}
+                        <div className="footer-right">
+                            {/* Social Media Icons */}
+                            <div className="social-media">
+                                <Link>
+                                    <img src={instagram} alt="Instagram" />
+                                </Link>
+                                <Link>
+                                    <img src={facebook} alt="Facebook" />
+                                </Link>
+                                <Link>
+                                    <img src={youtube} alt="YouTube" />
+                                </Link>
+                                <Link>
+                                    <img src={linkedIn} alt="LinkedIn" />
+                                </Link>
+                            </div>
 
-            <div className="logo">
-                <img src={logo} alt="logo" />
-            </div>
-
-            <div className="teams">
-                <div className="image-container">
-                    <img src={team1} alt="team-1" />
-                    <img src={team2} alt="team-1" />
-                    <img src={team3} alt="team-1" />
-                    <img src={team4} alt="team-1" />
-                    <img src={team5} alt="team-1" />
-                    <img src={team6} alt="team-1" />
-                    <img src={team7} alt="team-1" />
-                    <img src={team8} alt="team-1" />
+                            {/* Legal Links */}
+                            <div className="legal-links">
+                                <Link>Privacy Policy</Link>
+                                <span>|</span>
+                                <Link>Tearms & conditions</Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            {/* <div className="menu">
-                <Link to={'/'}>Home</Link>
-                <Link to={'/team'}>Teams</Link>
-                <Link to={'/fixtures'} >Matches</Link>
-                <Link to={'/standings'}>Standing</Link>
-                <Link>About Us</Link>
-                <Link  to={'/contact-us'}>Contact Us</Link>
-                <Link className='contact-us' to={'/register'}>Register</Link>
-            </div> */}
-            
-            <div className="social-media">
-                <Link>
-                    <img src={instagram} alt="" />
-                </Link>
-
-                <Link>
-                    <img src={facebook} alt="" />
-                </Link>
-
-                <Link>
-                    <img src={youtube} alt="" />
-                </Link>
-
-                <Link>
-                    <img src={linkedIn} alt="" />
-                </Link>
-            </div>
-            <div className="privacy-content-container">
-                <div className="copyright">© 2025 KabaddiChampions League.. Developed by Creative Cosmos. All rights reserved.</div>
-                <div className="links">
-                    <Link>Privacy Policy</Link> 
-                    <span>|</span>
-                    <Link>Tearms & conditions</Link>
-                </div>
-            </div>
-        </div>
-
-    </footer>
-    
-    </>
-  )
+            </footer>
+        </>
+    )
 }
 
 export default Footer
