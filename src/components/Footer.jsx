@@ -27,8 +27,8 @@ function Footer() {
                     {/* Navigation Links */}
                     <div className="nav-links">
                         <Link to="/blogs">BLOGS</Link>
-                        <Link to="/brand-ambassador">BRAND AMBASDER</Link>
-                        <Link to="/sponsors">OUR SPONSERS</Link>
+                        <Link to="/brand-ambassador">BRAND AMBASSADOR</Link>
+                        <Link to="/sponsors">OUR SPONSORS</Link>
                         <Link to="/contact-us">CONTACT US</Link>
                         <Link to="/media">MEDIA</Link>
                     </div>
