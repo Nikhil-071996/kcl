@@ -1,16 +1,17 @@
 import React from 'react'
 
-import instagram from '../assets/images/footer/instagram.svg'
-import facebook from '../assets/images/footer/facebook.png'
-import youtube from '../assets/images/footer/youtube.svg'
-import linkedIn from '../assets/images/footer/linked_in.svg'
-
 import logo from '../assets/images/footer/main_logo.png'
 import footerBg from '../assets/images/footer/footer-bg.png'
 
 import '../assets/styles/footer.css'
 import { Link } from 'react-router-dom'
 import Sponsers from './sponsers/Sponsers'
+
+import facebookIcon from '../assets/images/social_media/fb.svg'
+import instagramIcon from '../assets/images/social_media/insta.svg'
+import youtubeIcon from '../assets/images/social_media/youtube.svg'
+import linkedInIcon from '../assets/images/social_media/linkedin.svg'
+import xIcon from '../assets/images/social_media/x.svg'
 
 function Footer() {
     return (
@@ -44,16 +45,19 @@ function Footer() {
                             {/* Social Media Icons */}
                             <div className="social-media">
                                 <Link>
-                                    <img src={instagram} alt="Instagram" />
+                                    <img src={instagramIcon} alt="Instagram" />
                                 </Link>
                                 <Link>
-                                    <img src={facebook} alt="Facebook" />
+                                    <img src={facebookIcon} alt="Facebook" />
                                 </Link>
                                 <Link>
-                                    <img src={youtube} alt="YouTube" />
+                                    <img src={youtubeIcon} alt="YouTube" />
                                 </Link>
                                 <Link>
-                                    <img src={linkedIn} alt="LinkedIn" />
+                                    <img src={linkedInIcon} alt="LinkedIn" />
+                                </Link>
+                                <Link>
+                                    <img src={xIcon} alt="X" />
                                 </Link>
                             </div>
 

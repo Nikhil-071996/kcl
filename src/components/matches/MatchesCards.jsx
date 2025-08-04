@@ -10,9 +10,15 @@ import './matchesCards.css';
 
 import '../../assets/styles/CardSlider.css'
 
-import logo1 from '../../assets/images/register/register-image.png'
-import logo2 from '../../assets/images/register/logo-1.png'
-import logo3 from '../../assets/images/register/logo-2.png'
+import bhiwani from '../../assets/images/teams_logo_small/bhiwani.png'
+import faridabad from '../../assets/images/teams_logo_small/faridabad.png'
+import gurgaon from '../../assets/images/teams_logo_small/gurgaon.png'
+import hisar from '../../assets/images/teams_logo_small/hisar.png'
+import karnal from '../../assets/images/teams_logo_small/karnal.png'
+import panipat from '../../assets/images/teams_logo_small/panipat.png'
+import rohtak from '../../assets/images/teams_logo_small/rohtak.png'
+import sonipat from '../../assets/images/teams_logo_small/sonipat.png'
+import logo from '../../assets/images/teams_logo_small/logo.png'
 import arrow from '../../assets/images/Home/Arrow.svg'
 import arrow2 from '../../assets/images/Home/Icon_Arrow.svg'
 import { Link } from 'react-router-dom';
@@ -23,10 +29,10 @@ const matchData = [
     {
         matchNo: "Match 1",
         teamA: 'Team A',
-        logoA: logo1,
+        logoA: sonipat,
         scoreA: 0,
         teamB: 'Team B',
-        logoB: logo2,
+        logoB: hisar,
         scoreB: 0,
         status: 'FINAL',
         venue: "Kalinga Stadium",
@@ -36,10 +42,10 @@ const matchData = [
     {
         matchNo: "Match 2",
         teamA: 'Thunder Kings',
-        logoA: logo3,
+        logoA: panipat,
         scoreA: 0,
         teamB: 'Desert Bulls',
-        logoB: logo1,
+        logoB: sonipat,
         scoreB: 0,
         status: 'DRAW',
         venue: "Kalinga Stadium",
@@ -49,10 +55,10 @@ const matchData = [
     {
         matchNo: "Match 2",
         teamA: 'Thunder Kings',
-        logoA: logo2,
+        logoA: hisar,
         scoreA: 0,
         teamB: 'Desert Bulls',
-        logoB: logo3,
+        logoB: panipat,
         scoreB: 0,
         status: 'DRAW',
         venue: "Kalinga Stadium",
@@ -62,10 +68,10 @@ const matchData = [
     {
         matchNo: "Match 100",
         teamA: 'Noida Warriors',
-        logoA: logo1,
+        logoA: sonipat,
         scoreA: 0,
         teamB: 'Lucknow Lions',
-        logoB: logo2,
+        logoB: hisar,
         scoreB: 0,
         status: 'FINAL',
         venue: "Kalinga Stadium",

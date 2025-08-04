@@ -1,7 +1,7 @@
 import '../assets/styles/about.css'
 import header1 from '../assets/images/about/about_us_1.png'
 import header2 from '../assets/images/about/about_us_2.png'
-import founder1 from '../assets/images/about/founder.png'
+import players from '../assets/images/about/players.png'
 
 function AboutUs() {
     return (
@@ -15,17 +15,7 @@ function AboutUs() {
             </div>
             <div className='about-us-container'>
                 <div className='about-us-founder-container'>
-                    <div className='about-us-founder'>
-                        <div className='about-us-founder-left'>
-                            <h4>Rajesh Narwal</h4>
-                            <h5>All-Rounder </h5>
-                        </div>
-                        <img className='about-us-founder-image' src={founder1} alt="Rajesh Narwal and Mohit Chillar" />
-                        <div className='about-us-founder-right'>
-                            <h4>Mohit Chillar</h4>
-                            <h5>Defender</h5>
-                        </div>
-                    </div>
+                    <img className='about-us-founder-image' src={players} alt="Rajesh Narwal and Mohit Chillar" />
                     <div className='about-us-founder-content'>
                         <p>A renowned all-rounder who has represented India at the international level. Known for his game sense, strength, and gaon se nikla dum, Rajesh stands as an icon for aspiring kabaddi players across Haryana.</p>
                         <div className='about-us-founder-content-line'></div>

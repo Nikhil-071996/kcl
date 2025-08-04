@@ -18,6 +18,8 @@ function TeamsContainer() {
 
     const windowWidth = window.innerWidth;
 
+    const teams = [Team7, Team4, Team1, Team2, Team8, Team3, Team5, Team6];
+
 
     return (
         <div className='team-container'>
@@ -91,54 +93,14 @@ function TeamsContainer() {
 
 
                     }}>
-                    <SplideSlide>
-                        <Link to={'/team-page'} className="team-card">
-                            <img src={Team1} alt="Team1" />
-                        </Link>
-                    </SplideSlide>
 
-                    <SplideSlide>
-                        <Link to={'/team-page'} className="team-card">
-                            <img src={Team2} alt="Team1" />
-                        </Link>
-                    </SplideSlide>
-
-                    <SplideSlide>
-                        <Link to={'/team-page'} className="team-card">
-                            <img src={Team3} alt="Team1" />
-                        </Link>
-                    </SplideSlide>
-
-                    <SplideSlide>
-                        <Link to={'/team-page'} className="team-card">
-                            <img src={Team4} alt="Team1" />
-                        </Link>
-                    </SplideSlide>
-
-                    <SplideSlide>
-                        <Link to={'/team-page'} className="team-card">
-                            <img src={Team5} alt="Team1" />
-                        </Link>
-                    </SplideSlide>
-
-                    <SplideSlide>
-                        <Link to={'/team-page'} className="team-card">
-                            <img src={Team6} alt="Team1" />
-                        </Link>
-                    </SplideSlide>
-
-                    <SplideSlide>
-                        <Link to={'/team-page'} className="team-card">
-                            <img src={Team7} alt="Team1" />
-                        </Link>
-                    </SplideSlide>
-
-                    <SplideSlide>
-                        <Link to={'/team-page'} className="team-card">
-                            <img src={Team8} alt="Team1" />
-                        </Link>
-                    </SplideSlide>
-
+                    {teams.map((team, index) => (
+                        <SplideSlide>
+                            <Link to={'/team-page'} className="team-card">
+                                <img src={team} alt={`Team ${index + 1}`} />
+                            </Link>
+                        </SplideSlide>
+                    ))}
                 </Splide>
             </div>
         </div>
