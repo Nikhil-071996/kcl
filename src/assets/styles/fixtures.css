@@ -34,12 +34,12 @@
     background-color: #fff;
     font-weight: 700;
     cursor: pointer;
-    color: var(--color-accent-dark);
+    color: var(--color-primary-dark);
 }
 
 .fixtures-buttons-container button.active {
     background-color: var(--color-highlight-dark);
-    color: var(--color-accent-dark);
+    color: var(--color-primary-light);
 
 }
 
@@ -110,6 +110,10 @@ p.teams-name {
     display: flex;
     border-radius: 7px;
     overflow: hidden;
+}
+
+.fixture-card img {
+    width: 110px;
 }
 
 .fixture-card .section-1 {

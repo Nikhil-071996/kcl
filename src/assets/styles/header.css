@@ -30,6 +30,8 @@ nav {
   justify-content: space-between;
 }
 
+
+
 header nav a {
   color: #fff;
   text-decoration: none;
@@ -124,7 +126,7 @@ header .contact-us.active {
 
 marquee {
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   font-style: italic;
   width: 87%;
 }

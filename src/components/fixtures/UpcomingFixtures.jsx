@@ -1,6 +1,10 @@
 import React from 'react'
-import logo1 from '../../assets/images/fixtures/logo_2.png'
-import logo2 from '../../assets/images/fixtures/logo_1.png'
+import logo1 from '../../assets/images/Home/logos_table/karnal_kings.png'
+import logo2 from '../../assets/images/Home/logos_table/hisar_heros.png'
+import logo3 from '../../assets/images/Home/logos_table/bhiwani_bulls.png'
+import logo4 from '../../assets/images/Home/logos_table/faridabad_fighters.png'
+import logo5 from '../../assets/images/Home/logos_table/panipat_panther.png'
+import logo6 from '../../assets/images/Home/logos_table/gurgaon_gurus.png'
 
 import arrow from '../../assets/images/Home/Arrow.svg'
 
@@ -41,7 +45,7 @@ function UpcomingFixtures() {
                     </div>
 
                     <div className="fitures-team">
-                      <p className='fs-18 teams-name'>Panipat <br /> Panthers</p>
+                      <p className='fs-18 teams-name'>Hissar <br /> Heroes</p>
                       <img src={logo2} alt={"logo1"} />
                     </div>
                     <img src={arrow} alt="arrow" className='arrow-icon' />
@@ -74,8 +78,8 @@ function UpcomingFixtures() {
                 <div className="section-2">
                   <div className="fitures-match-body">
                     <div className="fitures-team">
-                      <img src={logo1} alt={"logo1"} />
-                      <p className='fs-18 teams-name'>Karnal <br /> Kings</p>
+                      <img src={logo3} alt={"logo1"} />
+                      <p className='fs-18 teams-name'>Bhiwani  <br /> Bulls</p>
                     </div>
 
                     <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', gap: '5px' }}>
@@ -88,8 +92,8 @@ function UpcomingFixtures() {
                     </div>
 
                     <div className="fitures-team">
-                      <p className='fs-18 teams-name'>Panipat <br /> Panthers</p>
-                      <img src={logo2} alt={"logo1"} />
+                      <p className='fs-18 teams-name'>Faridabad  <br /> Fighters</p>
+                      <img src={logo4} alt={"logo1"} />
                     </div>
                     <img src={arrow} alt="arrow" className='arrow-icon' />
                   </div>
@@ -106,8 +110,8 @@ function UpcomingFixtures() {
                 <div className="section-2">
                   <div className="fitures-match-body">
                     <div className="fitures-team">
-                      <img src={logo1} alt={"logo1"} />
-                      <p className='fs-18 teams-name'>Karnal <br /> Kings</p>
+                      <img src={logo5} alt={"logo1"} />
+                      <p className='fs-18 teams-name'>Panipat  <br /> Panthers</p>
                     </div>
 
                     <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', gap: '5px' }}>
@@ -120,8 +124,8 @@ function UpcomingFixtures() {
                     </div>
 
                     <div className="fitures-team">
-                      <p className='fs-18 teams-name'>Panipat <br /> Panthers</p>
-                      <img src={logo2} alt={"logo1"} />
+                      <p className='fs-18 teams-name'>Gurgaon  <br /> Gurus</p>
+                      <img src={logo6} alt={"logo1"} />
                     </div>
                     <img src={arrow} alt="arrow" className='arrow-icon' />
                   </div>

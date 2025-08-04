@@ -37,7 +37,9 @@
 .video-cards .banner {
     border-radius: 5px;
     width: 100%;
+    aspect-ratio: 269 / 180;
     min-height: 180px;
+    margin-bottom: 8px;
 }
 
 

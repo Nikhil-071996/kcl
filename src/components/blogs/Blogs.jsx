@@ -5,7 +5,7 @@ import blogImage2 from '../../assets/images/News/2.png'
 import blogImage3 from '../../assets/images/News/3.png'
 import blogImage4 from '../../assets/images/News/4.png'
 import arrow from '../../assets/images/Home/Arrow.svg'
-import shareIcon from '../../assets/images/Home/share_gold.svg'
+import shareIcon from '../../assets/images/Home/Share_icon.svg'
 import { Link } from 'react-router-dom'
 
 function Blogs() {

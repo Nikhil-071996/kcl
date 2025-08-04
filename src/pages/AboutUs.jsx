@@ -1,6 +1,6 @@
 import '../assets/styles/about.css'
-import header1 from '../assets/images/about/about_us_1.png'
-import header2 from '../assets/images/about/about_us_2.png'
+import header1 from '../assets/images/about/about_us_1.webp'
+import header2 from '../assets/images/about/about_us_2.webp'
 import players from '../assets/images/about/players.png'
 
 function AboutUs() {

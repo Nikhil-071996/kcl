@@ -77,7 +77,7 @@ function Videos() {
 
                     <div className="video-cards active">
                         <img src={banner2} alt="banner" className='banner' />
-                        <p className='video-title'> New Panthers eye third PKL title under new head coach</p>
+                        <p className='video-title'> New Panthers eye third KCL title under new head coach</p>
                         <div className="video-footer">
                             <div className="play-btn">
                                 <img src={playIcon} alt="playIcon" />
@@ -91,7 +91,7 @@ function Videos() {
 
                     <div className="video-cards second-card">
                         <img src={banner1} alt="banner" className='banner' />
-                        <p className='video-title'>New Panthers eye third PKL title under new head coach</p>
+                        <p className='video-title'>New Panthers eye third KCL title under new head coach</p>
                         <div className="video-footer">
                             <div className="play-btn">
                                 <img src={playIcon} alt="playIcon" />
@@ -105,7 +105,7 @@ function Videos() {
 
                     <div className="video-cards">
                         <img src={banner0} alt="banner" className='banner' />
-                        <p className='video-title'>New Panthers eye third PKL title under new head coach</p>
+                        <p className='video-title'>New Panthers eye third KCL title under new head coach</p>
                         <div className="video-footer">
                             <div className="play-btn">
                                 <img src={playIcon} alt="playIcon" />
