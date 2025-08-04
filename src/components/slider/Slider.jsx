@@ -2,8 +2,9 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
 import { InertiaPlugin } from "gsap/InertiaPlugin";
-import banner1 from '../../assets/images/Home/banner-1.png'
-import banner2 from '../../assets/images/Home/banner-2.png'
+import banner1 from '../../assets/images/Home/banner/banner_1.png'
+import banner2 from '../../assets/images/Home/banner/banner_2.png'
+import banner3 from '../../assets/images/Home/banner/banner_3.png'
 import "../../assets/styles/Slider.css";
 
 gsap.registerPlugin(Draggable, InertiaPlugin);
@@ -50,10 +51,10 @@ const Slider = () => {
     return wrap
       ? snapped
       : gsap.utils.clamp(
-          -slideWidthRef.current * (slidesRef.current.length - 1),
-          0,
-          snapped
-        );
+        -slideWidthRef.current * (slidesRef.current.length - 1),
+        0,
+        snapped
+      );
   };
 
   const updateProgress = () => {
@@ -65,25 +66,25 @@ const Slider = () => {
   const updateDraggable = function () {
     timerRef.current.restart(true);
     if (slideAnimationRef.current) {
-        slideAnimationRef.current.kill();
+      slideAnimationRef.current.kill();
     }
     this.update();
-    };
+  };
 
   const animateSlides = (direction) => {
     timerRef.current.restart(true);
-  if (slideAnimationRef.current) {
-    slideAnimationRef.current.kill();
-  }
-  const x = snapX(
-    gsap.getProperty(proxyRef.current, "x") + direction * slideWidthRef.current
-  );
+    if (slideAnimationRef.current) {
+      slideAnimationRef.current.kill();
+    }
+    const x = snapX(
+      gsap.getProperty(proxyRef.current, "x") + direction * slideWidthRef.current
+    );
 
-  slideAnimationRef.current = gsap.to(proxyRef.current, {
-    x,
-    duration: slideDuration,
-    onUpdate: updateProgress
-  });
+    slideAnimationRef.current = gsap.to(proxyRef.current, {
+      x,
+      duration: slideDuration,
+      onUpdate: updateProgress
+    });
   };
 
   const autoPlay = () => {
@@ -142,19 +143,26 @@ const Slider = () => {
     <main>
       <div className="slides-container">
         <div className="slides-inner">
-            <div
-              className="slide"
-              ref={(el) => (slidesRef.current[0] = el)}
-            >
-              <img src={banner1} alt="banner1" />
-            </div>
+          <div
+            className="slide"
+            ref={(el) => (slidesRef.current[0] = el)}
+          >
+            <img src={banner1} alt="banner1" />
+          </div>
 
-            <div
-              className="slide"
-              ref={(el) => (slidesRef.current[1] = el)}
-            >
-                <img src={banner2} alt="banner2" />
-            </div>
+          <div
+            className="slide"
+            ref={(el) => (slidesRef.current[1] = el)}
+          >
+            <img src={banner2} alt="banner2" />
+          </div>
+
+          <div
+            className="slide"
+            ref={(el) => (slidesRef.current[2] = el)}
+          >
+            <img src={banner3} alt="banner3" />
+          </div>
         </div>
       </div>
       {/* <div className="controls">

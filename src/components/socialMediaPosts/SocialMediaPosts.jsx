@@ -17,7 +17,7 @@ function SocialMediaPosts() {
   const socialMediaRef = useRef(null);
   const windowWidth = window.innerWidth;
 
-  const blogImages = [blogImage1, blogImage2, blogImage3, blogImage4, blogImage5, blogImage6, blogImage7]
+  const blogImages = [blogImage1, blogImage3, blogImage6, blogImage4, blogImage2, blogImage5, blogImage7]
 
   return (
     <div className='social-media-Posts'>

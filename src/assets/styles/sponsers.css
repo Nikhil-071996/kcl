@@ -24,23 +24,22 @@
 }
 
 .sponsor-logo {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #f8f8f8;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
-    min-width: 150px;
-    min-height: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 280px;
+    height: 150px;
+    box-sizing: border-box;
 }
 
 .sponsor-logo img {
     max-width: 100%;
-    max-height: 60px;
+    max-height: 80px;
     object-fit: contain;
 }
 
@@ -60,11 +59,18 @@
     margin: 0 auto;
 }
 
+.sponsor-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
 .partner-label {
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 8px;
+    margin: 0;
     color: #666;
     text-align: center;
 }
