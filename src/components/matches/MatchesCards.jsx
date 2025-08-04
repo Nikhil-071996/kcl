@@ -16,6 +16,7 @@ import gurgaon from '../../assets/images/teams_logo_small/gurgaon.png'
 import hisar from '../../assets/images/teams_logo_small/hisar.png'
 import karnal from '../../assets/images/teams_logo_small/karnal.png'
 import panipat from '../../assets/images/teams_logo_small/panipat.png'
+import panipatOnBlack from '../../assets/images/teams_logo_small/panipat_on_black.png'
 import rohtak from '../../assets/images/teams_logo_small/rohtak.png'
 import sonipat from '../../assets/images/teams_logo_small/sonipat.png'
 import logo from '../../assets/images/teams_logo_small/logo.png'
@@ -29,7 +30,7 @@ const matchData = [
     {
         matchNo: "Match 1",
         teamA: 'Team A',
-        logoA: sonipat,
+        logoA: bhiwani,
         scoreA: 0,
         teamB: 'Team B',
         logoB: hisar,
@@ -55,10 +56,10 @@ const matchData = [
     {
         matchNo: "Match 2",
         teamA: 'Thunder Kings',
-        logoA: hisar,
+        logoA: karnal,
         scoreA: 0,
         teamB: 'Desert Bulls',
-        logoB: panipat,
+        logoB: rohtak,
         scoreB: 0,
         status: 'DRAW',
         venue: "Kalinga Stadium",
@@ -68,10 +69,10 @@ const matchData = [
     {
         matchNo: "Match 100",
         teamA: 'Noida Warriors',
-        logoA: sonipat,
+        logoA: gurgaon,
         scoreA: 0,
         teamB: 'Lucknow Lions',
-        logoB: hisar,
+        logoB: faridabad,
         scoreB: 0,
         status: 'FINAL',
         venue: "Kalinga Stadium",
@@ -208,7 +209,6 @@ const MatchesCards = () => {
                                 <div className="match-body">
                                     <div className="team">
                                         <img src={match.logoA} alt={match.teamA} />
-                                        <p className='fs-12'>Panipat Panthers</p>
                                     </div>
 
                                     <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', gap: '5px' }}>
@@ -222,7 +222,6 @@ const MatchesCards = () => {
 
                                     <div className="team">
                                         <img src={match.logoB} alt={match.teamB} />
-                                        <p className='fs-12'>Panipat Panthers</p>
                                     </div>
                                 </div>
 

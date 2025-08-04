@@ -1,16 +1,15 @@
-
-.blogs{
-    margin-top: 50px;
+.blogs {
+    margin-top: 75px;
 }
 
-.blogs h2{
+.blogs h2 {
     color: #000;
     margin-bottom: 30px;
     text-transform: uppercase;
     font-style: italic;
 }
 
-.blogs-content-container{
+.blogs-content-container {
     width: 100%;
 
     display: flex;
@@ -19,7 +18,7 @@
     row-gap: 10px;
 }
 
-.heading-container{
+.heading-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,11 +26,11 @@
     position: relative;
 }
 
-.heading-container h2{
+.heading-container h2 {
     margin-bottom: 0px !important;
 }
 
-.heading-container a{
+.heading-container a {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,13 +44,13 @@
     right: 0;
 }
 
-.heading-container a img{
+.heading-container a img {
     display: flex;
     justify-content: space-between;
     width: 20px;
 }
 
-.blogs-content-container .blog{
+.blogs-content-container .blog {
     width: 23%;
     position: relative;
 
@@ -62,23 +61,23 @@
     cursor: pointer;
 }
 
-.blogs-content-container .blog .image-container{
+.blogs-content-container .blog .image-container {
     width: 100%;
     overflow: hidden;
 }
 
-.blogs-content-container .blog .image-container img{
+.blogs-content-container .blog .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: scale ease 0.1s;
 }
 
-.blogs-content-container .blog:hover img{
+.blogs-content-container .blog:hover img {
     scale: 1.1;
 }
 
-.blogs-content-container .blog .date-container{
+.blogs-content-container .blog .date-container {
     position: absolute;
     background-color: var(--color-highlight-dark);
     font-weight: 700;
@@ -88,10 +87,10 @@
     font-size: 12px;
 }
 
-.blogs-content-container .blog .blog-info{
+.blogs-content-container .blog .blog-info {
     bottom: 0;
     width: 100%;
-    background-image: linear-gradient(28deg, #330d69 0%, #c20b0b 100%);
+    background-image: linear-gradient(28deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
 
     color: #fff;
     padding: 20px;
@@ -103,16 +102,17 @@
     height: 84px;
 }
 
-.blogs-content-container .blog .blog-info img{
+.blogs-content-container .blog .blog-info img {
     width: 20px;
 }
 
-.blogs-content-container .blog .blog-info p{
+.blogs-content-container .blog .blog-info p {
     display: -webkit-box;
-      -webkit-line-clamp: 2;     /* Limit to 3 lines */
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      font-size: 18px;
+    -webkit-line-clamp: 2;
+    /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
 
 }

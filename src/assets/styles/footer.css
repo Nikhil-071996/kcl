@@ -20,7 +20,7 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 footer .logo img {
@@ -34,7 +34,7 @@ footer .logo img {
     justify-content: space-between;
     margin-bottom: 40px;
     flex-wrap: nowrap;
-    width: 100%;
+    width: 60%;
 }
 
 .nav-links a {

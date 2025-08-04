@@ -1,13 +1,13 @@
-.video-container{
-    margin-top: 50px;
+.video-container {
+    margin-top: 75px;
 }
 
-.video-container h2{
+.video-container h2 {
     font-style: italic;
     margin-bottom: 10px;
 }
 
-.video-content-container{
+.video-content-container {
     /* background-color: #000; */
 
     height: auto;
@@ -24,7 +24,7 @@
 
 }
 
-.video-content-container .video-cards{
+.video-content-container .video-cards {
     width: 22%;
     color: #fff;
 
@@ -34,41 +34,47 @@
     position: absolute;
 }
 
-.video-cards .banner{
+.video-cards .banner {
     border-radius: 5px;
     width: 100%;
+    min-height: 180px;
 }
 
 
-.video-cards p{
+.video-cards p {
     font-size: 16px;
 }
-.video-cards .fs-12{
+
+.video-cards .fs-12 {
     font-size: 12px;
 }
 
-.video-footer{
+.video-footer {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-.play-btn{
+.play-btn {
     display: flex;
     gap: 7px;
     align-items: center;
 }
 
-.play-btn img{
+.play-btn img {
     width: 25px;
+    filter: invert(1);
 }
 
-.share-icon{
+.share-icon {
     width: 25px;
+    filter: invert(1);
+    margin-left: 25px;
+    width: 14px;
 }
 
 
-.video-content-container .video-cards.active{
+.video-content-container .video-cards.active {
     width: 100%;
     height: auto;
     color: #fff;
@@ -79,16 +85,16 @@
     top: 0;
     left: 0;
 
-    
+
 
     position: absolute;
 }
 
-.video-cards.second-card{
+.video-cards.second-card {
     transform: translateX(105%);
 }
 
-.video-content-container .video-cards.active img.banner{
+.video-content-container .video-cards.active img.banner {
     width: 100%;
     height: 100%;
     object-position: center;
@@ -96,21 +102,20 @@
 }
 
 
-.video-content-container .video-cards.active .video-title{
+.video-content-container .video-cards.active .video-title {
     position: absolute;
     top: 60%;
     left: 50%;
     font-size: 18px;
 }
 
-.video-content-container .video-cards.active .video-footer{
+.video-content-container .video-cards.active .video-footer {
     position: absolute;
     top: 65%;
     left: 50%;
-
-    flex-direction: column;
+    align-items: center;
 }
 
-.video-content-container .video-cards.active .play-btn p{
+.video-content-container .video-cards.active .play-btn p {
     font-size: 18px;
 }
