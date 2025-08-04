@@ -28,7 +28,7 @@ function Header() {
           <Link to={'/team'} className={currentPathname === '/team' ? 'active' : ''}>Teams</Link>
           <Link to={'/fixtures'} className={currentPathname === '/fixtures' ? 'active' : ''}>Matches</Link>
           <Link to={'/standings'} className={currentPathname === '/standings' ? 'active' : ''}>Standing</Link>
-          <Link className={currentPathname === '/about-us' ? 'active' : ''}>About Us</Link>
+          <Link to={'/about-us'} className={currentPathname === '/about-us' ? 'active' : ''}>About Us</Link>
           <div className="dropdown">
             <Link to="#" className={currentPathname === '/media' ? 'active' : ''}>Media</Link>
             <div className="dropdown-content">

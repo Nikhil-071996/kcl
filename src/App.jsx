@@ -10,6 +10,7 @@ import Fixtures from './pages/Fixtures'
 import Standings from './pages/Standings'
 import TeamPage from './pages/TeamPage'
 import Teams from './pages/Teams'
+import AboutUs from './pages/AboutUs'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path='/standings' element={<Standings />} />
           <Route path='/team-page' element={<TeamPage />} />
           <Route path='/team' element={<Teams />} />
+          <Route path='/about-us' element={<AboutUs />} />
         </Routes>
         <Footer />
 
