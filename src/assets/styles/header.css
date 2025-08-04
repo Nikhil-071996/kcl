@@ -40,6 +40,10 @@ header nav a:hover {
   color: var(--color-highlight-dark);
 }
 
+header nav a.active {
+  color: var(--color-highlight-dark);
+}
+
 
 header .logo {
   filter: drop-shadow(2.736px 7.518px 5px rgba(0, 0, 0, 0.36));

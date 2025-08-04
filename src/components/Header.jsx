@@ -1,11 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import '../assets/styles/header.css'
 import { Link, useLocation } from 'react-router-dom'
-import { gsap } from 'gsap';
 import logo from '../assets/images/footer/main_logo.png'
 
 
 function Header() {
+  const location = useLocation();
+  const currentPathname = location.pathname;
+
   return (
     <header >
       <section className="marquee-wrapper">
@@ -22,21 +24,21 @@ function Header() {
           </div>
         </Link>
         <nav>
-          <Link to={'/'}>Home</Link>
-          <Link to={'/team'}>Teams</Link>
-          <Link to={'/fixtures'} >Matches</Link>
-          <Link to={'/standings'}>Standing</Link>
-          <Link>About Us</Link>
+          <Link to={'/'} className={currentPathname === '/' ? 'active' : ''}>Home</Link>
+          <Link to={'/team'} className={currentPathname === '/team' ? 'active' : ''}>Teams</Link>
+          <Link to={'/fixtures'} className={currentPathname === '/fixtures' ? 'active' : ''}>Matches</Link>
+          <Link to={'/standings'} className={currentPathname === '/standings' ? 'active' : ''}>Standing</Link>
+          <Link className={currentPathname === '/about-us' ? 'active' : ''}>About Us</Link>
           <div className="dropdown">
-            <Link to="#">Media</Link>
+            <Link to="#" className={currentPathname === '/media' ? 'active' : ''}>Media</Link>
             <div className="dropdown-content">
               <Link to="/media/photos">Photos</Link>
               <Link to="/media/videos">Videos</Link>
             </div>
           </div>
 
-          <Link to={'/contact-us'}>Contact Us</Link>
-          <Link className='contact-us' to={'/register'}>Register</Link>
+          <Link to={'/contact-us'} className={currentPathname === '/contact-us' ? 'active' : ''}>Contact Us</Link>
+          <Link to={'/register'} className={`contact-us ${currentPathname === '/register' ? 'active' : ''}`}>Register</Link>
         </nav>
       </div>
     </header>
