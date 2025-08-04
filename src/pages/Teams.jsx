@@ -1,8 +1,15 @@
 import React from 'react'
-import Team1 from '../assets/images/Home/team_1.jpg'
-import Team2 from '../assets/images/Home/team_2.jpg'
+import Team1 from '../assets/images/Home/logos/karnal_kings.png'
+import Team2 from '../assets/images/Home/logos/gurgaon_gurus.png'
+import Team3 from '../assets/images/Home/logos/rohtak_royals.png'
+import Team4 from '../assets/images/Home/logos/faridabad_fighters.png'
+import Team5 from '../assets/images/Home/logos/panipat_panther.png'
+import Team6 from '../assets/images/Home/logos/sonipat_stars.png'
+import Team7 from '../assets/images/Home/logos/bhiwani_bulls.png'
+import Team8 from '../assets/images/Home/logos/hisar_heros.png'
 import arrow from '../assets/images/Home/Arrow.svg'
 import banner from '../assets/images/team-page/TeamsPage.png'
+import '../assets/styles/teams-cards-page.css'
 import { Link } from 'react-router-dom'
 
 function Teams() {
@@ -10,7 +17,7 @@ function Teams() {
     
     
   return (
-    <div className='teamPage'>
+    <div className='teamsPage'>
             <div className="page-team-header" style={{backgroundImage: `url(${banner})`}}>
                 <div className="container">
                     <div className="content">
@@ -32,27 +39,27 @@ function Teams() {
                     </Link>
                     
                     <Link to={'/team-page'} className="team-card width-20">
-                        <img src={Team1} alt="Team1" />
+                        <img src={Team3} alt="Team1" />
                     </Link>
 
                     <Link to={'/team-page'} className="team-card width-20">
-                        <img src={Team2} alt="Team1" />
+                        <img src={Team4} alt="Team1" />
                     </Link>
 
                     <Link to={'/team-page'} className="team-card width-20">
-                        <img src={Team1} alt="Team1" />
+                        <img src={Team5} alt="Team1" />
                     </Link>
 
                     <Link to={'/team-page'} className="team-card width-20">
-                        <img src={Team2} alt="Team1" />
+                        <img src={Team6} alt="Team1" />
                     </Link>
 
                     <Link to={'/team-page'} className="team-card width-20">
-                        <img src={Team1} alt="Team1" />
+                        <img src={Team7} alt="Team1" />
                     </Link>
 
                     <Link to={'/team-page'} className="team-card width-20">
-                        <img src={Team2} alt="Team1" />
+                        <img src={Team8} alt="Team1" />
                     </Link>
 
                 </div>

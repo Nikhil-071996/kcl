@@ -1,7 +1,13 @@
 import React from 'react';
 import './TeamStandingTable.css';
 import image1 from '../../assets/images/Home/Table_logo_1.png'
-import image2 from '../../assets/images/Home/Table_logo_2.png'
+import image2 from '../../assets/images/Home/Table_logo_1.png'
+import image3 from '../../assets/images/Home/Table_logo_1.png'
+import image4 from '../../assets/images/Home/Table_logo_1.png'
+import image5 from '../../assets/images/Home/Table_logo_1.png'
+import image6 from '../../assets/images/Home/Table_logo_1.png'
+import image7 from '../../assets/images/Home/Table_logo_1.png'
+import image8 from '../../assets/images/Home/Table_logo_1.png'
 import arrow from '../../assets/images/Home/Arrow.svg'
 import { Link } from 'react-router-dom'
 
@@ -11,34 +17,35 @@ const teams = [
     image: image1
   },
   {
-    name: 'HISAR HEROES',
+    name: 'ROHTAK ROYALS',
     image: image2
   },
   {
-    name: 'SONIPAT STARS',
-    image: image1
-  },
-  {
     name: 'HISAR HEROES',
-    image: image2
+    image: image3
   },
   {
-    name: 'SONIPAT STARS',
-    image: image1
+    name: 'PANIPAT PANTHERS',
+    image: image4
   },
   {
-    name: 'HISAR HEROES',
-    image: image2
+    name: 'FARIDABAD FIGHTERS',
+    image: image5
   },
   {
-    name: 'SONIPAT STARS',
-    image: image1
+    name: 'BHIWANI BULLS',
+    image: image6
   },
   {
-    name: 'HISAR HEROES',
-    image: image2
+    name: 'KARNAL KINGS',
+    image: image7
+  },
+  {
+    name: 'GURGAON GURU',
+    image: image8
   }
 ];
+
 
 
 const TeamStandingTable = () => {

@@ -5,10 +5,15 @@ import sponser1 from '../../assets/images/sponsers/nxt_sports.png'
 import sponser2 from '../../assets/images/sponsers/result_guru.png'
 import sponser3 from '../../assets/images/sponsers/nirveda.png'
 import associateSponser from '../../assets/images/sponsers/associate_partner.png'
+import { useLocation } from 'react-router-dom'
 
 function Sponsers() {
+
+  const location = useLocation();
+
+
   return (
-    <div className="sponsers-container">
+    <div className="sponsers-container" style={{ marginTop: location.pathname === "/register" ? "0" : "50px" }}>
       <h2>OUR PARTNERS</h2>
 
       {/* Official Partners Section */}

@@ -1,5 +1,5 @@
 .teamPage{
-    margin-top: 93px;
+    margin-top: 101px;
 }
 
 .page-team-header{
@@ -14,6 +14,7 @@
 
 .page-team-header .container{
     display: flex;
+    justify-content: center;
 }
 
 .page-team-header img{
@@ -24,7 +25,6 @@
     font-size: 41px;
     color: var(--color-highlight-light);
     text-transform: uppercase;
-    margin-bottom: 23px;
     font-style: italic;
 }
 

@@ -1,4 +1,10 @@
+.contact-page-header .container{
+  justify-content: center;
+}
 
+.contact-page-header .container h2{
+  margin: 0;
+}
 
 .contact-page {
   position: relative;
@@ -72,7 +78,7 @@
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
-  margin-bottom: 0.7rem;
+  margin-bottom: 2rem;
 }
 
 .input-container {
@@ -186,7 +192,9 @@ textarea.input {
 .contact-info {
   position: relative;
   color: #fff;
-  background-color: var(--color-primary-light);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 54px 26px ;
   border-radius: 18px;
   width: 35%;
@@ -203,22 +211,25 @@ textarea.input {
 }
 
 .text {
-  margin: 10px 0 20px 0;
+  margin: 10px 0 35px 0;
 }
 
 .information {
   display: flex;
   margin: 0.7rem 0;
   align-items: center;
+  gap: 10px;
   font-size: 0.95rem;
 }
 
 
-.icon {
-  width: 28px;
-  margin-right: 0.7rem;
+.information img {
+  width: 22px;
 }
 
+.information img.mail-icon{
+  width: 20px;
+}
 
 
 .social-icons {
@@ -242,17 +253,7 @@ textarea.input {
   transform: scale(1.05);
 }
 
-.contact-info:before {
-  content: "";
-  position: absolute;
-  width: 110px;
-  height: 100px;
-  border: 22px solid var(--color-primary-light);
-  border-radius: 50%;
-  bottom: -77px;
-  right: 50px;
-  opacity: 0.3;
-}
+
 
 .big-circle {
   position: absolute;
@@ -290,12 +291,7 @@ textarea.input {
     grid-template-columns: 1fr;
   }
 
-  .contact-info:before {
-    bottom: initial;
-    top: -75px;
-    right: 65px;
-    transform: scale(0.95);
-  }
+
 
   .contact-form:before {
     top: -13px;
@@ -328,9 +324,7 @@ textarea.input {
     padding: 1.5rem;
   }
 
-  .contact-info:before {
-    display: none;
-  }
+ 
 
   .square,
   .big-circle {
