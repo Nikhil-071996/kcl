@@ -17,25 +17,24 @@ const HomeBannerSlider = () => {
     <main>
       <div className="slides-container">
         <Splide
-            options={{
-                type: 'loop',
-                perPage: 1,
-                gap: '0',
-                type: "loop", 
-                autoplay: true,
-                arrows: true,
-                pagination: false,
-            }}
-            aria-label="React Splide Example"
-    >
+          options={{
+            type: 'loop',
+            perPage: 1,
+            gap: '0',
+            autoplay: true,
+            arrows: true,
+            pagination: false,
+          }}
+          aria-label="React Splide Example"
+        >
 
-        <SplideSlide className="slide">
-        <img src={banner1} alt="Slide 1" />
-      </SplideSlide>
-      <SplideSlide className="slide">
-        <img src={banner2} alt="Slide 1" />
-      </SplideSlide>
-    </Splide>
+          <SplideSlide className="slide">
+            <img src={banner1} alt="Slide 1" />
+          </SplideSlide>
+          <SplideSlide className="slide">
+            <img src={banner2} alt="Slide 1" />
+          </SplideSlide>
+        </Splide>
       </div>
       {/* <div className="controls">
         <button onClick={() => animateSlides(1)}>Prev</button>
