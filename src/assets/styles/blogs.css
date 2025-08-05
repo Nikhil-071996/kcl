@@ -51,18 +51,17 @@
 }
 
 .blogs-content-container .blog {
-    width: 23%;
     position: relative;
-
     display: flex;
     flex-direction: column;
-    border-radius: 7px;
+    border-radius: 18px;
     overflow: hidden;
     cursor: pointer;
 }
 
 .blogs-content-container .blog .image-container {
     width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 

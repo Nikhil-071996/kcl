@@ -7,7 +7,6 @@ import blogImage4 from '../../assets/images/Social/4.jpg'
 import blogImage5 from '../../assets/images/Social/5.jpg'
 import blogImage6 from '../../assets/images/Social/6.jpg'
 import blogImage7 from '../../assets/images/Social/7.jpg'
-import shareIcon from '../../assets/images/Home/Share_icon.svg'
 import './SocialMediaPosts.css'
 
 import { Splide, SplideSlide } from '@splidejs/react-splide';
@@ -79,20 +78,10 @@ function SocialMediaPosts() {
         // extensions={{ Autoplay }}
         >
           {blogImages.map((image, index) => (
-            <SplideSlide
-              key={index}
-              style={{
-                paddingBottom: '50px',
-              }}
-            >
+            <SplideSlide key={index} >
               <div className="blog">
                 <div className="image-container">
                   <img src={image} alt="blogImage" />
-                </div>
-
-                <div className="blog-info">
-                  <p>Lorem ipsum dolor sit amet consectetur </p>
-                  <img src={shareIcon} alt="share" width={10} />
                 </div>
               </div>
             </SplideSlide>
