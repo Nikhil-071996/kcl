@@ -1,92 +1,118 @@
+.about-us-page {
+    margin-top: 93px;
+}
+
 .about-us-container {
-    position: relative;
-    background-color: var(--color-primary-dark);
-}
-
-.about-us-container:nth-child(2) {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-}
-
-.about-us-container .about-us-bg {
-    object-fit: cover;
+    flex-direction: column;
+    gap: 72px;
+    position: relative;
+    background-size: cover;
     width: 100%;
-    display: block;
+    padding: 100px 0;
 }
 
-.about-us-container .about-us-content {
-    position: absolute;
-    top: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
+.about-us-container.top {
+    background: url('../images/about/top_bg.png') no-repeat center center;
 }
 
-.about-us-container .about-us-content h2 {
+.about-us-container.bottom {
+    background: url('../images/about/bottom_bg.png') no-repeat center center;
+}
+
+.about-us-container .about-us-top-content {
+    margin: 0 auto;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.about-us-container .about-us-bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.about-us-container .about-us-bottom-content:nth-child(1) {
+    flex-direction: row-reverse;
+}
+
+.about-us-container .about-us-top-image {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.about-us-container .about-us-bottom-content img {
+    width: 50%;
+}
+
+.about-us-container .about-us-top-content-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.about-us-container .about-us-top-content-description img {
+    margin: 0 auto;
+}
+
+.about-us-container .about-us-top-content h2 {
     color: var(--color-highlight-dark);
     font-size: 72px;
     font-weight: 700;
     line-height: 1.2;
     margin: 0;
     padding: 0;
-    margin-bottom: 48px;
     text-align: center;
 }
 
-.about-us-container .about-us-content p {
+.about-us-container .about-us-top-content p {
     font-size: 18px;
     text-align: center;
     margin: 0 auto;
     color: var(--color-body-gray);
 }
 
-.about-us-container .about-us-content p span {
-    color: var(--color-highlight-dark);
-}
-
-.about-us-container .about-us-founder-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 200px;
-}
-
-.about-us-container .about-us-founder-container .about-us-founder-image {
-    max-width: 85%;
-}
-
-.about-us-container .about-us-founder-container .about-us-founder-content {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-us-container .about-us-founder-container .about-us-founder-content p {
+.about-us-container .about-us-top-content-description p {
     font-size: 18px;
-    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--color-body-gray);
+    line-height: 1.5;
+}
+
+.about-us-container .about-us-bottom-content-description h4 {
+    font-size: 64px;
+    font-style: italic;
+    background: linear-gradient(135deg, #DAA520, #FFD700, #B8860B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-us-container .about-us-bottom-content:nth-child(2) h4 {
+    text-align: right;
+}
+
+.about-us-container .about-us-bottom-content-description p {
+    font-size: 18px;
     line-height: 1.5;
     color: var(--color-body-gray);
 }
 
-.about-us-container .about-us-founder-container .about-us-founder-content .about-us-founder-content-line {
-    width: 1px;
-    height: 160px;
-    transform: rotate(15deg);
-    margin: 0 48px;
-    background-color: var(--color-body-gray);
-}
-
-
-.about-us-container .about-us-founder-container .about-us-founder-content p:nth-child(1) {
+.about-us-container .about-us-bottom-content:nth-child(2) p {
     text-align: right;
 }
 
-.about-us-container .about-us-founder-container .about-us-founder-content p:nth-child(2) {
-    text-align: left;
+.about-us-container .about-us-top-content p span {
+    color: var(--color-highlight-dark);
+}
+
+.about-us-container .about-us-top-content-description p span {
+    color: var(--color-highlight-dark);
 }
