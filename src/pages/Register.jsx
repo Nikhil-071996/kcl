@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import RegisterLogo from '../assets/images/header/KCL_Logo.svg';
-import banner from '../assets/images/team-page/Matches.png';
+import banner from '../assets/images/team-page/TeamsPage.png'
 import bannerForm from '../assets/images/register/Ragiter_background.png';
 
 import '../assets/styles/register.css';
@@ -21,6 +21,7 @@ const initialState = {
   positionsPlayed: [],
   positionsTrying: [],
   otherTournaments: [],
+  showOtherLeagues: false,
   otherLeagues: [
     { leagueName: "", year: "" },
     { leagueName: "", year: "" }
@@ -72,7 +73,7 @@ const RegistrationForm = () => {
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
 
-    if (type === "checkbox" && (name === "permission" || name === "registrationFeeAgreement")) {
+    if (type === "checkbox" && (name === "permission" || name === "registrationFeeAgreement" || name === "showOtherLeagues")) {
       setForm({ ...form, [name]: checked });
     } else if (type === "checkbox") {
       const groupName = e.target.getAttribute("data-group");
@@ -122,7 +123,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="register" style={{ backgroundImage: `url(${bannerForm})`}}>
+    <div className="register" style={{ backgroundImage: `url(${bannerForm})` }}>
       <div className="page-team-header" style={{ backgroundImage: `url(${banner})`, marginTop: '101px' }}>
         <div className="container">
           <div className="content">
@@ -223,56 +224,74 @@ const RegistrationForm = () => {
                     </div>
                   </div>
 
-                    <h3 className="wid-100">Other Leagues:</h3>
-                  <div className="input-container-floating-form wid-50">
-                    <label>League Name 1</label>
-                    <input
-                      type="text"
-                      value={form.otherLeagues[0].leagueName}
-                      onChange={(e) => {
-                        const updated = [...form.otherLeagues];
-                        updated[0].leagueName = e.target.value;
-                        setForm({ ...form, otherLeagues: updated });
-                      }}
-                    />
-                  </div>
-                  <div className="input-container-floating-form wid-50">
-                    <label>Year</label>
-                    <input
-                      type="text"
-                      value={form.otherLeagues[0].year}
-                      onChange={(e) => {
-                        const updated = [...form.otherLeagues];
-                        updated[0].year = e.target.value;
-                        setForm({ ...form, otherLeagues: updated });
-                      }}
-                    />
+                  <div className="input-container-floating-form wid-100">
+                    <h3 className="wid-100">
+                      <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}>
+                        <input
+                          type="checkbox"
+                          name="showOtherLeagues"
+                          checked={form.showOtherLeagues}
+                          onChange={handleChange}
+                          style={{ marginRight: '5px' }}
+                        />
+                        Other Leagues:
+                      </label>
+                    </h3>
                   </div>
 
-                  <div className="input-container-floating-form wid-50">
-                    <label>League Name 2</label>
-                    <input
-                      type="text"
-                      value={form.otherLeagues[1].leagueName}
-                      onChange={(e) => {
-                        const updated = [...form.otherLeagues];
-                        updated[1].leagueName = e.target.value;
-                        setForm({ ...form, otherLeagues: updated });
-                      }}
-                    />
-                  </div>
-                  <div className="input-container-floating-form wid-50">
-                    <label>Year</label>
-                    <input
-                      type="text"
-                      value={form.otherLeagues[1].year}
-                      onChange={(e) => {
-                        const updated = [...form.otherLeagues];
-                        updated[1].year = e.target.value;
-                        setForm({ ...form, otherLeagues: updated });
-                      }}
-                    />
-                  </div>
+                  {form.showOtherLeagues && (
+                    <>
+                      <div className="input-container-floating-form wid-50">
+                        <label>League Name 1</label>
+                        <input
+                          type="text"
+                          value={form.otherLeagues[0].leagueName}
+                          onChange={(e) => {
+                            const updated = [...form.otherLeagues];
+                            updated[0].leagueName = e.target.value;
+                            setForm({ ...form, otherLeagues: updated });
+                          }}
+                        />
+                      </div>
+                      <div className="input-container-floating-form wid-50">
+                        <label>Year</label>
+                        <input
+                          type="text"
+                          value={form.otherLeagues[0].year}
+                          onChange={(e) => {
+                            const updated = [...form.otherLeagues];
+                            updated[0].year = e.target.value;
+                            setForm({ ...form, otherLeagues: updated });
+                          }}
+                        />
+                      </div>
+
+                      <div className="input-container-floating-form wid-50">
+                        <label>League Name 2</label>
+                        <input
+                          type="text"
+                          value={form.otherLeagues[1].leagueName}
+                          onChange={(e) => {
+                            const updated = [...form.otherLeagues];
+                            updated[1].leagueName = e.target.value;
+                            setForm({ ...form, otherLeagues: updated });
+                          }}
+                        />
+                      </div>
+                      <div className="input-container-floating-form wid-50">
+                        <label>Year</label>
+                        <input
+                          type="text"
+                          value={form.otherLeagues[1].year}
+                          onChange={(e) => {
+                            const updated = [...form.otherLeagues];
+                            updated[1].year = e.target.value;
+                            setForm({ ...form, otherLeagues: updated });
+                          }}
+                        />
+                      </div>
+                    </>
+                  )}
                   <h3 className="wid-100">Parent/Guardian Details (If Minor):</h3>
                   {[
                     { label: "Parent/Guardian First Name *", name: "guardianFirstName" },

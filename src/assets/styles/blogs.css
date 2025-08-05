@@ -14,8 +14,8 @@
 
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 10px;
+    flex-wrap: nowrap;
+    gap: 20px;
 }
 
 .heading-container {
@@ -57,6 +57,8 @@
     border-radius: 18px;
     overflow: hidden;
     cursor: pointer;
+    flex: 1;
+    min-width: 0;
 }
 
 .blogs-content-container .blog .image-container {

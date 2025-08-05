@@ -15,32 +15,32 @@ import HomeBannerSlider from '../components/HomeBannerSlider'
 
 function Home() {
   return (
-    <div>
-        <Slider />
+    <div style={{ marginBottom: '50px' }} z>
+      <Slider />
 
-        {/* <HomeBannerSlider /> */}
+      {/* <HomeBannerSlider /> */}
 
-        <MatchesCards />
+      <MatchesCards />
 
-        <TeamsContainer />
+      <TeamsContainer />
 
-        {/* <TeamStandingTable /> */}
-        <SocialMediaPosts />
+      {/* <TeamStandingTable /> */}
+      <SocialMediaPosts />
 
-        <Blogs />
+      <Blogs />
 
-        <Videos />
-
-
+      <Videos />
 
 
-        {/* Ground Banner */}
-        {/* <div className="img-container" style={{width: "100%"}}>
+
+
+      {/* Ground Banner */}
+      {/* <div className="img-container" style={{width: "100%"}}>
           <img src={GroundImage} alt="GroundImage" style={{width: '100%'}} />
         </div> */}
 
 
-        {/* <Enquiries /> */}
+      {/* <Enquiries /> */}
 
 
     </div>

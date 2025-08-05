@@ -13,7 +13,7 @@ function Sponsers() {
 
 
   return (
-    <div className="sponsers-container" style={{ marginTop: location.pathname === "/register" ? "0" : "50px" }}>
+    <div className="sponsers-container">
       <h2>OUR PARTNERS</h2>
 
       {/* Official Partners Section */}

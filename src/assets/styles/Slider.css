@@ -3,9 +3,8 @@ main {
   position: relative;
   flex-direction: column;
   width: 100vw;
-  height: calc(100vh - 70px);
+  height: calc(75vh - 7px);
   margin-top: 70px;
-
 }
 
 .controls {

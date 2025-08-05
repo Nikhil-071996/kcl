@@ -1,8 +1,8 @@
-.teamPage{
+.teamPage {
     margin-top: 101px;
 }
 
-.page-team-header{
+.page-team-header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,23 +12,24 @@
     background-repeat: repeat;
 }
 
-.page-team-header .container{
+.page-team-header .container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.page-team-header img{
+.page-team-header img {
     width: 200px;
 }
 
-.page-team-header h2{
+.page-team-header h2 {
     font-size: 41px;
     color: var(--color-highlight-light);
     text-transform: uppercase;
     font-style: italic;
 }
 
-.page-team-header p{
+.page-team-header p {
     font-size: 18px;
     color: #fff;
     width: 50%;
@@ -39,7 +40,7 @@
 
 }
 
-.team-owner .container{
+.team-owner .container {
     background-color: var(--color-primary-light);
     padding: 32px 39px;
     border-radius: 14px;
@@ -50,31 +51,31 @@
 
 }
 
-.team-owner .container .img-container{
+.team-owner .container .img-container {
     width: 20%;
 }
 
-.team-owner .container .img-container img{
+.team-owner .container .img-container img {
     width: 245px;
     position: absolute;
     bottom: 0;
     right: 59px;
 }
 
-.owner-info h4{
+.owner-info h4 {
     font-size: 22px;
     font-weight: 400;
     color: #fff;
 }
 
-.owner-info p{
+.owner-info p {
     font-size: 16px;
     font-weight: 400;
     color: #fff;
     width: 85%;
 }
 
-.owner-info h2{
+.owner-info h2 {
     font-size: 35px;
     font-weight: 700;
     font-style: italic;
@@ -83,18 +84,18 @@
 
 }
 
-.team-players{
+.team-players {
     background-color: var(--color-primary-light);
     padding: 43px 0 94px;
 }
 
-.team-players h2{
+.team-players h2 {
     color: var(--color-highlight-light);
     font-size: 35px;
     font-style: italic;
 }
 
-.players-container{
+.players-container {
     display: flex;
     justify-content: flex-start;
     gap: 2%;
@@ -104,7 +105,7 @@
     padding-top: 86px;
 }
 
-.players-container .player{
+.players-container .player {
     display: flex;
     align-items: center;
     position: relative;
@@ -114,27 +115,27 @@
     border-radius: 14px;
 }
 
-.players-container .player:hover{
+.players-container .player:hover {
     background-color: var(--color-accent-dark);
 }
 
-.players-container .player .player-info{
+.players-container .player .player-info {
     padding: 18px 29px;
 }
 
-.players-container .player h4{
+.players-container .player h4 {
     font-size: 18px;
     padding-bottom: 13px;
     border-bottom: 1px solid var(--color-highlight-light);
 }
 
-.players-container .player h3{
+.players-container .player h3 {
     font-size: 43px;
     font-weight: 400;
     margin-top: 21px;
 }
 
-.players-container .player h5{
+.players-container .player h5 {
     padding: 5px 18px;
     background-color: var(--color-highlight-dark);
     color: #000;
@@ -145,11 +146,11 @@
 
 }
 
-.players-container .player .img-container{
+.players-container .player .img-container {
     width: 20%;
 }
 
-.players-container .player .img-container img{
+.players-container .player .img-container img {
     width: 188px;
     position: absolute;
     bottom: 0;
