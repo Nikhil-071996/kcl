@@ -4,9 +4,9 @@ import Team2 from '../assets/images/Home/logos/faridabad_fighters.png'
 import Team3 from '../assets/images/Home/logos/gurgaon_gurus.png'
 import Team4 from '../assets/images/Home/logos/hisar_heros.png'
 import Team5 from '../assets/images/Home/logos/karnal_kings.png'
-import Team6 from '../assets/images/Home/logos/panipat_panther.png'
-import Team7 from '../assets/images/Home/logos/rohtak_royals.png'
-import Team8 from '../assets/images/Home/logos/sonipat_stars.png'
+import Team6 from '../assets/images/Home/logos/panipat_panthers.png'
+import Team7 from '../assets/images/Home/logos/rohatak_royals.png'
+import Team8 from '../assets/images/Home/logos/sonipat_star.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import "../assets/styles/teams-container.css"
 import arrow from '../assets/images/Home/Arrow.svg'
@@ -18,7 +18,7 @@ function TeamsContainer() {
 
     const windowWidth = window.innerWidth;
 
-    const teams = [Team7, Team4, Team1, Team2, Team8, Team3, Team5, Team6];
+    const teams = [Team7, Team4, Team1, Team2, Team8, Team3, Team6, Team5];
 
 
     return (
