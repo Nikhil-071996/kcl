@@ -1,12 +1,7 @@
 import React, { useRef } from 'react'
 import '@splidejs/react-splide/css';
-import blogImage1 from '../../assets/images/Social/1.jpg'
-import blogImage2 from '../../assets/images/Social/2.jpg'
-import blogImage3 from '../../assets/images/Social/3.jpg'
-import blogImage4 from '../../assets/images/Social/4.jpg'
-import blogImage5 from '../../assets/images/Social/5.jpg'
-import blogImage6 from '../../assets/images/Social/6.jpg'
-import blogImage7 from '../../assets/images/Social/7.jpg'
+import blogImage1 from '../../assets/images/Social/1.png'
+import blogImage2 from '../../assets/images/Social/2.png'
 import './SocialMediaPosts.css'
 
 import { Splide, SplideSlide } from '@splidejs/react-splide';
@@ -16,7 +11,7 @@ function SocialMediaPosts() {
   const socialMediaRef = useRef(null);
   const windowWidth = window.innerWidth;
 
-  const blogImages = [blogImage1, blogImage3, blogImage6, blogImage4, blogImage2, blogImage5, blogImage7]
+  const blogImages = [blogImage1, blogImage2, blogImage1, blogImage2]
 
   return (
     <div className='social-media-Posts'>

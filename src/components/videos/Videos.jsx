@@ -77,7 +77,7 @@ function Videos() {
 
                     <div className="video-cards active">
                         <img src={banner2} alt="banner" className='banner' />
-                        <p className='video-title'> New Panthers eye third KCL title under new head coach</p>
+                        <p className='video-title'> New Panthers eye third KCL title <br />under new head coach</p>
                         <div className="video-footer">
                             <div className="play-btn">
                                 <img src={playIcon} alt="playIcon" />

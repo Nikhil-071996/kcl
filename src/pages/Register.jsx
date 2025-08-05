@@ -221,77 +221,72 @@ const RegistrationForm = () => {
                           /> {item}
                         </label>
                       ))}
-                    </div>
-                  </div>
 
-                  <div className="input-container-floating-form wid-100">
-                    <h3 className="wid-100">
-                      <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}>
+                      <label>
                         <input
                           type="checkbox"
                           name="showOtherLeagues"
                           checked={form.showOtherLeagues}
                           onChange={handleChange}
                           style={{ marginRight: '5px' }}
-                        />
-                        Other Leagues:
+                        /> Other Leagues
                       </label>
-                    </h3>
+                    </div>
+
+                    {form.showOtherLeagues && (
+                      <div style={{ marginTop: '15px', display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+                        <div className="input-container-floating-form wid-50">
+                          <label>League Name 1</label>
+                          <input
+                            type="text"
+                            value={form.otherLeagues[0].leagueName}
+                            onChange={(e) => {
+                              const updated = [...form.otherLeagues];
+                              updated[0].leagueName = e.target.value;
+                              setForm({ ...form, otherLeagues: updated });
+                            }}
+                          />
+                        </div>
+                        <div className="input-container-floating-form wid-50">
+                          <label>Year</label>
+                          <input
+                            type="text"
+                            value={form.otherLeagues[0].year}
+                            onChange={(e) => {
+                              const updated = [...form.otherLeagues];
+                              updated[0].year = e.target.value;
+                              setForm({ ...form, otherLeagues: updated });
+                            }}
+                          />
+                        </div>
+
+                        <div className="input-container-floating-form wid-50">
+                          <label>League Name 2</label>
+                          <input
+                            type="text"
+                            value={form.otherLeagues[1].leagueName}
+                            onChange={(e) => {
+                              const updated = [...form.otherLeagues];
+                              updated[1].leagueName = e.target.value;
+                              setForm({ ...form, otherLeagues: updated });
+                            }}
+                          />
+                        </div>
+                        <div className="input-container-floating-form wid-50">
+                          <label>Year</label>
+                          <input
+                            type="text"
+                            value={form.otherLeagues[1].year}
+                            onChange={(e) => {
+                              const updated = [...form.otherLeagues];
+                              updated[1].year = e.target.value;
+                              setForm({ ...form, otherLeagues: updated });
+                            }}
+                          />
+                        </div>
+                      </div>
+                    )}
                   </div>
-
-                  {form.showOtherLeagues && (
-                    <>
-                      <div className="input-container-floating-form wid-50">
-                        <label>League Name 1</label>
-                        <input
-                          type="text"
-                          value={form.otherLeagues[0].leagueName}
-                          onChange={(e) => {
-                            const updated = [...form.otherLeagues];
-                            updated[0].leagueName = e.target.value;
-                            setForm({ ...form, otherLeagues: updated });
-                          }}
-                        />
-                      </div>
-                      <div className="input-container-floating-form wid-50">
-                        <label>Year</label>
-                        <input
-                          type="text"
-                          value={form.otherLeagues[0].year}
-                          onChange={(e) => {
-                            const updated = [...form.otherLeagues];
-                            updated[0].year = e.target.value;
-                            setForm({ ...form, otherLeagues: updated });
-                          }}
-                        />
-                      </div>
-
-                      <div className="input-container-floating-form wid-50">
-                        <label>League Name 2</label>
-                        <input
-                          type="text"
-                          value={form.otherLeagues[1].leagueName}
-                          onChange={(e) => {
-                            const updated = [...form.otherLeagues];
-                            updated[1].leagueName = e.target.value;
-                            setForm({ ...form, otherLeagues: updated });
-                          }}
-                        />
-                      </div>
-                      <div className="input-container-floating-form wid-50">
-                        <label>Year</label>
-                        <input
-                          type="text"
-                          value={form.otherLeagues[1].year}
-                          onChange={(e) => {
-                            const updated = [...form.otherLeagues];
-                            updated[1].year = e.target.value;
-                            setForm({ ...form, otherLeagues: updated });
-                          }}
-                        />
-                      </div>
-                    </>
-                  )}
                   <h3 className="wid-100">Parent/Guardian Details (If Minor):</h3>
                   {[
                     { label: "Parent/Guardian First Name *", name: "guardianFirstName" },
