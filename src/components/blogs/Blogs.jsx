@@ -24,7 +24,7 @@ function Blogs() {
                     {/* Large banner at the top */}
                     <div className="blog blog-large">
                         <div className="image-container">
-                            <img src={blogImage1} alt="blogImage" />
+                            <img src={blogImage4} alt="blogImage" />
                         </div>
                         <div className="date-container">24th July</div>
                         <div className="blog-info">
@@ -48,7 +48,7 @@ function Blogs() {
 
                         <div className="blog blog-small">
                             <div className="image-container">
-                                <img src={blogImage1} alt="blogImage" />
+                                <img src={blogImage2} alt="blogImage" />
                             </div>
                             <div className="date-container">24th July</div>
                             <div className="blog-info">
@@ -59,7 +59,7 @@ function Blogs() {
 
                         <div className="blog blog-small">
                             <div className="image-container">
-                                <img src={blogImage1} alt="blogImage" />
+                                <img src={blogImage3} alt="blogImage" />
                             </div>
                             <div className="date-container">24th July</div>
                             <div className="blog-info">
@@ -70,7 +70,7 @@ function Blogs() {
 
                         <div className="blog blog-small">
                             <div className="image-container">
-                                <img src={blogImage1} alt="blogImage" />
+                                <img src={blogImage4} alt="blogImage" />
                             </div>
                             <div className="date-container">24th July</div>
                             <div className="blog-info">

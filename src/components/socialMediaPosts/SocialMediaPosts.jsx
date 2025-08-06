@@ -41,7 +41,7 @@ function SocialMediaPosts() {
         </div>
 
         <Splide
-          className="blogs-content-container"
+          className="social-content-container"
           ref={socialMediaRef}
           options={{
             type: "loop",
@@ -60,7 +60,7 @@ function SocialMediaPosts() {
             snap: true,
             gap: windowWidth ? "20px" : "10px",
             breakpoints: {
-              1440: { perPage: 3.5 },
+              1440: { perPage: 3.5, },
               1300: { perPage: 2.5 },
               875: { perPage: 2, focus: 'center', trimSpace: false, },
               640: { perPage: 1.5, focus: 'center', trimSpace: false, },
@@ -74,9 +74,9 @@ function SocialMediaPosts() {
         >
           {blogImages.map((image, index) => (
             <SplideSlide key={index} >
-              <div className="blog">
+              <div className="social-post">
                 <div className="image-container">
-                  <img src={image} alt="blogImage" />
+                  <img src={image} alt="socialPost" />
                 </div>
               </div>
             </SplideSlide>
