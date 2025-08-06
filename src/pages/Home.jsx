@@ -12,11 +12,14 @@ import MatchesCards from '../components/matches/MatchesCards'
 import SocialMediaPosts from '../components/socialMediaPosts/SocialMediaPosts'
 import Videos from '../components/videos/Videos'
 import HomeBannerSlider from '../components/HomeBannerSlider'
+import HeroVideo from '../components/hero_video/HeroVideo'
 
 function Home() {
   return (
-    <div style={{ marginBottom: '50px' }} z>
-      <Slider />
+    <div style={{ marginBottom: '50px' }}>
+
+      <HeroVideo />
+      {/* <Slider /> */}
 
       {/* <HomeBannerSlider /> */}
 
