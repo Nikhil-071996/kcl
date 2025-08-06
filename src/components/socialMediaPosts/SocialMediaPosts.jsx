@@ -3,6 +3,8 @@ import '@splidejs/react-splide/css';
 import blogImage1 from '../../assets/images/Social/1.png'
 import blogImage2 from '../../assets/images/Social/2.png'
 import './SocialMediaPosts.css'
+import arrow from '../../assets/images/Home/Arrow.svg'
+import { Link } from 'react-router-dom'
 
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
@@ -14,30 +16,15 @@ function SocialMediaPosts() {
   const blogImages = [blogImage1, blogImage2, blogImage1, blogImage2]
 
   return (
-    <div className='social-media-Posts'>
+    <div className='social-media-container'>
       <div className="container">
 
-
-        <div className="social-head">
+        <div className="heading-container">
           <h2>SOCIAL MEDIA</h2>
-
-          {/* <div className="social-icons-social-media">
-            <Link>
-                <img src={instagram} alt="" />
-            </Link>
-
-            <Link>
-                <img src={facebook} alt="" />
-            </Link>
-
-            <Link>
-                <img src={youtube} alt="" />
-            </Link>
-
-            <Link>
-                <img src={linkedIn} alt="" />
-            </Link>
-          </div> */}
+          <Link to={'/social'}>
+            <span>View More</span>
+            <img src={arrow} alt="Arrow" />
+          </Link>
         </div>
 
         <Splide
@@ -51,12 +38,6 @@ function SocialMediaPosts() {
             perPage: 4,
             perMove: 1,
             autoplay: true,
-            // autoScroll: {
-            //   speed: 1.2,
-            //   pauseOnHover: true,
-            //   pauseOnFocus: false,
-            //   rewind: false,
-            // },
             snap: true,
             gap: windowWidth ? "20px" : "10px",
             breakpoints: {
@@ -66,19 +47,15 @@ function SocialMediaPosts() {
               640: { perPage: 1.5, focus: 'center', trimSpace: false, },
               514: { perPage: 1, focus: 'center', trimSpace: false, },
             },
-
-
           }}
-        // extensions={{ AutoScroll }}
-        // extensions={{ Autoplay }}
         >
           {blogImages.map((image, index) => (
             <SplideSlide key={index} >
-              <div className="social-post">
+              <Link to={'/social-post'} className="social-post-card">
                 <div className="image-container">
                   <img src={image} alt="socialPost" />
                 </div>
-              </div>
+              </Link>
             </SplideSlide>
           ))}
         </Splide>

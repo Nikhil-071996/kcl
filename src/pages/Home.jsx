@@ -27,10 +27,12 @@ function Home() {
 
       <TeamsContainer />
 
+      <Blogs />
+
+
       {/* <TeamStandingTable /> */}
       <SocialMediaPosts />
 
-      <Blogs />
 
       <Videos />
 
