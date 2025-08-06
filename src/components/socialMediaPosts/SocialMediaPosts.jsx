@@ -60,11 +60,11 @@ function SocialMediaPosts() {
             snap: true,
             gap: windowWidth ? "20px" : "10px",
             breakpoints: {
-              320: { perPage: 1, focus: 'center', trimSpace: false, },
-              460: { perPage: 1, focus: 'center', trimSpace: false, },
-              560: { perPage: 1, focus: 'center', trimSpace: false, },
-              1024: { perPage: 3 },
-              1300: { perPage: 4 },
+              1440: { perPage: 3.5 },
+              1300: { perPage: 2.5 },
+              875: { perPage: 2, focus: 'center', trimSpace: false, },
+              640: { perPage: 1.5, focus: 'center', trimSpace: false, },
+              514: { perPage: 1, focus: 'center', trimSpace: false, },
             },
 
 

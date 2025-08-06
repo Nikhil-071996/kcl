@@ -21,48 +21,62 @@ function Blogs() {
                 </div>
 
                 <div className="blogs-content-container">
-
-
-
-                    <div className="blog">
+                    {/* Large banner at the top */}
+                    <div className="blog blog-large">
                         <div className="image-container">
                             <img src={blogImage1} alt="blogImage" />
                         </div>
                         <div className="date-container">24th July</div>
                         <div className="blog-info">
-                            <p>Lorem ipsum dolor sit amet consectetur </p>
-                            <img src={shareIcon} alt="share" width={10} />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            <img src={arrow} alt="arrow" width={20} />
                         </div>
                     </div>
 
-                    <div className="blog">
-                        <div className="image-container">
-                            <img src={blogImage2} alt="blogImage" />
+                    {/* Four smaller banners in 2x2 grid */}
+                    <div className="blogs-grid">
+                        <div className="blog blog-small">
+                            <div className="image-container">
+                                <img src={blogImage1} alt="blogImage" />
+                            </div>
+                            <div className="date-container">24th July</div>
+                            <div className="blog-info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                <img src={arrow} alt="arrow" width={20} />
+                            </div>
                         </div>
-                        <div className="date-container">24th July</div>
-                        <div className="blog-info">
-                            <p>Lorem ipsum dolor sit amet consectetur </p>
-                            <img src={shareIcon} alt="share" width={10} />
+
+                        <div className="blog blog-small">
+                            <div className="image-container">
+                                <img src={blogImage1} alt="blogImage" />
+                            </div>
+                            <div className="date-container">24th July</div>
+                            <div className="blog-info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                <img src={arrow} alt="arrow" width={20} />
+                            </div>
                         </div>
-                    </div>
-                    <div className="blog">
-                        <div className="image-container">
-                            <img src={blogImage3} alt="blogImage" />
+
+                        <div className="blog blog-small">
+                            <div className="image-container">
+                                <img src={blogImage1} alt="blogImage" />
+                            </div>
+                            <div className="date-container">24th July</div>
+                            <div className="blog-info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                <img src={arrow} alt="arrow" width={20} />
+                            </div>
                         </div>
-                        <div className="date-container">24th July</div>
-                        <div className="blog-info">
-                            <p>Lorem ipsum dolor sit amet consectetur </p>
-                            <img src={shareIcon} alt="share" width={10} />
-                        </div>
-                    </div>
-                    <div className="blog">
-                        <div className="image-container">
-                            <img src={blogImage4} alt="blogImage" />
-                        </div>
-                        <div className="date-container">24th July</div>
-                        <div className="blog-info">
-                            <p>Lorem ipsum dolor sit amet consectetur </p>
-                            <img src={shareIcon} alt="share" width={10} />
+
+                        <div className="blog blog-small">
+                            <div className="image-container">
+                                <img src={blogImage1} alt="blogImage" />
+                            </div>
+                            <div className="date-container">24th July</div>
+                            <div className="blog-info">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                <img src={arrow} alt="arrow" width={20} />
+                            </div>
                         </div>
                     </div>
                 </div>

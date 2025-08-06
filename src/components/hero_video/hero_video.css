@@ -2,6 +2,7 @@
     position: relative;
     margin-top: 101px;
     width: 100%;
+    height: calc(75vh - 7px);
 }
 
 .hero-video-container video {
