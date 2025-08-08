@@ -10,7 +10,7 @@
   background-color: var(--color-primary-dark);
   color: #fff;
   scale: 0.9;
-  transition: 0.1s ease-in all;
+  transition: 500ms ease-in all;
 }
 
 .heading{
