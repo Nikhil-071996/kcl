@@ -8,13 +8,13 @@ import banner from '../assets/images/team-page/TeamsPage.png'
 function AboutUs() {
     return (
         <div className="about-us-page">
-            <div className="page-team-header" style={{ backgroundImage: `url(${banner})` }}>
+            {/* <div className="page-team-header" style={{ backgroundImage: `url(${banner})` }}>
                 <div className="container">
                     <div className="content">
                         <h2>About Us</h2>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="about-us-container top container">
                 <div className='about-us-top-content'>
                     <h2>Kabaddi Champions League Haryana</h2>
