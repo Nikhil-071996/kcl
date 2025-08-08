@@ -1,0 +1,76 @@
+.photo-page{
+    margin-top: 101px;
+}
+
+.photo-page-container .container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1%;
+    row-gap: 20px;
+}
+
+.photo-page-card{
+    width: 24%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+}
+
+.blogs .photo-page-card{
+    width: 32%;
+}
+
+.blogs .photo-page-card .image-container{
+    /* width: 32%; */
+    aspect-ratio: 1.77;
+}
+
+.photo-page-card .image-container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    aspect-ratio: 275/225;
+}
+
+.photo-page-card .image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1;
+    transition: scale 500ms;
+}
+
+.photo-page-card:hover .image-container img{
+    scale: 1.1;
+}
+
+.photo-page-card .body-card{
+    padding: 16px 14px;
+    background-image: linear-gradient(28deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+    color: #fff;
+}
+ 
+.photo-page-card .body-card h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.photo-page-card .footer-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.photo-page-card .footer-cards img.shareIcon{
+    width: 14px;
+    filter: invert();
+}
+
+.photo-page-card .footer-cards .crd-date{
+    font-size: 12px;
+}

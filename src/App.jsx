@@ -11,6 +11,9 @@ import Standings from './pages/Standings'
 import TeamPage from './pages/TeamPage'
 import Teams from './pages/Teams'
 import AboutUs from './pages/AboutUs'
+import PhotoPage from './pages/PhotoPage'
+import VideosPage from './pages/VideosPage'
+import BlogsPage from './pages/BlogsPage'
 
 
 function App() {
@@ -29,6 +32,9 @@ function App() {
           <Route path='/team-page' element={<TeamPage />} />
           <Route path='/team' element={<Teams />} />
           <Route path='/about-us' element={<AboutUs />} />
+          <Route path='/media/photos' element={<PhotoPage />} />
+          <Route path='/media/videos' element={<VideosPage />} />
+          <Route path='/blogs' element={<BlogsPage />} />
         </Routes>
         <Footer />
 
