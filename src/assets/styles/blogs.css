@@ -84,6 +84,7 @@
     top: 0;
     font-size: 12px;
     z-index: 2;
+    color: #000 ;
 }
 
 .blog-large .blog-info {
@@ -157,6 +158,8 @@
     top: 0;
     font-size: 12px;
     z-index: 2;
+    color: #000 ;
+
 }
 
 .blog-small .blog-info {

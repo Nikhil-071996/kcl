@@ -14,7 +14,7 @@ function Blogs() {
             <div className="container">
                 <div className="heading-container">
                     <h2>Latest Updates</h2>
-                    <Link href="">
+                    <Link to="/blogs">
                         <span>View More</span>
                         <img src={arrow} alt="Arrow" />
                     </Link>
@@ -22,7 +22,7 @@ function Blogs() {
 
                 <div className="blogs-content-container">
                     {/* Large banner at the top */}
-                    <div className="blog blog-large">
+                    <Link to={'/blogs/details'} className="blog blog-large">
                         <div className="image-container">
                             <img src={blogImage4} alt="blogImage" />
                         </div>
@@ -31,11 +31,11 @@ function Blogs() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                             <img src={arrow} alt="arrow" width={20} />
                         </div>
-                    </div>
+                    </Link>
 
                     {/* Four smaller banners in 2x2 grid */}
                     <div className="blogs-grid">
-                        <div className="blog blog-small">
+                        <Link to={'/blogs/details'} className="blog blog-small">
                             <div className="image-container">
                                 <img src={blogImage1} alt="blogImage" />
                             </div>
@@ -44,9 +44,9 @@ function Blogs() {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                                 <img src={arrow} alt="arrow" width={20} />
                             </div>
-                        </div>
+                        </Link>
 
-                        <div className="blog blog-small">
+                        <Link to={'/blogs/details'} className="blog blog-small">
                             <div className="image-container">
                                 <img src={blogImage2} alt="blogImage" />
                             </div>
@@ -55,9 +55,9 @@ function Blogs() {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                                 <img src={arrow} alt="arrow" width={20} />
                             </div>
-                        </div>
+                        </Link>
 
-                        <div className="blog blog-small">
+                        <Link to={'/blogs/details'} className="blog blog-small">
                             <div className="image-container">
                                 <img src={blogImage3} alt="blogImage" />
                             </div>
@@ -66,9 +66,9 @@ function Blogs() {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                                 <img src={arrow} alt="arrow" width={20} />
                             </div>
-                        </div>
+                        </Link>
 
-                        <div className="blog blog-small">
+                        <Link to={'/blogs/details'} className="blog blog-small">
                             <div className="image-container">
                                 <img src={blogImage4} alt="blogImage" />
                             </div>
@@ -77,7 +77,7 @@ function Blogs() {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                                 <img src={arrow} alt="arrow" width={20} />
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
 
