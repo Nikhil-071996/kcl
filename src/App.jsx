@@ -14,6 +14,9 @@ import AboutUs from './pages/AboutUs'
 import PhotoPage from './pages/PhotoPage'
 import VideosPage from './pages/VideosPage'
 import BlogsPage from './pages/BlogsPage'
+import BlogDetails from './components/blogs/BlogDetails'
+import PicturesDetails from './components/pictures/PicturesDetails'
+import VideoDetails from './components/videosDetails/VideoDetails'
 
 
 function App() {
@@ -35,6 +38,9 @@ function App() {
           <Route path='/media/photos' element={<PhotoPage />} />
           <Route path='/media/videos' element={<VideosPage />} />
           <Route path='/blogs' element={<BlogsPage />} />
+          <Route path='/blogs/details' element={<BlogDetails />} />
+          <Route path='/media/picture/details' element={<PicturesDetails />} />
+          <Route path='/media/video/details' element={<VideoDetails />} />
         </Routes>
         <Footer />
 

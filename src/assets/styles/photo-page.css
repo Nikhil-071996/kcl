@@ -26,14 +26,14 @@
 
 .blogs .photo-page-card .image-container{
     /* width: 32%; */
-    aspect-ratio: 1.77;
+    aspect-ratio: 457/257;
 }
 
 .photo-page-card .image-container{
     width: 100%;
     height: auto;
     overflow: hidden;
-    aspect-ratio: 275/225;
+    aspect-ratio: 340/190;
 }
 
 .photo-page-card .image-container img{

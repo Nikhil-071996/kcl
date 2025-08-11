@@ -7,6 +7,7 @@ import blogImage4 from '../assets/images/News/4.png'
 import shareIcon from '../assets/images/Home/Share_icon.svg'
 
 import '../assets/styles/photo-page.css'
+import { Link } from 'react-router-dom'
 
 
 function PhotoPage() {
@@ -25,7 +26,7 @@ function PhotoPage() {
 
         <div className="container">
 
-          <div className="photo-page-card">
+          <Link to={'/media/picture/details'} className="photo-page-card">
              <div className="image-container">
               <img src={blogImage1} alt="blogimage" />
              </div>
@@ -36,9 +37,9 @@ function PhotoPage() {
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
               </div>
              </div>
-          </div>
+          </Link>
 
-          <div className="photo-page-card">
+          <Link to={'/media/picture/details'} className="photo-page-card">
              <div className="image-container">
               <img src={blogImage2} alt="blogimage" />
              </div>
@@ -49,9 +50,9 @@ function PhotoPage() {
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
               </div>
              </div>
-          </div>
+          </Link>
 
-          <div className="photo-page-card">
+          <Link to={'/media/picture/details'} className="photo-page-card">
              <div className="image-container">
               <img src={blogImage3} alt="blogimage" />
              </div>
@@ -62,9 +63,9 @@ function PhotoPage() {
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
               </div>
              </div>
-          </div>
+          </Link>
 
-          <div className="photo-page-card">
+          <Link to={'/media/picture/details'} className="photo-page-card">
              <div className="image-container">
               <img src={blogImage4} alt="blogimage" />
              </div>
@@ -75,9 +76,9 @@ function PhotoPage() {
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
               </div>
              </div>
-          </div>
+          </Link>
 
-          <div className="photo-page-card">
+          <Link to={'/media/picture/details'} className="photo-page-card">
              <div className="image-container">
               <img src={blogImage2} alt="blogimage" />
              </div>
@@ -88,9 +89,9 @@ function PhotoPage() {
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
               </div>
              </div>
-          </div>
+          </Link>
 
-          <div className="photo-page-card">
+          <Link to={'/media/picture/details'} className="photo-page-card">
              <div className="image-container">
               <img src={blogImage4} alt="blogimage" />
              </div>
@@ -101,7 +102,85 @@ function PhotoPage() {
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
               </div>
              </div>
-          </div>
+          </Link>
+
+          <Link to={'/media/picture/details'} className="photo-page-card">
+             <div className="image-container">
+              <img src={blogImage1} alt="blogimage" />
+             </div>
+             <div className="body-card">
+              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <div className="footer-cards">
+                <div className="crd-date">01 July, 2025</div>
+                <img src={shareIcon} className='shareIcon' alt="SHARE" />
+              </div>
+             </div>
+          </Link>
+
+          <Link to={'/media/picture/details'} className="photo-page-card">
+             <div className="image-container">
+              <img src={blogImage2} alt="blogimage" />
+             </div>
+             <div className="body-card">
+              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <div className="footer-cards">
+                <div className="crd-date">01 July, 2025</div>
+                <img src={shareIcon} className='shareIcon' alt="SHARE" />
+              </div>
+             </div>
+          </Link>
+
+          <Link to={'/media/picture/details'} className="photo-page-card">
+             <div className="image-container">
+              <img src={blogImage3} alt="blogimage" />
+             </div>
+             <div className="body-card">
+              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <div className="footer-cards">
+                <div className="crd-date">01 July, 2025</div>
+                <img src={shareIcon} className='shareIcon' alt="SHARE" />
+              </div>
+             </div>
+          </Link>
+
+          <Link to={'/media/picture/details'} className="photo-page-card">
+             <div className="image-container">
+              <img src={blogImage4} alt="blogimage" />
+             </div>
+             <div className="body-card">
+              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <div className="footer-cards">
+                <div className="crd-date">01 July, 2025</div>
+                <img src={shareIcon} className='shareIcon' alt="SHARE" />
+              </div>
+             </div>
+          </Link>
+
+          <Link to={'/media/picture/details'} className="photo-page-card">
+             <div className="image-container">
+              <img src={blogImage2} alt="blogimage" />
+             </div>
+             <div className="body-card">
+              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <div className="footer-cards">
+                <div className="crd-date">01 July, 2025</div>
+                <img src={shareIcon} className='shareIcon' alt="SHARE" />
+              </div>
+             </div>
+          </Link>
+
+          <Link to={'/media/picture/details'} className="photo-page-card">
+             <div className="image-container">
+              <img src={blogImage4} alt="blogimage" />
+             </div>
+             <div className="body-card">
+              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <div className="footer-cards">
+                <div className="crd-date">01 July, 2025</div>
+                <img src={shareIcon} className='shareIcon' alt="SHARE" />
+              </div>
+             </div>
+          </Link>
 
         </div>
 

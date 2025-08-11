@@ -44,6 +44,9 @@ body{
 }
 
 
+a{
+  text-decoration: none;
+}
 
 .container{
   width: 85vw;
