@@ -181,11 +181,9 @@ const MatchesCards = () => {
                         perMove: 1,
                         snap: true,
                         breakpoints: {
+                            768: { perPage: 1, trimSpace: false },
+                            1024: { perPage: 2, },
                             1300: { perPage: 3, },
-                            1024: { perPage: 3, },
-                            560: { perPage: 1, trimSpace: false },
-                            460: { perPage: 1, trimSpace: false },
-                            320: { perPage: 1, trimSpace: false },
                         },
                     }}
                 >

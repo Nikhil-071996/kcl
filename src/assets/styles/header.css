@@ -76,6 +76,7 @@ header nav a.active {
 
 
 header .logo {
+  z-index: 99999;
   filter: drop-shadow(2.736px 7.518px 5px rgba(0, 0, 0, 0.36));
 }
 
@@ -245,7 +246,7 @@ marquee {
 
   nav {
     position: fixed;
-    top: 65px;
+    top: 95px;
     left: -100%;
     width: 100%;
     height: calc(100vh - 65px);

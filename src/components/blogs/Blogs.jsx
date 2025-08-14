@@ -41,7 +41,7 @@ function Blogs() {
                             </div>
                             <div className="date-container">24th July</div>
                             <div className="blog-info">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
                                 <img src={arrow} alt="arrow" width={20} />
                             </div>
                         </Link>
@@ -52,7 +52,7 @@ function Blogs() {
                             </div>
                             <div className="date-container">24th July</div>
                             <div className="blog-info">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
                                 <img src={arrow} alt="arrow" width={20} />
                             </div>
                         </Link>
@@ -63,7 +63,7 @@ function Blogs() {
                             </div>
                             <div className="date-container">24th July</div>
                             <div className="blog-info">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
                                 <img src={arrow} alt="arrow" width={20} />
                             </div>
                         </Link>
@@ -74,7 +74,7 @@ function Blogs() {
                             </div>
                             <div className="date-container">24th July</div>
                             <div className="blog-info">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
                                 <img src={arrow} alt="arrow" width={20} />
                             </div>
                         </Link>

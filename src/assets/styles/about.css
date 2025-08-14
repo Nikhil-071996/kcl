@@ -64,10 +64,11 @@
 
 .about-us-container .about-us-top-content-description {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr .5fr;
+    gap: 12px;
     justify-content: space-between;
     align-items: center;
-    max-width: 80%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
@@ -86,8 +87,8 @@
 }
 
 .about-us-container .about-us-top-content p {
-    font-size: 18px;
-    text-align: center;
+    font-size: 16px;
+    text-align: justify;
     margin: 0 auto;
     color: var(--color-body-gray);
 }
@@ -129,4 +130,18 @@
 
 .about-us-container .about-us-top-content-description p span {
     color: var(--color-highlight-dark);
+}
+
+@media (max-width: 1024px) {
+    .about-us-container .about-us-top-content-description {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us-container .about-us-bottom-content-description p {
+        font-size: 12px;
+    }
+
+    .about-us-container .about-us-bottom-content.rajesh {
+        margin-bottom: 32px;
+    }
 }
