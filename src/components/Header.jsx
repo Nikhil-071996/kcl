@@ -26,9 +26,9 @@ function Header() {
     <header >
       <section className="marquee-wrapper">
         <marquee>
-          🏆 Kabaddi Champions League Haryana - Pre-Launch Event on 6th August 2025
+          🏆 Kabaddi Champions League Haryana - Pre-Launch Event on 18th August 2025
           &nbsp;&nbsp;&nbsp; |
-          &nbsp;&nbsp;&nbsp; 📰 Press Conference at Ramada, Sonipat ( 6th August 2025) &nbsp;&nbsp;&nbsp; |
+          &nbsp;&nbsp;&nbsp; 📰 Press Conference at Ramada, Sonipat ( 18th August 2025) &nbsp;&nbsp;&nbsp; |
           &nbsp;&nbsp;&nbsp; 📢 Registration for KCL Haryana Trials is Now Open!
         </marquee>
       </section>
