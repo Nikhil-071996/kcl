@@ -17,12 +17,14 @@ import BlogsPage from './pages/BlogsPage'
 import BlogDetails from './components/blogs/BlogDetails'
 import PicturesDetails from './components/pictures/PicturesDetails'
 import VideoDetails from './components/videosDetails/VideoDetails'
+import { ToastContainer } from 'react-toastify'
 
 
 function App() {
 
   return (
     <>
+      <ToastContainer />
       <BrowserRouter>
         <ScrollToTop />
         <Header />
@@ -43,7 +45,6 @@ function App() {
           <Route path='/media/video/details' element={<VideoDetails />} />
         </Routes>
         <Footer />
-
       </BrowserRouter>
     </>
   )

@@ -12,13 +12,16 @@
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "axios": "^1.11.0",
     "bootstrap": "^5.3.7",
+    "dotenv": "^17.2.1",
     "gsap": "^3.13.0",
     "moment": "^2.30.1",
     "react": "^19.1.0",
     "react-bootstrap-carousel": "^4.1.1",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.7.1",
+    "react-toastify": "^11.0.5",
     "swiper": "^11.2.10"
   },
   "devDependencies": {

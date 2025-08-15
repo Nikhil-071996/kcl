@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import RegisterLogo from '../assets/images/header/KCL_Logo.svg';
 import banner from '../assets/images/team-page/TeamsPage.png'
 import bannerForm from '../assets/images/register/Ragiter_background.png';
 
 import '../assets/styles/register.css';
 import '../assets/styles/floatingForm.css';
+import { submitRegisterForm } from "../api/register";
+import { toast } from "react-toastify";
 
 const initialState = {
   playerFirstName: "",
@@ -36,6 +39,7 @@ const initialState = {
 const RegistrationForm = () => {
   const [form, setForm] = useState(initialState);
   const [errors, setErrors] = useState({});
+  const navigate = useNavigate();
 
   const categories = [
     "Senior Men",
@@ -93,6 +97,8 @@ const RegistrationForm = () => {
 
   const validate = () => {
     const newErrors = {};
+
+    // Basic required fields
     if (!form.playerFirstName.trim()) newErrors.playerFirstName = "Required";
     if (!form.playerLastName.trim()) newErrors.playerLastName = "Required";
     if (!form.dob) newErrors.dob = "Required";
@@ -104,21 +110,67 @@ const RegistrationForm = () => {
     if (!form.city.trim()) newErrors.city = "Required";
     if (!form.pincode.trim()) newErrors.pincode = "Required";
     if (!form.category) newErrors.category = "Select a category";
-    if (!form.guardianFirstName.trim()) newErrors.guardianFirstName = "Required";
-    if (!form.guardianLastName.trim()) newErrors.guardianLastName = "Required";
-    if (!form.guardianEmail.trim()) newErrors.guardianEmail = "Required";
-    if (!form.guardianPhone.trim()) newErrors.guardianPhone = "Required";
+
+    // Phone number validation
+    if (form.phone.trim()) {
+      const phoneRegex = /^[0-9]{10}$/;
+      if (!phoneRegex.test(form.phone.trim())) {
+        newErrors.phone = "Phone number must be 10 digits";
+      }
+    }
+
+    // Positions Trying Out For validation
+    if (form.positionsTrying.length === 0) {
+      newErrors.positionsTrying = "Please select at least one position";
+    }
+
+    // Parent/Guardian validation - only required for Junior categories
+    const isJuniorCategory = form.category === "Junior Men" || form.category === "Junior Women";
+    if (isJuniorCategory) {
+      if (!form.guardianFirstName.trim()) newErrors.guardianFirstName = "Required for Junior categories";
+      if (!form.guardianLastName.trim()) newErrors.guardianLastName = "Required for Junior categories";
+      if (!form.guardianEmail.trim()) newErrors.guardianEmail = "Required for Junior categories";
+      if (!form.guardianPhone.trim()) newErrors.guardianPhone = "Required for Junior categories";
+    }
+
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = validate();
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-    } else {
-      setErrors({});
-      console.log("Form Submitted:", form);
+      return;
+    }
+
+    setErrors({});
+
+    try {
+      const submitPromise = submitRegisterForm(form);
+
+      toast.promise(submitPromise, {
+        pending: 'Submitting registration form...',
+        success: {
+          render({ data }) {
+            if (data?.status === 200) {
+              // navigate('/');
+              return 'Form submitted successfully!';
+            } else {
+              return 'Failed to submit form';
+            }
+          }
+        },
+        error: {
+          render({ data }) {
+            console.error('Error submitting form:', data);
+            return 'Failed to submit form. Please try again.';
+          }
+        }
+      });
+    } catch (error) {
+      console.error('Error in form submission:', error);
+      toast.error('An unexpected error occurred. Please try again.');
     }
   };
 
@@ -188,7 +240,7 @@ const RegistrationForm = () => {
                   </div>
 
                   <div className="input-container-floating-form wid-50">
-                    <h3 className="wid-100">Positions Trying Out For</h3>
+                    <h3 className="wid-100">Positions Trying Out For *</h3>
 
                     <div className="checkbox-group">
                       {tryingPositions.map((pos) => (
@@ -204,6 +256,7 @@ const RegistrationForm = () => {
                         </label>
                       ))}
                     </div>
+                    {errors.positionsTrying && <span className="error">{errors.positionsTrying}</span>}
                   </div>
 
                   <div className="input-container-floating-form wid-100">
@@ -287,15 +340,18 @@ const RegistrationForm = () => {
                       </div>
                     )}
                   </div>
-                  <h3 className="wid-100">Parent/Guardian Details (If Minor):</h3>
+                  <h3 className="wid-100">Parent/Guardian Details {(form.category === "Junior Men" || form.category === "Junior Women") ? "*" : "(Optional)"}:</h3>
                   {[
-                    { label: "Parent/Guardian First Name *", name: "guardianFirstName" },
-                    { label: "Parent/Guardian Last Name *", name: "guardianLastName" },
-                    { label: "Parent/Guardian Email *", name: "guardianEmail", type: "email" },
-                    { label: "Parent/Guardian Phone *", name: "guardianPhone", type: "tel" },
+                    { label: "Parent/Guardian First Name", name: "guardianFirstName" },
+                    { label: "Parent/Guardian Last Name", name: "guardianLastName" },
+                    { label: "Parent/Guardian Email", name: "guardianEmail", type: "email" },
+                    { label: "Parent/Guardian Phone", name: "guardianPhone", type: "tel" },
                   ].map(({ label, name, type = "text" }) => (
                     <div key={name} className="input-container-floating-form wid-50">
-                      <label>{label}</label>
+                      <label>
+                        {label}
+                        {(form.category === "Junior Men" || form.category === "Junior Women") && " *"}
+                      </label>
                       <input type={type} name={name} value={form[name]} onChange={handleChange} />
                       {errors[name] && <span className="error">{errors[name]}</span>}
                     </div>
