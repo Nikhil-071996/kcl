@@ -18,7 +18,7 @@ export const submitContactForm = async (data: any) => {
     const turnstileSiteKey = import.meta.env.VITE_TURNSTILE_SITE_KEY;
     const response = await post('/form-submissions', {
         "cf-turnstile-response": turnstileSiteKey,
-        "formId": 2,
+        "formId": 1,
         "submissionData": data,
     });
 
