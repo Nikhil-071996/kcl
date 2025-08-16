@@ -5,7 +5,7 @@ import sponser1 from '../../assets/images/sponsers/nxt_sports.png'
 import sponser2 from '../../assets/images/sponsers/result_guru.png'
 import sponser3 from '../../assets/images/sponsers/Niraveda.png'
 import associateSponser from '../../assets/images/sponsers/associate_partner.png'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 function Sponsers() {
 
@@ -20,35 +20,35 @@ function Sponsers() {
       <div className="sponsor-section">
         <div className="sponsor-logos-grid">
           {/* First Row */}
-          <div className="sponsor-item">
+          <Link to={'https://www.nxtsports.in'} target='_blank' className="sponsor-item">
             <p className="partner-label">MANAGING PARTNERS</p>
             <div className="sponsor-logo">
               <img src={sponser1} alt="Nxt Sports" />
             </div>
-          </div>
-          <div className="sponsor-item">
+          </Link>
+          <Link to={'https://www.resultguru.in'} target='_blank' className="sponsor-item">
             <p className="partner-label">EDUCATION PARTNER</p>
             <div className="sponsor-logo">
               <img src={sponser2} alt="Result Guru" />
             </div>
-          </div>
-          <div className="sponsor-item">
+          </Link>
+          <Link to={'https://www.niraveda.com'} target='_blank' className="sponsor-item">
             <p className="partner-label">AYURVEDIC PARTNER</p>
             <div className="sponsor-logo">
               <img src={sponser3} alt="Nirveda" />
             </div>
-          </div>
+          </Link>
         </div>
       </div>
 
-      <div className="sponsor-section">
+      <Link to={'https://www.amateurkabaddiassociationharyana.com'} target='_blank' className="sponsor-section">
         <h3 className="section-title">IN ASSOCIATE WITH</h3>
         <div className="sponsor-logos-row">
           <div className="sponsor-logo">
             <img src={associateSponser} alt="Armature Kabaddi League Haryana" />
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   )
 }
