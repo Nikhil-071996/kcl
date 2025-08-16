@@ -137,42 +137,61 @@ const RegistrationForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const newErrors = validate();
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
+  e.preventDefault();
+  const newErrors = validate();
+  if (Object.keys(newErrors).length > 0) {
+    setErrors(newErrors);
+    return;
+  }
+
+  setErrors({});
+
+  // 🔥 Make a clean copy of the form
+  const cleanedForm = { ...form };
+
+  // Remove optional fields if empty
+  Object.keys(cleanedForm).forEach((key) => {
+    const value = cleanedForm[key];
+
+    if (
+      value === "" ||
+      (Array.isArray(value) && value.every((v) => v === "")) ||
+      (typeof value === "object" && !Array.isArray(value) &&
+        Object.values(value).every((v) => v === ""))
+    ) {
+      delete cleanedForm[key];
     }
+  });
 
-    setErrors({});
+  try {
+    const submitPromise = submitRegisterForm(cleanedForm);
 
-    try {
-      const submitPromise = submitRegisterForm(form);
-
-      toast.promise(submitPromise, {
-        pending: 'Submitting registration form...',
-        success: {
-          render({ data }) {
-            if (data?.status === 200) {
-              // navigate('/');
-              return 'Form submitted successfully!';
-            } else {
-              return 'Failed to submit form';
-            }
+    toast.promise(submitPromise, {
+      pending: "Submitting registration form...",
+      success: {
+        render({ data }) {
+          if (data?.status === 200) {
+            setForm(initialState);
+            navigate("/");
+            return "Form submitted successfully!";
+          } else {
+            return "Failed to submit form";
           }
         },
-        error: {
-          render({ data }) {
-            console.error('Error submitting form:', data);
-            return 'Failed to submit form. Please try again.';
-          }
-        }
-      });
-    } catch (error) {
-      console.error('Error in form submission:', error);
-      toast.error('An unexpected error occurred. Please try again.');
-    }
-  };
+      },
+      error: {
+        render({ data }) {
+          console.error("Error submitting form:", data);
+          return "Failed to submit form. Please try again.";
+        },
+      },
+    });
+  } catch (error) {
+    console.error("Error in form submission:", error);
+    toast.error("An unexpected error occurred. Please try again.");
+  }
+};
+
 
   return (
     <div className="register" style={{ backgroundImage: `url(${bannerForm})` }}>

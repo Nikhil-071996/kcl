@@ -2,6 +2,8 @@ import React, { useRef } from 'react'
 import '@splidejs/react-splide/css';
 import blogImage1 from '../../assets/images/Social/1.png'
 import blogImage2 from '../../assets/images/Social/2.png'
+import blogImage3 from '../../assets/images/Social/3.png'
+import blogImage4 from '../../assets/images/Social/4.jpeg'
 import './SocialMediaPosts.css'
 import arrow from '../../assets/images/Home/Arrow.svg'
 import { Link } from 'react-router-dom'
@@ -13,7 +15,7 @@ function SocialMediaPosts() {
   const socialMediaRef = useRef(null);
   const windowWidth = window.innerWidth;
 
-  const blogImages = [blogImage1, blogImage2, blogImage1, blogImage2]
+  const blogImages = [blogImage1, blogImage2, blogImage3, blogImage4]
 
   return (
     <div className='social-media-container'>
@@ -51,7 +53,7 @@ function SocialMediaPosts() {
         >
           {blogImages.map((image, index) => (
             <SplideSlide key={index} >
-              <Link to={'/social-post'} className="social-post-card">
+              <Link to={'https://www.instagram.com/kabaddichampionsleague/'} target='_blank' className="social-post-card">
                 <div className="image-container">
                   <img src={image} alt="socialPost" />
                 </div>
