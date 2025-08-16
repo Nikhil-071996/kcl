@@ -23,7 +23,7 @@ function SocialMediaPosts() {
 
         <div className="heading-container">
           <h2>SOCIAL MEDIA</h2>
-          <Link to={'/social'}>
+          <Link to={'https://www.instagram.com/kabaddichampionsleague/'} target='_blank'>
             <span>View More</span>
             <img src={arrow} alt="Arrow" />
           </Link>

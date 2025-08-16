@@ -124,14 +124,37 @@ const RegistrationForm = () => {
       newErrors.positionsTrying = "Please select at least one position";
     }
 
-    // Parent/Guardian validation - only required for Junior categories
-    const isJuniorCategory = form.category === "Junior Men" || form.category === "Junior Women";
-    if (isJuniorCategory) {
-      if (!form.guardianFirstName.trim()) newErrors.guardianFirstName = "Required for Junior categories";
-      if (!form.guardianLastName.trim()) newErrors.guardianLastName = "Required for Junior categories";
-      if (!form.guardianEmail.trim()) newErrors.guardianEmail = "Required for Junior categories";
-      if (!form.guardianPhone.trim()) newErrors.guardianPhone = "Required for Junior categories";
+   // Parent/Guardian validation - only required for Junior categories
+const isJuniorCategory =
+  form.category === "Junior Men" || form.category === "Junior Women";
+
+if (isJuniorCategory) {
+  if (!form.guardianFirstName.trim())
+    newErrors.guardianFirstName = "Required for Junior categories";
+
+  if (!form.guardianLastName.trim())
+    newErrors.guardianLastName = "Required for Junior categories";
+
+  if (!form.guardianEmail.trim()) {
+    newErrors.guardianEmail = "Required for Junior categories";
+  } else {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.guardianEmail.trim())) {
+      newErrors.guardianEmail = "Invalid email format";
     }
+  }
+
+  if (!form.guardianPhone.trim()) {
+    newErrors.guardianPhone = "Required for Junior categories";
+  } else {
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(form.guardianPhone.trim())) {
+      newErrors.guardianPhone = "Guardian phone must be 10 digits";
+    }
+  }
+}
+
+
 
     return newErrors;
   };

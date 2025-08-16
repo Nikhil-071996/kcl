@@ -15,7 +15,7 @@ function Videos() {
             <div className="container">
                 <div className="heading-container">
                     <h2>VIDEOS</h2>
-                    <Link to="">
+                    <Link to="/media/videos">
                         <span>View More</span>
                         <img src={arrow} alt="Arrow" />
                     </Link>
