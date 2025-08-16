@@ -67,7 +67,7 @@
 }
 
 .fs-13 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -76,18 +76,15 @@
 }
 
 p.teams-name {
-    font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    max-width: 120px;
-    word-wrap: break-word;
-    hyphens: auto;
+    max-width: 80px;
 }
 
 .icon-text-group-container {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
 }
 
 /* Icon and text alignment */
@@ -98,8 +95,8 @@ p.teams-name {
 }
 
 .icon-text-group img {
-    width: 48px !important;
-    height: 48px !important;
+    width: 24px !important;
+    height: 24px !important;
     flex-shrink: 0;
 }
 
@@ -112,6 +109,10 @@ p.teams-name {
 .fixture-card-section {
     background-color: #fff;
     padding: 37px 0;
+}
+
+.fixture-card-section .container {
+    width: 65vw;
 }
 
 .fixtures-cards-container {
@@ -141,7 +142,7 @@ p.teams-name {
     width: 30%;
     color: #fff;
     border-radius: 12px;
-    padding: 22px;
+    padding: 18px 22px;
 }
 
 .fixture-card .section-2 {
@@ -162,7 +163,7 @@ p.teams-name {
 }
 
 .fixture-card .section-2 .fitures-team img {
-    width: 110px;
+    width: 80px;
     height: auto;
     object-fit: contain;
 }
@@ -203,9 +204,9 @@ p.teams-name {
 .full-time {
     background-color: var(--color-success-btn);
     border-radius: 80px;
-    padding: 8px 18px;
+    padding: 8px 12px;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 100;
     white-space: nowrap;
 }
@@ -213,7 +214,6 @@ p.teams-name {
 .fitures-team {
     display: flex;
     align-items: center;
-    gap: 23px;
     min-width: 180px;
     flex-shrink: 0;
     flex-direction: row;
@@ -229,7 +229,7 @@ p.teams-name {
 }
 
 .fitures-score {
-    font-size: 35px;
+    font-size: 24px;
     font-weight: 700;
     color: var(--color-primary-light);
 }
@@ -242,6 +242,14 @@ p.teams-name {
 @media (max-width: 1024px) {
     .fs-13 {
         font-size: 14px;
+    }
+
+    .fixtures-cards-container {
+        gap: 32px;
+    }
+
+    .fixture-card-section .container {
+        width: 80%;
     }
 
     .fixture-card {
@@ -265,37 +273,25 @@ p.teams-name {
     }
 
     .fixture-card .section-2 .fitures-team img {
-        width: 50px;
+        width: 80px;
         height: auto;
     }
 
     .fixture-card .section-2 .fitures-match-body {
-        flex-direction: column;
-        gap: 20px;
         align-items: center;
-        justify-content: center;
-        width: 90%;
+        justify-content: space-between;
+        width: 100%;
         margin: 0 auto;
     }
 
     .fitures-team {
-        flex-direction: row;
         text-align: center;
-        gap: 10px;
         min-width: auto;
         justify-content: center;
     }
 
-    .fitures-team:first-child {
-        justify-content: center;
-    }
-
-    .fitures-team:last-child {
-        justify-content: center;
-    }
-
     p.teams-name {
-        max-width: 100px;
+        max-width: 70px;
         font-size: 16px;
         line-height: 1.1;
     }
@@ -307,8 +303,7 @@ p.teams-name {
     }
 
     .full-time-container {
-        min-width: auto;
-        width: 100%;
+        width: max-content;
     }
 
     .full-time {
@@ -321,7 +316,7 @@ p.teams-name {
     }
 
     .fitures-score {
-        padding: 12px 20px;
+        padding: 8px;
         font-size: 24px;
         width: 100%;
         max-width: 200px;

@@ -14,14 +14,14 @@ function LiveFixtures() {
 
         <div className="container">
 
-          <h1 style={{textAlign: 'center'}}>No Data Available</h1>
+          <h1 style={{ textAlign: 'center' }}>No Data Available</h1>
 
         </div>
 
       </div>
 
 
-    </section> 
+    </section>
   )
 }
 

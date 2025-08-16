@@ -14,6 +14,11 @@
     margin-bottom: 30px;
 }
 
+.heading-container h2 {
+    margin-bottom: 0px !important;
+    margin: 0 auto;
+}
+
 .heading-container a {
     display: flex;
     align-items: center;
