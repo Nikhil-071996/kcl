@@ -24,38 +24,69 @@ const ContactForm = () => {
   };
 
   const handleChange = (e) => {
+    let { name, value } = e.target;
+
+    if (name === "phone") {
+      // Allow only digits
+      value = value.replace(/\D/g, "");
+      // Ensure max 10 digits
+      if (value.length > 10) {
+        value = value.slice(0, 10);
+      }
+    }
+
+    if (name === "message") {
+      // Limit message to 250 words
+      const words = value.trim().split(/\s+/);
+      if (words.length > 250) {
+        value = words.slice(0, 250).join(" ");
+      }
+    }
+
     setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [name]: value
     }));
 
     // Clear error when user starts typing
-    if (errors[e.target.name]) {
-      setErrors(prev => ({
+    if (errors[name]) {
+      setErrors((prev) => ({
         ...prev,
-        [e.target.name]: ""
+        [name]: ""
       }));
     }
   };
 
-  const validate = () => {
-    const newErrors = {};
 
-    // Basic required fields
-    if (!formData.name.trim()) newErrors.name = "Required";
-    if (!formData.email.trim()) newErrors.email = "Required";
-    if (!formData.phone.trim()) newErrors.phone = "Required";
 
-    // Phone number validation
-    if (formData.phone.trim()) {
-      const phoneRegex = /^[0-9]{10}$/;
-      if (!phoneRegex.test(formData.phone.trim())) {
-        newErrors.phone = "Phone number must be 10 digits";
-      }
+const validate = () => {
+  const newErrors = {};
+
+  // Basic required fields
+  if (!formData.name.trim()) newErrors.name = "Required";
+  if (!formData.email.trim()) {
+    newErrors.email = "Required";
+  } else {
+    // Email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email.trim())) {
+      newErrors.email = "Invalid email address";
     }
+  }
 
-    return newErrors;
-  };
+  if (!formData.phone.trim()) {
+    newErrors.phone = "Required";
+  } else {
+    // Phone number validation
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(formData.phone.trim())) {
+      newErrors.phone = "Phone number must be 10 digits";
+    }
+  }
+
+  return newErrors;
+};
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -150,7 +181,10 @@ const ContactForm = () => {
             onChange={handleChange}
             onFocus={handleFocus}
             onBlur={handleBlur}
+            inputMode="numeric"
+            maxLength="10"
           />
+
           {errors.phone && <span className="error">{errors.phone}</span>}
         </div>
 

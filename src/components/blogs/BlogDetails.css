@@ -1,11 +1,13 @@
 .blog-detail-wrapper {
-  padding: 40px;
   margin-top: 101px;
 }
 
 .blog-main {
   display: flex;
   gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
 }
 
 .blog-content {
@@ -25,6 +27,7 @@
 
 .blog-image {
   width: 100%;
+  /* aspect-ratio: 1536/1024; */
   aspect-ratio: 1280/720;
   border-radius: 6px;
   margin-bottom: 20px;

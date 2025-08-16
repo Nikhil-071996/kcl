@@ -67,7 +67,7 @@ function VideosPage() {
         
                   <Link to={'/media/video/details'} className="photo-page-card">
                      <div className="image-container">
-                      <img src={blogImage4} alt="blogimage" />
+                      <img src={blogImage2} alt="blogimage" />
                      </div>
                      <div className="body-card">
                       <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
@@ -93,19 +93,6 @@ function VideosPage() {
         
                   <Link to={'/media/video/details'} className="photo-page-card">
                      <div className="image-container">
-                      <img src={blogImage4} alt="blogimage" />
-                     </div>
-                     <div className="body-card">
-                      <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
-                      <div className="footer-cards">
-                        <div className="crd-date">01 July, 2025</div>
-                        <img src={shareIcon} className='shareIcon' alt="SHARE" />
-                      </div>
-                     </div>
-                  </Link>
-
-                  <Link to={'/media/video/details'} className="photo-page-card">
-                     <div className="image-container">
                       <img src={blogImage1} alt="blogimage" />
                      </div>
                      <div className="body-card">
@@ -116,7 +103,7 @@ function VideosPage() {
                       </div>
                      </div>
                   </Link>
-        
+
                   <Link to={'/media/video/details'} className="photo-page-card">
                      <div className="image-container">
                       <img src={blogImage2} alt="blogimage" />
@@ -145,7 +132,20 @@ function VideosPage() {
         
                   <Link to={'/media/video/details'} className="photo-page-card">
                      <div className="image-container">
-                      <img src={blogImage4} alt="blogimage" />
+                      <img src={blogImage3} alt="blogimage" />
+                     </div>
+                     <div className="body-card">
+                      <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+                      <div className="footer-cards">
+                        <div className="crd-date">01 July, 2025</div>
+                        <img src={shareIcon} className='shareIcon' alt="SHARE" />
+                      </div>
+                     </div>
+                  </Link>
+        
+                  <Link to={'/media/video/details'} className="photo-page-card">
+                     <div className="image-container">
+                      <img src={blogImage1} alt="blogimage" />
                      </div>
                      <div className="body-card">
                       <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
@@ -171,7 +171,7 @@ function VideosPage() {
         
                   <Link to={'/media/video/details'} className="photo-page-card">
                      <div className="image-container">
-                      <img src={blogImage4} alt="blogimage" />
+                      <img src={blogImage1} alt="blogimage" />
                      </div>
                      <div className="body-card">
                       <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>

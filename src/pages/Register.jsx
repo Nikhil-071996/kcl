@@ -75,7 +75,16 @@ const RegistrationForm = () => {
   ];
 
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+    let { name, value, type, checked } = e.target;
+
+    if (name === "phone") {
+      // Allow only digits
+      value = value.replace(/\D/g, "");
+      // Ensure max 10 digits
+      if (value.length > 10) {
+        value = value.slice(0, 10);
+      }
+    }
 
     if (type === "checkbox" && (name === "permission" || name === "registrationFeeAgreement" || name === "showOtherLeagues")) {
       setForm({ ...form, [name]: checked });
@@ -96,68 +105,103 @@ const RegistrationForm = () => {
   };
 
   const validate = () => {
-    const newErrors = {};
+  const newErrors = {};
 
-    // Basic required fields
-    if (!form.playerFirstName.trim()) newErrors.playerFirstName = "Required";
-    if (!form.playerLastName.trim()) newErrors.playerLastName = "Required";
-    if (!form.dob) newErrors.dob = "Required";
-    if (!form.phone.trim()) newErrors.phone = "Required";
-    if (!form.emailId.trim()) newErrors.emailId = "Required";
-    if (!form.address.trim()) newErrors.address = "Required";
-    if (!form.country.trim()) newErrors.country = "Required";
-    if (!form.state.trim()) newErrors.state = "Required";
-    if (!form.city.trim()) newErrors.city = "Required";
-    if (!form.pincode.trim()) newErrors.pincode = "Required";
-    if (!form.category) newErrors.category = "Select a category";
+  // Basic required fields
+  if (!form.playerFirstName.trim()) newErrors.playerFirstName = "Required";
+  if (!form.playerLastName.trim()) newErrors.playerLastName = "Required";
 
-    // Phone number validation
-    if (form.phone.trim()) {
-      const phoneRegex = /^[0-9]{10}$/;
-      if (!phoneRegex.test(form.phone.trim())) {
-        newErrors.phone = "Phone number must be 10 digits";
-      }
-    }
-
-    // Positions Trying Out For validation
-    if (form.positionsTrying.length === 0) {
-      newErrors.positionsTrying = "Please select at least one position";
-    }
-
-   // Parent/Guardian validation - only required for Junior categories
-const isJuniorCategory =
-  form.category === "Junior Men" || form.category === "Junior Women";
-
-if (isJuniorCategory) {
-  if (!form.guardianFirstName.trim())
-    newErrors.guardianFirstName = "Required for Junior categories";
-
-  if (!form.guardianLastName.trim())
-    newErrors.guardianLastName = "Required for Junior categories";
-
-  if (!form.guardianEmail.trim()) {
-    newErrors.guardianEmail = "Required for Junior categories";
+  if (!form.dob) {
+    newErrors.dob = "Required";
   } else {
+    const dobDate = new Date(form.dob);
+    const year = dobDate.getFullYear();
+    const currentYear = new Date().getFullYear();
+
+    if (year < 1950 || year > currentYear) {
+      newErrors.dob = `Year must be between 1950 and ${currentYear}`;
+    }
+  }
+
+  if (!form.phone.trim()) newErrors.phone = "Required";
+  if (!form.emailId.trim()) {
+    newErrors.emailId = "Required";
+  } else {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.emailId.trim())) {
+      newErrors.emailId = "Invalid email format";
+    }
+  }
+  if (!form.address.trim()) newErrors.address = "Required";
+  if (!form.country.trim()) newErrors.country = "Required";
+  if (!form.state.trim()) newErrors.state = "Required";
+  if (!form.city.trim()) newErrors.city = "Required";
+  if (!form.pincode.trim()) newErrors.pincode = "Required";
+  if (!form.category) newErrors.category = "Select a category";
+
+  // Phone number validation
+  if (form.phone.trim()) {
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(form.phone.trim())) {
+      newErrors.phone = "Phone number must be 10 digits";
+    }
+  }
+
+  // ✅ Positions Trying Out For validation
+  if (form.positionsTrying.length === 0) {
+    newErrors.positionsTrying = "Please select at least one position";
+  }
+
+  // ✅ Positions Previously Played validation
+  if (form.positionsPlayed.length === 0) {
+    newErrors.positionsPlayed = "Please select at least one position";
+  }
+
+  // ✅ Other Tournaments Played validation
+  if (form.otherTournaments.length === 0) {
+    newErrors.otherTournaments = "Please select at least one tournament";
+  }
+
+  // Parent/Guardian validation
+  const isJuniorCategory =
+    form.category === "Junior Men" || form.category === "Junior Women";
+
+  if (isJuniorCategory) {
+    if (!form.guardianFirstName.trim())
+      newErrors.guardianFirstName = "Required for Junior categories";
+
+    if (!form.guardianLastName.trim())
+      newErrors.guardianLastName = "Required for Junior categories";
+
+    if (!form.guardianEmail.trim()) {
+      newErrors.guardianEmail = "Required for Junior categories";
+    }
+
+    if (!form.guardianPhone.trim()) {
+      newErrors.guardianPhone = "Required for Junior categories";
+    }
+  }
+
+  // Guardian email validation
+  if (form.guardianEmail.trim()) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(form.guardianEmail.trim())) {
       newErrors.guardianEmail = "Invalid email format";
     }
   }
 
-  if (!form.guardianPhone.trim()) {
-    newErrors.guardianPhone = "Required for Junior categories";
-  } else {
+  // Guardian phone validation
+  if (form.guardianPhone.trim()) {
     const phoneRegex = /^[0-9]{10}$/;
     if (!phoneRegex.test(form.guardianPhone.trim())) {
       newErrors.guardianPhone = "Guardian phone must be 10 digits";
     }
   }
-}
+
+  return newErrors;
+};
 
 
-
-    return newErrors;
-  };
 
   const handleSubmit = async (e) => {
   e.preventDefault();
@@ -243,13 +287,41 @@ if (isJuniorCategory) {
                     { label: "City *", name: "city" },
                     { label: "Pin Code *", name: "pincode" },
                     { label: "Country *", name: "country" },
-                  ].map(({ label, name, type = "text" }) => (
-                    <div key={name} className="input-container-floating-form wid-50">
-                      <label>{label}</label>
-                      <input type={type} name={name} value={form[name]} onChange={handleChange} />
-                      {errors[name] && <span className="error">{errors[name]}</span>}
-                    </div>
-                  ))}
+                  ].map(({ label, name, type = "text" }) => {
+                    let extraProps = {};
+
+                    if (name === "dob") {
+                      // Restrict DOB year between 1950 and current year
+                      const currentYear = new Date().getFullYear();
+                      extraProps = {
+                        min: "1950-01-01",
+                        max: `${currentYear}-12-31`,
+                      };
+                    }
+
+                    if (name === "phone") {
+                      // Restrict phone to digits only and max 10
+                      extraProps = {
+                        inputMode: "numeric",
+                        maxLength: 10,
+                      };
+                    }
+
+                    return (
+                      <div key={name} className="input-container-floating-form wid-50">
+                        <label>{label}</label>
+                        <input
+                          type={type}
+                          name={name}
+                          value={form[name]}
+                          onChange={handleChange}
+                          {...extraProps}
+                        />
+                        {errors[name] && <span className="error">{errors[name]}</span>}
+                      </div>
+                    );
+                  })}
+
 
                   <div className="input-container-floating-form wid-100">
                     <label>Category *</label>
@@ -263,7 +335,7 @@ if (isJuniorCategory) {
                   </div>
 
                   <div className="input-container-floating-form wid-50">
-                    <h3 className="wid-100">Positions Previously Played</h3>
+                    <h3 className="wid-100">Positions Previously Played *</h3>
 
                     <div className="checkbox-group">
                       {playedPositions.map((pos) => (
@@ -279,6 +351,7 @@ if (isJuniorCategory) {
                         </label>
                       ))}
                     </div>
+                    {errors.positionsPlayed && <span className="error">{errors.positionsPlayed}</span>}
                   </div>
 
                   <div className="input-container-floating-form wid-50">
@@ -302,7 +375,7 @@ if (isJuniorCategory) {
                   </div>
 
                   <div className="input-container-floating-form wid-100">
-                    <h3 className="wid-100">Other Tournaments Played</h3>
+                    <h3 className="wid-100">Other Tournaments Played *</h3>
                     <div className="checkbox-group">
                       {tournamentsPlayed.map((item) => (
                         <label key={item}>
@@ -327,7 +400,7 @@ if (isJuniorCategory) {
                         /> Other Leagues
                       </label>
                     </div>
-
+                    {errors.otherTournaments && <span className="error">{errors.otherTournaments}</span>}
                     {form.showOtherLeagues && (
                       <div style={{ marginTop: '15px', display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                         <div className="input-container-floating-form wid-50">
