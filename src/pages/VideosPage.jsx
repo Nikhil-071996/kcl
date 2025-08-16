@@ -1,9 +1,9 @@
 import React from 'react'
 import banner from '../assets/images/team-page/TeamsPage.png'
-import blogImage1 from '../assets/images/videos/banner_0.png'
-import blogImage2 from '../assets/images/videos/banner_1.png'
-import blogImage3 from '../assets/images/videos/banner_0.png'
-import blogImage4 from '../assets/images/News/4.png'
+import blogImage1 from '../assets/images/videos/main.jpg'
+import blogImage2 from '../assets/images/videos/Inside-1.jpeg'
+import blogImage3 from '../assets/images/videos/Inside.jpg'
+import blogImage4 from '../assets/images/videos/banner_0.png'
 import shareIcon from '../assets/images/Home/Share_icon.svg'
 
 import '../assets/styles/photo-page.css'

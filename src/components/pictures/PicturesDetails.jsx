@@ -1,7 +1,12 @@
 import React, { useRef, useState } from "react";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import blogImage1 from '../../assets/images/videos/banner_0.png';
-import blogImage2 from '../../assets/images/videos/banner_1.png';
+import blogImage1 from '../../assets/images/videos/photo-main.jpg';
+import blogImage2 from '../../assets/images/videos/Inside-photo.jpeg';
+
+import blogImage5 from '../../assets/images/videos/main.jpg'
+import blogImage6 from '../../assets/images/videos/Inside-1.jpeg'
+import blogImage3 from '../../assets/images/videos/Inside.jpg'
+import blogImage4 from '../../assets/images/videos/banner_0.png'
 import './pictureDetails.css';
 import arrow2 from '../../assets/images/Home/Icon_Arrow.svg'
 
@@ -54,7 +59,7 @@ const PicturesDetails = () => {
                 },
               }}
             >
-              {[blogImage1, blogImage1, blogImage2, blogImage1, blogImage1].map((img, index) => (
+              {[blogImage1, blogImage2, blogImage3, blogImage4, blogImage5].map((img, index) => (
                 <SplideSlide key={index}>
                   <div
                     className="picture-container"
@@ -86,7 +91,7 @@ const PicturesDetails = () => {
         <aside className="blog-sidebar">
           <h3>More Photos</h3>
 
-          {[blogImage2, blogImage2, blogImage2, blogImage2].map((img, index) => (
+          {[blogImage3, blogImage4, blogImage5, blogImage6].map((img, index) => (
             <div key={index} className={`sidebar-item ${index === 0 ? "firsr-item" : ""}`}>
               <img src={img} alt={`Update ${index + 1}`} />
               <div>

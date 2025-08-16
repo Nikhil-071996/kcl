@@ -1,9 +1,11 @@
 import React from 'react'
 import '../../assets/styles/blogs.css'
-import blogImage1 from '../../assets/images/News/1.png'
-import blogImage2 from '../../assets/images/News/2.png'
-import blogImage3 from '../../assets/images/News/3.png'
-import blogImage4 from '../../assets/images/News/4.png'
+import blogImage1 from '../../assets/images/News/1.jpeg'
+import blogImage2 from '../../assets/images/News/2.jpeg'
+import blogImage3 from '../../assets/images/News/3.jpeg'
+import blogImage4 from '../../assets/images/News/4.jpg'
+import blogImage from '../../assets/images/News/Main.jpeg'
+
 import arrow from '../../assets/images/Home/Arrow.svg'
 // import shareIcon from '../../assets/images/Home/Share_icon.svg'
 import { Link } from 'react-router-dom'
@@ -24,7 +26,7 @@ function Blogs() {
                     {/* Large banner at the top */}
                     <Link to={'/blogs/details'} className="blog blog-large">
                         <div className="image-container">
-                            <img src={blogImage4} alt="blogImage" />
+                            <img src={blogImage} alt="blogImage" />
                         </div>
                         <div className="date-container">24th July</div>
                         <div className="blog-info">

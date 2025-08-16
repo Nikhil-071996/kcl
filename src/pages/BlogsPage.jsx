@@ -1,9 +1,10 @@
 import React from 'react'
 import banner from '../assets/images/team-page/TeamsPage.png'
-import blogImage1 from '../assets/images/videos/banner_0.png'
-import blogImage2 from '../assets/images/videos/banner_1.png'
-import blogImage3 from '../assets/images/videos/banner_0.png'
-import blogImage4 from '../assets/images/News/4.png'
+import blogImage1 from '../assets/images/News/1.jpeg'
+import blogImage2 from '../assets/images/News/2.jpeg'
+import blogImage3 from '../assets/images/News/3.jpeg'
+import blogImage4 from '../assets/images/News/4.jpg'
+import blogImage from '../assets/images/News/Main.jpeg'
 import shareIcon from '../assets/images/Home/Share_icon.svg'
 
 import '../assets/styles/photo-page.css'
@@ -79,7 +80,7 @@ function BlogsPage() {
             
                       <Link to={'/blogs/details'} className="photo-page-card">
                          <div className="image-container">
-                          <img src={blogImage2} alt="blogimage" />
+                          <img src={blogImage} alt="blogimage" />
                          </div>
                          <div className="body-card">
                           <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>

@@ -1,6 +1,6 @@
 import React from 'react'
 import arrow from '../../assets/images/Home/Arrow.svg'
-import banner0 from '../../assets/images/videos/banner_0.png'
+import banner0 from '../../assets/images/videos/video_cover.jpg'
 import banner1 from '../../assets/images/videos/banner_1.png'
 import banner2 from '../../assets/images/videos/banner_2.png'
 import playIcon from '../../assets/images/videos/playicon.svg'
@@ -22,9 +22,9 @@ function Videos() {
                 </div>
 
                 <div className="video-content-container">
-                    <div className="video-card">
+                    <Link to={'/media/video/details'} className="video-card">
                         <div className="video-image-container">
-                            <img src={banner2} alt="Heartbreak in Cape Town" className='video-image' />
+                            <img src={banner0} alt="Heartbreak in Cape Town" className='video-image' />
                             <div className="video-overlay">
                                 <div className="play-button">
                                     <img src={playIcon} alt="play" />
@@ -35,11 +35,11 @@ function Videos() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className="video-card">
+                    <Link to={'/media/video/details'} className="video-card">
                         <div className="video-image-container">
-                            <img src={banner1} alt="Japan's first" className='video-image' />
+                            <img src={banner0} alt="Japan's first" className='video-image' />
                             <div className="video-overlay">
                                 <div className="play-button">
                                     <img src={playIcon} alt="play" />
@@ -50,9 +50,9 @@ function Videos() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className="video-card">
+                    <Link to={'/media/video/details'} className="video-card">
                         <div className="video-image-container">
                             <img src={banner0} alt="Maradona against Belgium" className='video-image' />
                             <div className="video-overlay">
@@ -65,11 +65,11 @@ function Videos() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className="video-card">
+                    <Link to={'/media/video/details'} className="video-card">
                         <div className="video-image-container">
-                            <img src={banner1} alt="Alex Morgan's moment" className='video-image' />
+                            <img src={banner0} alt="Alex Morgan's moment" className='video-image' />
                             <div className="video-overlay">
                                 <div className="play-button">
                                     <img src={playIcon} alt="play" />
@@ -80,7 +80,7 @@ function Videos() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>

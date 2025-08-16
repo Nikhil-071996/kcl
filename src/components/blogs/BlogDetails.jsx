@@ -1,6 +1,10 @@
 import React from "react";
-import blogImage1 from '../../assets/images/videos/banner_0.png'
-import blogImage2 from '../../assets/images/videos/banner_1.png'
+import blogImage1 from '../../assets/images/News/1.jpeg'
+import blogImage2 from '../../assets/images/News/2.jpeg'
+import blogImage3 from '../../assets/images/News/3.jpeg'
+import blogImage4 from '../../assets/images/News/4.jpg'
+import blogImage from '../../assets/images/News/Main.jpeg'
+
 import "./BlogDetails.css";
 
 const BlogDetails = () => {
@@ -16,7 +20,7 @@ const BlogDetails = () => {
 
           <div className="blog-image">
             <img
-              src={blogImage1} // replace with your image path
+              src={blogImage} // replace with your image path
               alt="Chennai Bulls Champions"
             />
           </div>
@@ -73,7 +77,7 @@ const BlogDetails = () => {
 
 
           <div className="sidebar-item firsr-item">
-            <img src={blogImage2} alt="Update 1" />
+            <img src={blogImage1} alt="Update 1" />
             <div>
               <p>
                 GMR Rugby Premier League Final Preview: Chennai Bulls to lock horns with Delhi
@@ -95,7 +99,7 @@ const BlogDetails = () => {
           </div>
 
           <div className="sidebar-item">
-            <img src={blogImage2} alt="Update 1" />
+            <img src={blogImage3} alt="Update 1" />
             <div>
               <p>
                 GMR Rugby Premier League Final Preview: Chennai Bulls to lock horns with Delhi
@@ -106,7 +110,7 @@ const BlogDetails = () => {
           </div>
 
           <div className="sidebar-item">
-            <img src={blogImage2} alt="Update 1" />
+            <img src={blogImage4} alt="Update 1" />
             <div>
               <p>
                 GMR Rugby Premier League Final Preview: Chennai Bulls to lock horns with Delhi
