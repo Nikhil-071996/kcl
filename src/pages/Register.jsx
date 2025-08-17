@@ -242,7 +242,7 @@ const RegistrationForm = () => {
   });
 
   try {
-    const submitPromise = submitRegisterForm(cleanedForm);
+    const submitPromise = submitRegisterForm(cleanedForm, captchaToken);
 
     toast.promise(submitPromise, {
       pending: "Submitting registration form...",
