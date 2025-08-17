@@ -24,14 +24,14 @@ function Videos() {
                 <div className="video-content-container">
                     <Link to={'/media/video/details'} className="video-card">
                         <div className="video-image-container">
-                            <img src={banner0} alt="Heartbreak in Cape Town" className='video-image' />
+                            <img src={banner0} alt="KCL Trials Begin" className='video-image' />
                             <div className="video-overlay">
                                 <div className="play-button">
                                     <img src={playIcon} alt="play" />
                                 </div>
                                 <div className="video-info">
-                                    <h3 className="video-title">Heartbreak in Cape Town</h3>
-                                    <p className="video-subtitle">Relive Uruguay v Netherlands | South Africa 2010</p>
+                                    <h3 className="video-title">KCL Trials Begin</h3>
+                                    <p className="video-subtitle">Gaon Gaon Se Uthenge Champions</p>
                                 </div>
                             </div>
                         </div>
@@ -45,8 +45,8 @@ function Videos() {
                                     <img src={playIcon} alt="play" />
                                 </div>
                                 <div className="video-info">
-                                    <h3 className="video-title">Japan's first</h3>
-                                    <p className="video-subtitle">On this day: Japan v USA | Germany 2011</p>
+                                    <h3 className="video-title">KCL Auction 2025</h3>
+                                    <p className="video-subtitle">Stars Ab Honge Boliyan Mein</p>
                                 </div>
                             </div>
                         </div>
@@ -60,8 +60,8 @@ function Videos() {
                                     <img src={playIcon} alt="play" />
                                 </div>
                                 <div className="video-info">
-                                    <h3 className="video-title">Maradona against Belgium</h3>
-                                    <p className="video-subtitle">Relive Argentina v Belgium | Mexico 1986</p>
+                                    <h3 className="video-title">KCL Pre-Launch</h3>
+                                    <p className="video-subtitle">Haryana Sports Ka Naya Itihas</p>
                                 </div>
                             </div>
                         </div>
@@ -69,14 +69,14 @@ function Videos() {
 
                     <Link to={'/media/video/details'} className="video-card">
                         <div className="video-image-container">
-                            <img src={banner0} alt="Alex Morgan's moment" className='video-image' />
+                            <img src={banner0} alt="KCL Press Conference" className='video-image' />
                             <div className="video-overlay">
                                 <div className="play-button">
                                     <img src={playIcon} alt="play" />
                                 </div>
                                 <div className="video-info">
-                                    <h3 className="video-title">Alex Morgan's moment</h3>
-                                    <p className="video-subtitle">Relive England v USA | France 2019</p>
+                                    <h3 className="video-title">KCL Press Conference</h3>
+                                    <p className="video-subtitle">Sabse Bada Kabaddi Announcement</p>
                                 </div>
                             </div>
                         </div>

@@ -8,6 +8,8 @@ import '../assets/styles/register.css';
 import '../assets/styles/floatingForm.css';
 import { submitRegisterForm } from "../api/register";
 import { toast } from "react-toastify";
+import { Turnstile } from "@marsidev/react-turnstile"; // ✅ correct
+
 
 const initialState = {
   playerFirstName: "",
@@ -39,6 +41,9 @@ const initialState = {
 const RegistrationForm = () => {
   const [form, setForm] = useState(initialState);
   const [errors, setErrors] = useState({});
+  const [captchaToken, setCaptchaToken] = useState("");
+    const turnstileSiteKey = import.meta.env.VITE_TURNSTILE_SITE_KEY;
+  
   const navigate = useNavigate();
 
   const categories = [
@@ -213,6 +218,12 @@ const RegistrationForm = () => {
 
   setErrors({});
 
+  if (!captchaToken) {
+        toast.error("Please complete the verification.");
+        return;
+      }
+  
+
   // 🔥 Make a clean copy of the form
   const cleanedForm = { ...form };
 
@@ -239,6 +250,7 @@ const RegistrationForm = () => {
         render({ data }) {
           if (data?.status === 200) {
             setForm(initialState);
+            setCaptchaToken("");
             navigate("/");
             return "Form submitted successfully!";
           } else {
@@ -473,6 +485,13 @@ const RegistrationForm = () => {
                   ))}
                 </div>
 
+                  <div className="form-btn-container">
+                            <Turnstile
+                              siteKey={`${turnstileSiteKey}`} // replace with your Cloudflare site key
+                              onSuccess={(token) => setCaptchaToken(token)}
+                              onError={() => setCaptchaToken("")}
+                            />
+                          </div>
 
                 <div className="form-btn-container">
                   <button type="submit">Register Now</button>

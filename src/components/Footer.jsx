@@ -37,7 +37,7 @@ function Footer() {
                     <div className="footer-bottom">
                         {/* Copyright */}
                         <div className="copyright">
-                            © 2025 Kabaddi Champions League.. Developed by Creative Cosmos. All rights reserved.
+                            © 2025 Kabaddi Champions League. All Rights Reserved.
                         </div>
 
                         {/* Social Media and Legal Links */}

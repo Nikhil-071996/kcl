@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { submitContactForm } from "../../api/register";
 import { toast } from "react-toastify";
+import { Turnstile } from "@marsidev/react-turnstile"; // ✅ correct
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +14,8 @@ const ContactForm = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [captchaToken, setCaptchaToken] = useState("");
+  const turnstileSiteKey = import.meta.env.VITE_TURNSTILE_SITE_KEY;
 
   const handleFocus = (e) => {
     e.target.parentNode.classList.add("focus");
@@ -90,7 +94,6 @@ const validate = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
 
     const newErrors = validate();
     console.log(newErrors);
@@ -101,8 +104,13 @@ const validate = () => {
 
     setErrors({});
 
+    if (!captchaToken) {
+      toast.error("Please complete the verification.");
+      return;
+    }
+
     try {
-      const submitPromise = submitContactForm(formData);
+      const submitPromise = submitContactForm(formData, captchaToken);
 
       toast.promise(submitPromise, {
         pending: 'Sending message...',
@@ -116,6 +124,7 @@ const validate = () => {
                 phone: "",
                 message: ""
               });
+              setCaptchaToken("");
               return 'Message sent successfully!';
             } else {
               return 'Failed to send message';
@@ -202,6 +211,13 @@ const validate = () => {
         </div>
 
 
+      <div className="captcha-container">
+          <Turnstile
+            siteKey={`${turnstileSiteKey}`} // replace with your Cloudflare site key
+            onSuccess={(token) => setCaptchaToken(token)}
+            onError={() => setCaptchaToken("")}
+          />
+        </div>
 
         <input type="submit" value="Send Message" className="btn" />
       </form>

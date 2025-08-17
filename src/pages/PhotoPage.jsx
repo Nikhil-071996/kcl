@@ -32,7 +32,7 @@ function PhotoPage() {
               <img src={blogImage1} alt="blogimage" />
              </div>
              <div className="body-card">
-              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <h3>Kabaddi Champions League Haryana 2025 - Photo Gallery</h3>
               <div className="footer-cards">
                 <div className="crd-date">01 July, 2025</div>
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
@@ -45,7 +45,7 @@ function PhotoPage() {
               <img src={blogImage2} alt="blogimage" />
              </div>
              <div className="body-card">
-              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <h3>Kabaddi Champions League Haryana 2025 - Photo Gallery</h3>
               <div className="footer-cards">
                 <div className="crd-date">01 July, 2025</div>
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
@@ -58,7 +58,7 @@ function PhotoPage() {
               <img src={blogImage1} alt="blogimage" />
              </div>
              <div className="body-card">
-              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <h3>Kabaddi Champions League Haryana 2025 - Photo Gallery</h3>
               <div className="footer-cards">
                 <div className="crd-date">01 July, 2025</div>
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
@@ -71,7 +71,7 @@ function PhotoPage() {
               <img src={blogImage2} alt="blogimage" />
              </div>
              <div className="body-card">
-              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <h3>Kabaddi Champions League Haryana 2025 - Photo Gallery</h3>
               <div className="footer-cards">
                 <div className="crd-date">01 July, 2025</div>
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
@@ -84,7 +84,7 @@ function PhotoPage() {
               <img src={blogImage1} alt="blogimage" />
              </div>
              <div className="body-card">
-              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <h3>Kabaddi Champions League Haryana 2025 - Photo Gallery</h3>
               <div className="footer-cards">
                 <div className="crd-date">01 July, 2025</div>
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
@@ -97,7 +97,7 @@ function PhotoPage() {
               <img src={blogImage2} alt="blogimage" />
              </div>
              <div className="body-card">
-              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <h3>Kabaddi Champions League Haryana 2025 - Photo Gallery</h3>
               <div className="footer-cards">
                 <div className="crd-date">01 July, 2025</div>
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
@@ -110,7 +110,7 @@ function PhotoPage() {
               <img src={blogImage1} alt="blogimage" />
              </div>
              <div className="body-card">
-              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <h3>Kabaddi Champions League Haryana 2025 - Photo Gallery</h3>
               <div className="footer-cards">
                 <div className="crd-date">01 July, 2025</div>
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
@@ -123,7 +123,7 @@ function PhotoPage() {
               <img src={blogImage2} alt="blogimage" />
              </div>
              <div className="body-card">
-              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <h3>Kabaddi Champions League Haryana 2025 - Photo Gallery</h3>
               <div className="footer-cards">
                 <div className="crd-date">01 July, 2025</div>
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
@@ -136,7 +136,7 @@ function PhotoPage() {
               <img src={blogImage1} alt="blogimage" />
              </div>
              <div className="body-card">
-              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <h3>Kabaddi Champions League Haryana 2025 - Photo Gallery</h3>
               <div className="footer-cards">
                 <div className="crd-date">01 July, 2025</div>
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
@@ -149,7 +149,7 @@ function PhotoPage() {
               <img src={blogImage2} alt="blogimage" />
              </div>
              <div className="body-card">
-              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <h3>Kabaddi Champions League Haryana 2025 - Photo Gallery</h3>
               <div className="footer-cards">
                 <div className="crd-date">01 July, 2025</div>
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
@@ -162,7 +162,7 @@ function PhotoPage() {
               <img src={blogImage1} alt="blogimage" />
              </div>
              <div className="body-card">
-              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <h3>Kabaddi Champions League Haryana 2025 - Photo Gallery</h3>
               <div className="footer-cards">
                 <div className="crd-date">01 July, 2025</div>
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />
@@ -175,7 +175,7 @@ function PhotoPage() {
               <img src={blogImage2} alt="blogimage" />
              </div>
              <div className="body-card">
-              <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
+              <h3>Kabaddi Champions League Haryana 2025 - Photo Gallery</h3>
               <div className="footer-cards">
                 <div className="crd-date">01 July, 2025</div>
                 <img src={shareIcon} className='shareIcon' alt="SHARE" />

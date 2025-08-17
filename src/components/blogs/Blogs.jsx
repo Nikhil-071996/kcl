@@ -30,7 +30,7 @@ function Blogs() {
                         </div>
                         <div className="date-container">24th July</div>
                         <div className="blog-info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            <p>KCL Haryana kicks off grand trials across the state, thousands of young kabaddi players showcase their talent.</p>
                             <img src={arrow} alt="arrow" width={20} />
                         </div>
                     </Link>
@@ -43,7 +43,7 @@ function Blogs() {
                             </div>
                             <div className="date-container">24th July</div>
                             <div className="blog-info">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                                <p>From Sonipat to Hisar, Panipat to Gurugram – KCL trials witness record participation, building excitement ahead of league.</p>
                                 <img src={arrow} alt="arrow" width={20} />
                             </div>
                         </Link>
@@ -54,7 +54,7 @@ function Blogs() {
                             </div>
                             <div className="date-container">24th July</div>
                             <div className="blog-info">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                                <p>Kabaddi Champions League Haryana 2025 to feature star-studded celebrity events blending sport and entertainment.</p>
                                 <img src={arrow} alt="arrow" width={20} />
                             </div>
                         </Link>
@@ -65,7 +65,7 @@ function Blogs() {
                             </div>
                             <div className="date-container">24th July</div>
                             <div className="blog-info">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                                <p>India’s finest kabaddi champions to battle it out on the KCL Haryana mat this season.</p>
                                 <img src={arrow} alt="arrow" width={20} />
                             </div>
                         </Link>
@@ -76,7 +76,7 @@ function Blogs() {
                             </div>
                             <div className="date-container">24th July</div>
                             <div className="blog-info">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                                <p>KCL Haryana 2025 promises to bring grassroots heroes and international kabaddi icons together on one stage.</p>
                                 <img src={arrow} alt="arrow" width={20} />
                             </div>
                         </Link>
