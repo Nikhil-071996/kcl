@@ -246,7 +246,7 @@ marquee {
 
   nav {
     position: fixed;
-    top: 95px;
+    top: 93px;
     left: -100%;
     width: 100%;
     height: calc(100vh - 65px);

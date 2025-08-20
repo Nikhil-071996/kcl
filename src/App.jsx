@@ -40,7 +40,7 @@ function App() {
           <Route path='/media/photos' element={<PhotoPage />} />
           <Route path='/media/videos' element={<VideosPage />} />
           <Route path='/blogs' element={<BlogsPage />} />
-          <Route path='/blogs/details' element={<BlogDetails />} />
+          <Route path='/blogs/details/:id' element={<BlogDetails />} />
           <Route path='/media/picture/details' element={<PicturesDetails />} />
           <Route path='/media/video/details' element={<VideoDetails />} />
         </Routes>

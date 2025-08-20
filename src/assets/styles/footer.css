@@ -113,6 +113,12 @@ footer .logo img {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+    footer .logo img {
+        margin-left: 0px;
+    }
+
+
     .nav-links {
         gap: 20px;
         flex-direction: column;

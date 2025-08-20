@@ -67,6 +67,8 @@
   margin-bottom: 15px;
   border-bottom: 1px solid #333;
   padding-bottom: 12px;
+
+  color: #000;
 }
 
 .sidebar-item.firsr-item{
@@ -104,3 +106,8 @@
 
 
 
+@media (max-width:990px) {
+  .blog-main {
+    flex-direction: column;
+  }
+}

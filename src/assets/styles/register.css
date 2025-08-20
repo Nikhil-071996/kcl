@@ -84,3 +84,10 @@
 );
 
 }
+
+
+@media (max-width:990px) {
+    .register .container .column-2{
+        width: 100%;
+    }
+}

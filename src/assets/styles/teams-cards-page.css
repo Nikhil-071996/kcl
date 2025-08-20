@@ -40,3 +40,39 @@
 .teamsPage .team-container .container .teams .team-card {
     width: 22%;
 }
+
+
+@media (max-width:990px) {
+
+    .teamsPage {
+        margin-top: 93px;
+    }
+
+    .page-team-header {
+        margin-top: 93px !important;
+        padding: 25px 0;
+    }
+
+    .page-team-header h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .teamsPage .team-container .container .teams .team-card {
+        width: 48%;
+    }
+
+    .page-team-header .container {
+        flex-direction: column;
+    }
+
+    .page-team-header img {
+        width: 120px;
+    }
+
+    .page-team-header p{
+        width: 100%;
+        font-size: 14px;
+    }
+    
+}

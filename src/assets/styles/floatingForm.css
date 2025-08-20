@@ -261,3 +261,18 @@ form .form-container .wid-100{
   font-size: 12px;
 }
 /* Select File */
+
+
+@media (max-width : 990px) {
+    form .form-container .section-1{
+        padding: 30px 10px;
+    }
+    form .form-container .wid-50{
+        width: 100%;
+    }
+
+    form .form-container .wid-30{
+        width: 100%;
+    }
+
+}

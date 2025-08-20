@@ -156,3 +156,61 @@
     bottom: 0;
     right: 0;
 }
+
+
+@media (max-width:990px) {
+    .page-team-header h2 {
+        font-size: 24px;
+    }
+
+    .teamPage {
+        margin-top: 93px;
+    }
+
+    .team-owner .container .img-container img {
+        width: 145px;
+        bottom: 0;
+        right: 9px;
+    }
+
+    .team-owner .container{
+        padding: 12px 19px;
+    }
+
+    .owner-info p{
+
+    }
+
+    .players-container .player{
+        width: 100%;
+    }
+
+    .players-container .player .img-container img{
+        width: 140px;
+    }
+
+    .players-container .player h5{
+        margin-top: 12px;
+    }
+    
+    .players-container .player h3{
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .players-container .player .player-info {
+        padding: 8px 19px;
+    }
+
+    .players-container{
+        padding-top: 16px;
+    }
+
+    .team-players{
+        padding: 23px 0 24px;
+    }
+
+    .team-players h2{
+        font-size: 28px
+    }
+}

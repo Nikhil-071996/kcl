@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import RegisterLogo from '../assets/images/header/KCL_Logo.svg';
 import banner from '../assets/images/team-page/TeamsPage.png'
-import bannerForm from '../assets/images/register/Ragiter_background.png';
+import bannerForm from '../assets/images/register/Ragiter_background.webp';
 
 import '../assets/styles/register.css';
 import '../assets/styles/floatingForm.css';

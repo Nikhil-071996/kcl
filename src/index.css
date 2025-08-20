@@ -10,19 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-/* :root {
-  --color-primary-dark: #1A2362;
-  --color-primary-light: #1029A6;
-  --color-body-gray: #E8E8E8;
-  --color-body-light: #fff;
-  --color-accent-dark: #A8002C;
-  --color-accent-light: #E8002F;
-  --color-highlight-dark: #EBC449;
-  --color-highlight-light: #FFF07C;
-  --color-success-btn: #28a745;
-  --color-success-btn-hover: #218838;
-} */
-
 :root {
   /* Blues */
   --color-primary-dark: #002bc6;
@@ -92,4 +79,11 @@ a {
 h2 {
   font-size: 30px;
   font-weight: 700;
+}
+
+
+@media (max-width: 990px) {
+  .container {
+    width: 90vw;
+  }
 }

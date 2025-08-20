@@ -1,7 +1,7 @@
 // src/components/ContactInfo.jsx
 import React from "react";
 import logo from '../../assets/images/footer/main_logo.png'
-import bannerForm from '../../assets/images/register/Ragiter_background.png';
+import bannerForm from '../../assets/images/register/Ragiter_background.webp';
 import locationPin from '../../assets/images/contact/location_icon.svg'
 import callIcon from '../../assets/images/contact/call_icon.svg'
 import mailIcon from '../../assets/images/contact/mail-icon.svg'
