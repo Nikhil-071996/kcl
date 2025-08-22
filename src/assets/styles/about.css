@@ -187,4 +187,26 @@
         padding: 0;
         flex-direction: column-reverse;
     }
+
+    .about-us-container .about-us-bottom-content img {
+        width: 100%;
+    }
+
+    .about-us-container .about-us-top-content-description img{
+        width: 50%;
+
+    }
+
+    .about-us-container .about-us-bottom-content-description h4{
+        font-size: 32px;
+    }
+
+    .about-us-container .about-us-bottom-content:nth-child(2) h4{
+        text-align: left;
+    }
+
+    .about-us-container .about-us-bottom-content:nth-child(2) p{
+        text-align: left;
+
+    }
 }

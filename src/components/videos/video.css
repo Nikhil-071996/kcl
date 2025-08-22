@@ -147,16 +147,20 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     .video-content-container {
-        flex-direction: column;
         gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;  
+  -webkit-overflow-scrolling: touch;
     }
 
     .video-card {
         width: 100%;
-        max-width: none;
         margin: 0;
+        min-width: 100%;    /* show one card at a time */
+  flex-shrink: 0;     /* prevent shrinking */
+  scroll-snap-align: start; 
     }
 
     .video-overlay {
@@ -173,5 +177,9 @@
     .play-button img {
         width: 20px;
         height: 20px;
+    }
+
+    .heading-container h2 {
+        margin: 0;
     }
 }

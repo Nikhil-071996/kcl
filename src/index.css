@@ -86,4 +86,8 @@ h2 {
   .container {
     width: 90vw;
   }
+
+  h2 {
+    font-size: 22px;
+  }
 }

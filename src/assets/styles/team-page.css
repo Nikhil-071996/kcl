@@ -178,7 +178,7 @@
     }
 
     .owner-info p{
-
+        display: none;
     }
 
     .players-container .player{

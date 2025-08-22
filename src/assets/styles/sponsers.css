@@ -71,3 +71,9 @@
     color: #666;
     text-align: center;
 }
+
+@media (max-width:990px) {
+    .sponsor-logos-grid {
+        grid-template-columns: 1fr;
+    }
+}
