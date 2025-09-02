@@ -33,43 +33,6 @@ function TeamsContainer() {
                     </Link>
                 </div>
 
-                {/* <div className="teams">
-
-                <div className="team-card">
-                    <img src={Team1} alt="Team1" />
-                </div>
-
-                <div className="team-card">
-                    <img src={Team2} alt="Team1" />
-                </div>
-                
-                <div className="team-card">
-                    <img src={Team1} alt="Team1" />
-                </div>
-
-                <div className="team-card">
-                    <img src={Team2} alt="Team1" />
-                </div>
-
-                <div className="team-card">
-                    <img src={Team1} alt="Team1" />
-                </div>
-
-                <div className="team-card">
-                    <img src={Team2} alt="Team1" />
-                </div>
-
-                <div className="team-card">
-                    <img src={Team1} alt="Team1" />
-                </div>
-
-                <div className="team-card">
-                    <img src={Team2} alt="Team1" />
-                </div>
-
-            </div> */}
-
-
                 <Splide
                     ref={teamCardsRef}
                     options={{
@@ -86,9 +49,9 @@ function TeamsContainer() {
                         breakpoints: {
                             1300: { perPage: 4, },
                             1024: { perPage: 3, },
-                            560: { perPage: 1, focus: 'center', trimSpace: false },
-                            460: { perPage: 1, focus: 'center', trimSpace: false },
-                            320: { perPage: 1, focus: 'center', trimSpace: false },
+                            560: { perPage: 2, },
+                            460: { perPage: 2, },
+                            320: { perPage: 2, },
                         },
 
 

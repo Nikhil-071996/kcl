@@ -37,8 +37,16 @@
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 990px) {
+    .social-media-container {
+    margin-top: 40px;
+}
+
+}
 /* Responsive adjustments for social media posts */
 @media (max-width: 514px) {
+
+
     .social-media-container .social-post-card {
         margin: 0 auto;
     }

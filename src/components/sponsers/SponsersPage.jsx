@@ -48,7 +48,7 @@ function SponsersPage() {
         </div>
 
         <Link to={'https://www.amateurkabaddiassociationharyana.com'} target='_blank' className="sponsor-section">
-            <h3 className="section-title">IN ASSOCIATE WITH</h3>
+            <p className="partner-label">MANAGING PARTNERS</p>
             <div className="sponsor-logos-row">
             <div className="sponsor-logo">
                 <img src={associateSponser} alt="Armature Kabaddi League Haryana" />

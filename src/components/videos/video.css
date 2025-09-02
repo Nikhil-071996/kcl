@@ -148,6 +148,11 @@
 }
 
 @media (max-width: 990px) {
+
+    .video-container {
+    margin-top: 40px;
+}
+
     .video-content-container {
         gap: 20px;
         overflow-x: auto;

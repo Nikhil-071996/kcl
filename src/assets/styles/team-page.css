@@ -86,7 +86,7 @@
 
 .team-players {
     background-color: var(--color-primary-light);
-    padding: 43px 0 94px;
+        padding: 23px 0 50px;
 }
 
 .team-players h2 {
@@ -102,7 +102,7 @@
     flex-wrap: wrap;
     row-gap: 90px;
 
-    padding-top: 86px;
+    padding-top: 50px;
 }
 
 .players-container .player {

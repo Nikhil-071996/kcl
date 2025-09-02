@@ -197,6 +197,11 @@
 
 /* Responsive design */
 @media (max-width: 1024px) {
+
+    .blogs {
+        margin-top: 40px;
+    }
+
     .blogs-content-container {
         flex-direction: column;
         height: auto;

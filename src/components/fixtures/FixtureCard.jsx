@@ -35,8 +35,8 @@ function FixtureCard({
             <div className="section-2">
                 <div className="fitures-match-body">
                     <div className="fitures-team">
-                        <img src={team1Logo} alt={team1Name} />
                         <p className='fs-18 teams-name'>{team1Name}</p>
+                        <img src={team1Logo} alt={team1Name} />
                     </div>
 
                     <div className='full-time-container'>
@@ -49,8 +49,8 @@ function FixtureCard({
                     </div>
 
                     <div className="fitures-team">
-                        <p className='fs-18 teams-name'>{team2Name}</p>
                         <img src={team2Logo} alt={team2Name} />
+                        <p className='fs-18 teams-name'>{team2Name}</p>
                     </div>
                     <img src={arrow} alt="arrow" className='arrow-icon' />
                 </div>
