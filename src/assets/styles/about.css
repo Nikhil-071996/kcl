@@ -1,5 +1,8 @@
 .about-us-page {
     margin-top: 101px;
+    background: url('../images/about/WEB-BG-full.webp') no-repeat center top;
+    background-size: cover;
+
 }
 
 .about-us-container {
@@ -13,18 +16,17 @@
 }
 
 .about-us-container.top {
-    background: url('../images/about/top_bg.webp') no-repeat center top;
+    /* background: url('../images/about/WEB-BG-1.webp') no-repeat center top; */
     background-size: cover;
 }
 
 .about-us-container.middle {
-    background: url('../images/about/bottom_bg.png') no-repeat center top;
+    /* background: url('../images/about/WEB-BG-2.webp') no-repeat center top; */
     background-size: cover;
-    min-height: 400px;
 }
 
 .about-us-container.bottom {
-    background: url('../images/about/top_bg.webp') no-repeat center top;
+    /* background: url('../images/about/WEB-BG-3.webp') no-repeat center top; */
     background-size: cover;
 }
 
@@ -132,6 +134,51 @@
     color: var(--color-highlight-dark);
 }
 
+
+.about-balwan-singh{
+
+    display: flex;
+    align-items: center;
+    max-width: 75%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.about-balwan-singh .content{
+    width: 50%;
+}
+
+.about-balwan-singh img{
+    width: 50%;
+}
+
+.about-balwan-singh h1{
+        font-size: 64px;
+    font-style: italic;
+    background: linear-gradient(135deg, #DAA520, #FFD700, #B8860B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.about-balwan-singh h2{
+        border-bottom: 2px solid #fff;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+}
+
+.about-balwan-singh p{
+    font-size: 18px;
+    margin: 0 auto;
+    color: var(--color-body-gray);
+    line-height: 1.5;
+}
+
+.about-balwan-singh p span {
+    color: var(--color-highlight-dark);
+}
+
 @media (max-width: 1024px) {
     .about-us-container .about-us-top-content-description {
         grid-template-columns: 1fr;
@@ -153,6 +200,10 @@
 
     .about-us-container .about-us-top-content{
             max-width: 85%;
+    }
+
+    .about-us-bottom-content-description{
+        text-align: center;
     }
 
     .about-us-container .about-us-top-content h2{
@@ -177,6 +228,7 @@
 
     .about-us-container .about-us-top-content-description p{
         font-size: 14px;
+        text-align: center;
     }
 
     .about-us-container .about-us-bottom-content:nth-child(1){
@@ -202,11 +254,34 @@
     }
 
     .about-us-container .about-us-bottom-content:nth-child(2) h4{
-        text-align: left;
+        text-align: center;
     }
 
     .about-us-container .about-us-bottom-content:nth-child(2) p{
-        text-align: left;
+        text-align: center;
 
+    }
+
+    .about-balwan-singh{
+        max-width: 90%;
+        flex-direction: column-reverse;
+    }
+
+    .about-balwan-singh .content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-balwan-singh h1{
+        font-size: 32px;
+    }
+
+    .about-balwan-singh p{
+        font-size: 14px;
+
+    }
+    .about-balwan-singh img{
+        width: 100%;
+        margin-bottom: 15px;
     }
 }

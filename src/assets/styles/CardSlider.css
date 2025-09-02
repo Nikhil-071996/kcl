@@ -157,3 +157,39 @@ a.link-white img{
     width: 30px;
     height: auto;
 }
+
+
+@media (max-width :990px) {
+  .splide__slide.is-next .match-card{
+    scale: 0.8;
+    background-color: #fff;
+  color: #000;
+  }
+
+  .match-card {
+    background-color: #fff;
+  color: #000;
+  scale: 0.8;
+  padding: 12px 10px;
+    gap: 1rem;
+}
+
+.button-purple{
+    background-color: var(--color-accent-light);
+  color: #fff;
+}
+
+.splide__slide.is-next .match-card .button-purple{
+    
+
+background-color: var(--color-accent-light);
+  color: #fff;
+}
+
+.team img{
+  width: 75px;
+}
+p.fs-14{
+  font-size: 12px;
+}
+}

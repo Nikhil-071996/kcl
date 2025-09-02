@@ -1,7 +1,18 @@
+.sponser-page{
+    margin-top: 101px;
+}
+
 .sponsers-container {
     padding-top: 50px;
     border-top: 20px solid var(--color-highlight-dark);
 }
+
+.sponser-page .sponsers-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 0px solid var(--color-highlight-dark);
+}
+
 
 .sponsers-container h2 {
     text-align: center;
@@ -76,4 +87,8 @@
     .sponsor-logos-grid {
         grid-template-columns: 1fr;
     }
+
+    .sponser-page{
+    margin-top: 0;
+}
 }

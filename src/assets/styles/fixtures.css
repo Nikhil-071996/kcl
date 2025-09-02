@@ -51,7 +51,7 @@
     border-bottom-left-radius: 7px;
 }
 
-.fixtures-buttons-container button:nth-child(3) {
+.fixtures-buttons-container button:last-child {
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 }
@@ -324,5 +324,72 @@ p.teams-name {
 
     .arrow-icon {
         display: none;
+    }
+}
+
+@media (max-width :990px) {
+    
+    .fixtures-page {
+        margin-top: 93px;
+        padding-bottom: 29px;
+    }
+
+    .fixture-card .section-1 {
+        padding: 10px;
+    }
+
+    .page-fixtures-header {
+        padding: 25px 0;
+    }
+
+    .fixtures-buttons-container button {
+        width: 33%;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .fixture-card-section .container{
+        width: 90vw;
+    }
+
+    .fs-27 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+        .fs-13 {
+        font-size: 12px;
+    }
+
+    .fixture-card .section-2{
+        padding: 10px;
+    }
+
+    .fixture-card .section-2 .fitures-team img{
+        width: 45px ;
+    }
+
+    .full-time-container{
+        min-width: auto;
+    }
+
+    .full-time {
+        padding: 3px 6px;
+        font-size: 10px;
+        margin-top: 0 !important;
+    }
+
+        .fitures-score {
+        padding: 5px 16px;
+        font-size: 16px;
+        width: 100%;
+        max-width: fit-content;
+    }
+
+    p.teams-name {
+        max-width: 58px;
+        font-size: 12px;
     }
 }

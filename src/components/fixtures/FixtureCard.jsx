@@ -2,6 +2,7 @@ import React from 'react'
 import stadiumIcon from '../../assets/images/icons/stadium-icon.svg'
 import clockIcon from '../../assets/images/icons/clock-icon.svg'
 import arrow from '../../assets/images/icons/right.svg'
+import { Link } from 'react-router-dom'
 
 function FixtureCard({
     day,
@@ -17,7 +18,7 @@ function FixtureCard({
     status = "Full Time"
 }) {
     return (
-        <div className="fixture-card">
+        <Link to={'/score'} className="fixture-card">
             <div className="section-1">
                 <h3 className='fs-27'>{day}, {match}</h3>
                 <div className='icon-text-group-container'>
@@ -54,7 +55,7 @@ function FixtureCard({
                     <img src={arrow} alt="arrow" className='arrow-icon' />
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

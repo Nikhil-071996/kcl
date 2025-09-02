@@ -55,7 +55,7 @@ const MatchesCards = () => {
                         <SplideSlide
                             key={fixture.id}
                         >
-                            <div className="match-card">
+                            <Link to={'/score'} className="match-card">
                                 <div className="match-header">
                                     <div className="match_no">
                                         <div>
@@ -90,7 +90,7 @@ const MatchesCards = () => {
                                 </div>
 
 
-                            </div>
+                            </Link>
 
                         </SplideSlide>
 

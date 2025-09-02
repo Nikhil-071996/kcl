@@ -18,6 +18,8 @@ import BlogDetails from './components/blogs/BlogDetails'
 import PicturesDetails from './components/pictures/PicturesDetails'
 import VideoDetails from './components/videosDetails/VideoDetails'
 import { ToastContainer } from 'react-toastify'
+import ScorePage from './components/ScorePage/ScorePage'
+import SponsersPage from './components/sponsers/SponsersPage'
 
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
           <Route path='/register' element={<RegistrationForm />} />
           <Route path='/contact-us' element={<ContactPage />} />
           <Route path='/fixtures' element={<Fixtures />} />
+          <Route path='/score' element={<ScorePage />} />
           <Route path='/standings' element={<Standings />} />
           <Route path='/team-page' element={<TeamPage />} />
           <Route path='/team' element={<Teams />} />
@@ -43,6 +46,7 @@ function App() {
           <Route path='/blogs/details/:id' element={<BlogDetails />} />
           <Route path='/media/picture/details' element={<PicturesDetails />} />
           <Route path='/media/video/details' element={<VideoDetails />} />
+          <Route path='/partners' element={<SponsersPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

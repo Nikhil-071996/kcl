@@ -4,7 +4,7 @@ import logo from '../assets/images/footer/main_logo.png'
 import footerBg from '../assets/images/footer/footer-bg.png'
 
 import '../assets/styles/footer.css'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Sponsers from './sponsers/Sponsers'
 
 import facebookIcon from '../assets/images/social_media/fb.svg'
@@ -14,9 +14,10 @@ import linkedInIcon from '../assets/images/social_media/linkedin.svg'
 import xIcon from '../assets/images/social_media/x.svg'
 
 function Footer() {
+    const location = useLocation();
     return (
         <>
-            <Sponsers />
+            {location.pathname !== "/partners" && <Sponsers />}
             <footer style={{ backgroundImage: `url(${footerBg})` }}>
                 <div className="container">
                     {/* Central Logo */}
@@ -28,7 +29,7 @@ function Footer() {
                     <div className="nav-links">
                         <Link to="/blogs">BLOGS</Link>
                         <Link to="/about-us">BRAND AMBASSADOR</Link>
-                        <Link to="/about-us">OUR SPONSORS</Link>
+                        <Link to="/partners">OUR SPONSORS</Link>
                         <Link to="/contact-us">CONTACT US</Link>
                         <Link to="/media">MEDIA</Link>
                     </div>

@@ -128,6 +128,14 @@ td.team-name img {
     font-size: 12px;
   }
 
+  .sticky-col{
+    width: 180px;
+  }
+
+  thead .sticky-col{
+    width: 180px;
+  }
+
   td.team-name img{
     width: 50px;
   }
@@ -148,8 +156,5 @@ td.team-name img {
   font-size: 12px;
 }
 
-.sticky-col{
-  width: fit-content;
-}
 
 }

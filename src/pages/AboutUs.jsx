@@ -1,9 +1,9 @@
 import '../assets/styles/about.css'
 import mohit from '../assets/images/about/mohit.png'
 import rajesh from '../assets/images/about/rajesh.png'
+import balwanSingh from '../assets/images/about/balwan-singh.png'
 import map from '../assets/images/about/map.png'
 import akah from '../assets/images/about/akah.png'
-import banner from '../assets/images/team-page/TeamsPage.png'
 
 function AboutUs() {
     return (
@@ -23,9 +23,23 @@ function AboutUs() {
                 <div className='about-us-top-image'>
                     <img src={map} alt="Map" />
                 </div>
+                
+            </div>
+            <div className="about-us-container middle">
                 <div className='about-us-top-content-description'>
                     <p>Kabaddi Champions League Haryana is officially recognized by the <span>Amateur Kabaddi Association of Haryana (AKAH),</span> with exclusive rights granted to organize the league across the state. This partnership has been formed for the welfare and growth of kabaddi in Haryana, with a strong focus on uplifting grassroots players, providing them with professional exposure, and nurturing local talent. With a deep commitment to fairness, transparency, and player development, KCL Haryana also aligns with the <span>"Drug-Free Haryana"</span> campaign initiated by the Government of Haryana — promoting a culture of discipline, fitness, and pride through sports.</p>
                     <img src={akah} alt="AKAH" width={250} />
+                </div>
+                <div className='about-balwan-singh'>
+                    <div className="content">
+                        <h1>Shri Balwan Singh</h1>
+                        <h2>Dronacharya Award</h2>
+                        <p>Kabaddi Champions League Haryana is proud to be guided by Shri Balwan Singh, esteemed recipient of the prestigious Dronacharya Award.
+
+    With his unparalleled experience in nurturing kabaddi talent, his mentorship adds immense value to our mission. Under his guidance, KCL aims to create a platform where grassroots players rise to become <span>National Champions.</span></p>
+
+                    </div>
+                    <img src={balwanSingh} alt="Balwan Singh" width={250} />
                 </div>
             </div>
             <div className='about-us-container bottom'>
