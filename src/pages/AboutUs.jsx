@@ -47,14 +47,14 @@ function AboutUs() {
                     <div className='about-us-bottom-content rajesh'>
                         <div className='about-us-bottom-content-description'>
                             <h4>Rajesh Narwal</h4>
-                            <p>A renowned all-rounder who has represented India at the international level. Known for his game sense, strength, and gaon se nikla dum, Rajesh stands as an icon for aspiring kabaddi players across Haryana.</p>
+                            <p>A renowned all-rounder who has represented India at the international level. Known for his game sense, strength, and gaon se nikla dum, Rajesh stands as an icon for aspiring kabaddi players across Haryana. Honored as a National Best Player and played maximum times at the national level, his journey continues to inspire the next generation of champions.</p>
                         </div>
                         <img src={rajesh} alt="Rajesh" />
                     </div>
                     <div className='about-us-bottom-content mohit'>
                         <div className='about-us-bottom-content-description'>
                             <h4>Mohit Chillar</h4>
-                            <p>One of India's top defenders with years of national and international experience. Feared for his powerful tackles and fearless mindset, Mohit brings unmatched energy and inspiration to the league.</p>
+                            <p>One of India’s top defenders with years of national and international experience. Feared for his powerful tackles and fearless mindset, Mohit brings unmatched energy and inspiration to the league. His presence on the mat ensures confidence in teammates and fear in opponents. Widely regarded as a wall in defense, Mohit has set benchmarks for consistency and leadership in kabaddi.</p>
                         </div>
                         <img src={mohit} alt="Mohit" />
                     </div>

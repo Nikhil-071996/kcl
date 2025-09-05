@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const ContactInfo = () => {
   return (
-    <div className="contact-info" style={{backgroundImage: `url(${bannerForm})`}}>
+    <div className="contact-info">
       <h3 className="title">Let's get in touch</h3>
       <p className="text">
       </p>

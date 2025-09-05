@@ -77,8 +77,12 @@
 
 p.teams-name {
     line-height: 1.2;
-    text-align: center;
+    text-align: right;
     max-width: 80px;
+}
+
+p.teams-name:last-child {
+    text-align: left;
 }
 
 .icon-text-group-container {
@@ -222,6 +226,10 @@ p.teams-name {
 
 .fitures-team:first-child {
     justify-content: flex-end;
+}
+
+.teams-flex{
+    display: flex;
 }
 
 .fitures-team:last-child {

@@ -34,24 +34,27 @@ function FixtureCard({
             </div>
             <div className="section-2">
                 <div className="fitures-match-body">
-                    <div className="fitures-team">
-                        <p className='fs-18 teams-name'>{team1Name}</p>
-                        <img src={team1Logo} alt={team1Name} />
-                    </div>
+                    <div className="teams-flex">
+                        <div className="fitures-team">
+                            <p className='fs-18 teams-name'>{team1Name}</p>
+                            <img src={team1Logo} alt={team1Name} />
+                        </div>
 
-                    <div className='full-time-container'>
-                        <p style={{ marginTop: '10px' }} className='full-time'>{status}</p>
-                        <div className="fitures-score-section">
-                            <div className="fitures-score">
-                                <span>{score1}</span> - <span>{score2}</span>
+                        <div className='full-time-container'>
+                            <p style={{ marginTop: '10px' }} className='full-time'>{status}</p>
+                            <div className="fitures-score-section">
+                                <div className="fitures-score">
+                                    <span>{score1}</span> - <span>{score2}</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="fitures-team">
-                        <img src={team2Logo} alt={team2Name} />
-                        <p className='fs-18 teams-name'>{team2Name}</p>
+                        <div className="fitures-team">
+                            <img src={team2Logo} alt={team2Name} />
+                            <p className='fs-18 teams-name'>{team2Name}</p>
+                        </div>
                     </div>
+                    
                     <img src={arrow} alt="arrow" className='arrow-icon' />
                 </div>
             </div>

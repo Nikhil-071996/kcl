@@ -18,7 +18,6 @@ function ContactPage() {
       <div className="contact-page">
         {/* <img src="img/shape.png" className="square" alt="" /> */}
 
-        <p className='heading-para'></p>
 
         <div className="form">
           <ContactInfo />

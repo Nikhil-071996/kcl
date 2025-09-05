@@ -82,6 +82,17 @@
     font-size: 12px;
 }
 
+.share-active-container{
+    position: relative;
+}
+
+.hidden-share-content{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 223px;
+}
+
 
 @media (max-width:990px) {
     .photo-page{

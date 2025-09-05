@@ -4,6 +4,7 @@
   overflow-x: auto;
 
   margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 .table-wrapper {
@@ -126,6 +127,11 @@ td.team-name img {
 @media (max-width:990px) {
   td.team-name{
     font-size: 12px;
+  }
+
+  .leaderboard-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   .sticky-col{

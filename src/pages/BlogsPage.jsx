@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import banner from '../assets/images/team-page/TeamsPage.png'
 import blogsData from '../api/blogs.json';
 
@@ -15,6 +15,7 @@ import shareIcon from '../assets/images/Home/Share_icon.svg'
 import '../assets/styles/photo-page.css'
 import '../assets/styles/video-page.css'
 import { Link } from 'react-router-dom'
+import ShareMenu from '../components/ShareMenu/ShareMenu';
 
 
 const images = {
@@ -30,192 +31,68 @@ const images = {
 
 
 function BlogsPage() {
-  return (
-    <div className='video-page'>
-            <div className="page-team-header" style={{ backgroundImage: `url(${banner})` }}>
-                <div className="container">
-                    <div className="content">
-                        <h2>Latest News</h2>
-                    </div>
-                </div>
-            </div>
-    
-            <div className="photo-page-container blogs">
-            
-                    <div className="container">
 
-                      {blogsData.length > 0 && blogsData.map((blog, index) => (
-  <Link 
-    to={`/blogs/details/${blog.id}`} 
-    key={index} 
-    className="photo-page-card"
-  >
-    <div className="image-container">
-      <img src={images[blog.image]} alt={blog.title || "blog image"} />
-    </div>
-    <div className="body-card">
-      <h3>{blog.title}</h3>
-      <div className="footer-cards">
-        <div className="crd-date">
-          {blog.date}
+
+  const [activeShare, setActiveShare] = useState(null);
+
+  return (
+    <div className="video-page">
+      <div className="page-team-header" style={{ backgroundImage: `url(${banner})` }}>
+        <div className="container">
+          <div className="content">
+            <h2>Latest News</h2>
+          </div>
         </div>
-        <img src={shareIcon} className="shareIcon" alt="SHARE" />
+      </div>
+
+      <div className="photo-page-container blogs">
+        <div className="container">
+          {blogsData.length > 0 &&
+            blogsData.map((blog, index) => {
+              const blogUrl = `${window.location.origin}/blogs/details/${blog.id}`;
+
+              return (
+                <div key={index} className="photo-page-card">
+                  <Link to={`/blogs/details/${blog.id}`} className="card-link">
+                    <div className="image-container">
+                      <img src={images[blog.image]} alt={blog.title || "blog image"} />
+                    </div>
+                    <div className="body-card">
+                      <h3>{blog.title}</h3>
+                      <div className="footer-cards">
+                        <div className="crd-date">{blog.date}</div>
+                        <div className="share-active-container">
+                          <img
+                          src={shareIcon}
+                          className="shareIcon"
+                          alt="SHARE"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setActiveShare(activeShare === index ? null : index);
+                          }}
+                        />
+                          <div className="hidden-share-content">
+                            {activeShare === index && (
+                              <ShareMenu
+                                url={blogUrl}
+                                title={blog.title}
+                                onClose={() => setActiveShare(null)}
+                              />
+                            )}
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </Link>
+
+                  
+                </div>
+              );
+            })}
+        </div>
       </div>
     </div>
-  </Link>
-))}
-
-            
-                      
-            
-                      {/* <Link to={'/blogs/details'} className="photo-page-card">
-                         <div className="image-container">
-                          <img src={blogImage2} alt="blogimage" />
-                         </div>
-                         <div className="body-card">
-                          <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
-                          <div className="footer-cards">
-                            <div className="crd-date">01 July, 2025</div>
-                            <img src={shareIcon} className='shareIcon' alt="SHARE" />
-                          </div>
-                         </div>
-                      </Link>
-            
-                      <Link to={'/blogs/details'} className="photo-page-card">
-                         <div className="image-container">
-                          <img src={blogImage3} alt="blogimage" />
-                         </div>
-                         <div className="body-card">
-                          <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
-                          <div className="footer-cards">
-                            <div className="crd-date">01 July, 2025</div>
-                            <img src={shareIcon} className='shareIcon' alt="SHARE" />
-                          </div>
-                         </div>
-                      </Link>
-            
-                      <Link to={'/blogs/details'} className="photo-page-card">
-                         <div className="image-container">
-                          <img src={blogImage4} alt="blogimage" />
-                         </div>
-                         <div className="body-card">
-                          <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
-                          <div className="footer-cards">
-                            <div className="crd-date">01 July, 2025</div>
-                            <img src={shareIcon} className='shareIcon' alt="SHARE" />
-                          </div>
-                         </div>
-                      </Link>
-            
-                      <Link to={'/blogs/details'} className="photo-page-card">
-                         <div className="image-container">
-                          <img src={blogImage} alt="blogimage" />
-                         </div>
-                         <div className="body-card">
-                          <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
-                          <div className="footer-cards">
-                            <div className="crd-date">01 July, 2025</div>
-                            <img src={shareIcon} className='shareIcon' alt="SHARE" />
-                          </div>
-                         </div>
-                      </Link>
-            
-                      <Link to={'/blogs/details'} className="photo-page-card">
-                         <div className="image-container">
-                          <img src={blogImage4} alt="blogimage" />
-                         </div>
-                         <div className="body-card">
-                          <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
-                          <div className="footer-cards">
-                            <div className="crd-date">01 July, 2025</div>
-                            <img src={shareIcon} className='shareIcon' alt="SHARE" />
-                          </div>
-                         </div>
-                      </Link>
-
-                      <Link to={'/blogs/details'} className="photo-page-card">
-                         <div className="image-container">
-                          <img src={blogImage1} alt="blogimage" />
-                         </div>
-                         <div className="body-card">
-                          <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
-                          <div className="footer-cards">
-                            <div className="crd-date">01 July, 2025</div>
-                            <img src={shareIcon} className='shareIcon' alt="SHARE" />
-                          </div>
-                         </div>
-                      </Link>
-            
-                      <Link to={'/blogs/details'} className="photo-page-card">
-                         <div className="image-container">
-                          <img src={blogImage2} alt="blogimage" />
-                         </div>
-                         <div className="body-card">
-                          <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
-                          <div className="footer-cards">
-                            <div className="crd-date">01 July, 2025</div>
-                            <img src={shareIcon} className='shareIcon' alt="SHARE" />
-                          </div>
-                         </div>
-                      </Link>
-            
-                      <Link to={'/blogs/details'} className="photo-page-card">
-                         <div className="image-container">
-                          <img src={blogImage3} alt="blogimage" />
-                         </div>
-                         <div className="body-card">
-                          <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
-                          <div className="footer-cards">
-                            <div className="crd-date">01 July, 2025</div>
-                            <img src={shareIcon} className='shareIcon' alt="SHARE" />
-                          </div>
-                         </div>
-                      </Link>
-            
-                      <Link to={'/blogs/details'} className="photo-page-card">
-                         <div className="image-container">
-                          <img src={blogImage4} alt="blogimage" />
-                         </div>
-                         <div className="body-card">
-                          <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
-                          <div className="footer-cards">
-                            <div className="crd-date">01 July, 2025</div>
-                            <img src={shareIcon} className='shareIcon' alt="SHARE" />
-                          </div>
-                         </div>
-                      </Link>
-            
-                      <Link to={'/blogs/details'} className="photo-page-card">
-                         <div className="image-container">
-                          <img src={blogImage2} alt="blogimage" />
-                         </div>
-                         <div className="body-card">
-                          <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
-                          <div className="footer-cards">
-                            <div className="crd-date">01 July, 2025</div>
-                            <img src={shareIcon} className='shareIcon' alt="SHARE" />
-                          </div>
-                         </div>
-                      </Link>
-            
-                      <Link to={'/blogs/details'} className="photo-page-card">
-                         <div className="image-container">
-                          <img src={blogImage4} alt="blogimage" />
-                         </div>
-                         <div className="body-card">
-                          <h3>KCL Kabaddi Premier League 2025 - Photo Gallery</h3>
-                          <div className="footer-cards">
-                            <div className="crd-date">01 July, 2025</div>
-                            <img src={shareIcon} className='shareIcon' alt="SHARE" />
-                          </div>
-                         </div>
-                      </Link> */}
-            
-                    </div>
-            
-                    </div>
-    
-        </div>
   )
 }
 
